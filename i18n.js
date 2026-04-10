@@ -21,7 +21,6 @@ const translations = {
     'footer.copyright': '© 2026 ImmoGrowth — Freelance AI Marketing · Zürich · CHE-123.456.789',
 
     // ── INDEX HERO ──
-    'index.hero.badge': 'Available for new projects · Zürich, Switzerland',
     'index.hero.h1a': 'Marketing that', 'index.hero.h1b': 'thinks for itself.',
     'index.hero.subtitle': 'I help Swiss businesses scale smarter with AI-powered marketing — from intelligent content and ad optimization to full marketing automation systems.',
     'index.hero.cta1': 'Start a Project →', 'index.hero.cta2': 'View Work',
@@ -250,7 +249,6 @@ const translations = {
     'footer.copyright': '© 2026 ImmoGrowth — Freelance KI-Marketing · Zürich · CHE-123.456.789',
 
     // ── INDEX HERO ──
-    'index.hero.badge': 'Verfügbar für neue Projekte · Zürich, Schweiz',
     'index.hero.h1a': 'Marketing, das', 'index.hero.h1b': 'selbst denkt.',
     'index.hero.subtitle': 'Ich helfe Schweizer Unternehmen, smarter zu skalieren – mit KI-gestütztem Marketing: von intelligentem Content und Anzeigenoptimierung bis hin zu vollständigen Marketing-Automatisierungssystemen.',
     'index.hero.cta1': 'Projekt starten →', 'index.hero.cta2': 'Arbeiten ansehen',
@@ -476,7 +474,6 @@ const translations = {
     'footer.copyright': '© 2026 ImmoGrowth — Marketing IA Freelance · Zurich · CHE-123.456.789',
 
     // ── INDEX HERO ──
-    'index.hero.badge': 'Disponible pour de nouveaux projets · Zurich, Suisse',
     'index.hero.h1a': 'Un marketing qui', 'index.hero.h1b': 'pense par lui-même.',
     'index.hero.subtitle': "J'aide les entreprises suisses à se développer plus intelligemment grâce au marketing IA — du contenu intelligent et l'optimisation des annonces aux systèmes d'automatisation marketing complets.",
     'index.hero.cta1': 'Lancer un projet →', 'index.hero.cta2': 'Voir les travaux',
@@ -737,6 +734,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const lang = getLang();
   applyTranslations(lang);
   document.documentElement.lang = lang;
+  // Reveal the page now that the correct language is applied
+  document.documentElement.style.visibility = '';
   document.querySelectorAll('.lang-btn').forEach(btn => {
     btn.classList.toggle('active', btn.dataset.lang === lang);
     btn.addEventListener('click', () => setLang(btn.dataset.lang));
