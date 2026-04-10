@@ -1,0 +1,744 @@
+/* ============================================
+   ImmoGrowth — Internationalization (i18n)
+   Languages: EN | DE | FR
+   ============================================ */
+
+const translations = {
+  en: {
+    // ── NAVBAR ──
+    'nav.home': 'Home', 'nav.services': 'Services', 'nav.portfolio': 'Portfolio',
+    'nav.about': 'About', 'nav.insights': 'Insights', 'nav.contact': 'Contact',
+    'nav.bookCall': 'Book a Call',
+
+    // ── FOOTER ──
+    'footer.tagline': 'AI-powered marketing for Swiss businesses that want to grow smarter, faster.',
+    'footer.col.services': 'Services', 'footer.col.company': 'Company', 'footer.col.contact': 'Contact',
+    'footer.services.ads': 'AI Ad Optimization', 'footer.services.content': 'Content Strategy',
+    'footer.services.automation': 'Marketing Automation', 'footer.services.seo': 'AI SEO',
+    'footer.services.analytics': 'Analytics', 'footer.company.about': 'About',
+    'footer.company.portfolio': 'Portfolio', 'footer.company.insights': 'Insights',
+    'footer.company.contact': 'Contact',
+    'footer.copyright': '© 2026 ImmoGrowth — Freelance AI Marketing · Zürich · CHE-123.456.789',
+
+    // ── INDEX HERO ──
+    'index.hero.badge': 'Available for new projects · Zürich, Switzerland',
+    'index.hero.h1a': 'Marketing that', 'index.hero.h1b': 'thinks for itself.',
+    'index.hero.subtitle': 'I help Swiss businesses scale smarter with AI-powered marketing — from intelligent content and ad optimization to full marketing automation systems.',
+    'index.hero.cta1': 'Start a Project →', 'index.hero.cta2': 'View Work',
+    'index.stat.projects': 'Projects Delivered', 'index.stat.roas': 'Avg. ROAS Increase',
+    'index.stat.satisfaction': 'Client Satisfaction', 'index.stat.experience': 'Years Experience',
+    'trust.label': 'Trusted by',
+
+    // ── INDEX SERVICES ──
+    'index.services.label': 'What I Do', 'index.services.h2a': 'AI Marketing ',
+    'index.services.h2b': 'Services',
+    'index.services.desc': 'End-to-end marketing solutions powered by artificial intelligence — built for measurable results and sustainable growth.',
+    'index.s1.title': 'AI Ad Optimization', 'index.s1.desc': 'Machine learning models that continuously optimize your campaigns across Google, Meta and LinkedIn for maximum ROAS.',
+    'index.s2.title': 'AI Content Strategy', 'index.s2.desc': 'Data-driven content creation at scale — from blog posts to social copy — tailored to your brand voice and audience.',
+    'index.s3.title': 'Marketing Analytics', 'index.s3.desc': 'AI-powered dashboards and predictive analytics that turn raw data into actionable growth decisions.',
+    'index.s4.title': 'Marketing Automation', 'index.s4.desc': 'Custom automation workflows that nurture leads, engage customers and handle repetitive tasks around the clock.',
+    'index.s5.title': 'AI SEO & Visibility', 'index.s5.desc': 'Intelligent keyword research, content gap analysis and technical SEO driven by AI for lasting organic growth.',
+    'index.s6.title': 'AI Chatbots & CX', 'index.s6.desc': 'Conversational AI agents for customer support, lead qualification and personalized buyer journeys.',
+    'index.services.learnMore': 'Learn more →', 'index.services.viewAll': 'View All Services →',
+
+    // ── INDEX PROCESS ──
+    'index.process.label': 'How It Works', 'index.process.h2a': 'From Brief to ',
+    'index.process.h2b': 'Results',
+    'index.process.desc': 'A clear, structured process so you always know where we stand and what comes next.',
+    'index.step1.title': 'Discovery Call', 'index.step1.desc': 'We discuss your goals, current marketing setup, and where AI can make the biggest impact.',
+    'index.step2.title': 'Strategy & Proposal', 'index.step2.desc': 'I build a tailored AI marketing strategy with clear deliverables, timelines and pricing.',
+    'index.step3.title': 'Build & Launch', 'index.step3.desc': 'Rapid implementation of AI tools, campaigns and automations — with full transparency.',
+    'index.step4.title': 'Optimize & Scale', 'index.step4.desc': 'Ongoing monitoring, A/B testing and iterative improvement to compound your results.',
+
+    // ── INDEX TESTIMONIALS ──
+    'index.testimonials.label': 'Client Feedback', 'index.testimonials.h2a': 'What Clients ', 'index.testimonials.h2b': 'Say',
+    't1.text': '"ImmoGrowth transformed our Google Ads performance. Within 6 weeks our ROAS tripled and our cost per acquisition dropped by 40%. The AI-driven approach is genuinely remarkable."',
+    't2.text': '"The content automation system alone saved us 20 hours per week. Our organic traffic grew 180% in 4 months. I recommend ImmoGrowth to every Swiss startup I mentor."',
+    't3.text': '"Professional, responsive and deeply knowledgeable in AI marketing. The strategy they built for our B2B campaigns generated CHF 380K in pipeline within the first quarter."',
+
+    // ── INDEX CTA ──
+    'index.cta.label': "Let's Work Together", 'index.cta.h2': 'Ready to grow with AI?',
+    'index.cta.desc': 'Book a free 30-minute discovery call and find out how AI marketing can accelerate your business.',
+    'index.cta.btn1': 'Book Free Call →', 'index.cta.btn2': 'Explore Services',
+
+    // ── SERVICES PAGE ──
+    'services.hero.label': 'Services', 'services.hero.h1a': 'Intelligent Marketing',
+    'services.hero.h1b': 'Built to Scale',
+    'services.hero.desc': 'Every service is designed around one goal: measurable growth through applied artificial intelligence.',
+    'services.s1.label': 'Performance Marketing', 'services.s1.title': 'AI Ad Optimization',
+    'services.s1.desc': 'Stop wasting budget on guesswork. My AI-driven approach analyzes thousands of signals in real time — audience segments, creatives, bid strategies — and continuously refines your campaigns for peak efficiency.',
+    'services.s1.f1': 'Google Ads, Meta & LinkedIn campaign management', 'services.s1.f2': 'Machine-learning bid optimization',
+    'services.s1.f3': 'Audience modeling & lookalike targeting', 'services.s1.f4': 'Creative A/B testing at scale',
+    'services.s1.f5': 'Monthly performance reports with Swiss-market benchmarks',
+    'services.s2.label': 'Content & SEO', 'services.s2.title': 'AI Content Strategy',
+    'services.s2.desc': 'Scalable, on-brand content — from long-form articles to social posts and email sequences — crafted with AI and refined for your specific audience, whether German, French, Italian or English speaking.',
+    'services.s2.f1': 'Multilingual content production (DE / FR / IT / EN)', 'services.s2.f2': 'AI SEO: keyword clustering, topic authority maps',
+    'services.s2.f3': 'Blog, newsletter & social content pipelines', 'services.s2.f4': 'Brand voice training & style guides',
+    'services.s2.f5': 'Content calendar planning & scheduling',
+    'services.s3.label': 'Automation', 'services.s3.title': 'Marketing Automation',
+    'services.s3.desc': 'Custom AI workflows that run 24/7 — automatically nurturing leads, personalizing customer journeys, and triggering the right message at the right moment without manual intervention.',
+    'services.s3.f1': 'CRM integration & lead scoring models', 'services.s3.f2': 'Automated email & SMS sequences',
+    'services.s3.f3': 'Behavioral trigger campaigns', 'services.s3.f4': 'Multi-platform workflow orchestration',
+    'services.s3.f5': 'Re-engagement & churn prevention flows',
+    'services.s4.label': 'Data & Analytics', 'services.s4.title': 'AI-Powered Analytics',
+    'services.s4.desc': 'Transform your marketing data into a strategic asset. I build custom dashboards and predictive models that forecast performance and surface the insights that actually move the needle.',
+    'services.s4.f1': 'Custom KPI dashboards (Looker Studio, Power BI)', 'services.s4.f2': 'Attribution modeling & channel analysis',
+    'services.s4.f3': 'Predictive revenue & churn modeling', 'services.s4.f4': 'Customer lifetime value (CLV) analysis',
+    'services.s4.f5': 'Competitor intelligence reports',
+    'services.s5.label': 'Conversational AI', 'services.s5.title': 'AI Chatbots & CX',
+    'services.s5.desc': 'Deploy intelligent conversational agents that handle customer inquiries, qualify leads and personalize the buyer experience — available 24/7 in any language your customers speak.',
+    'services.s5.f1': 'Custom GPT-powered chatbots for websites & apps', 'services.s5.f2': 'Lead qualification & appointment booking bots',
+    'services.s5.f3': 'Multilingual support automation', 'services.s5.f4': 'Handoff to human agents when needed',
+    'services.s5.f5': 'Integration with CRM & helpdesk platforms',
+
+    // ── PRICING ──
+    'pricing.label': 'Investment', 'pricing.h2a': 'Simple, Transparent ', 'pricing.h2b': 'Pricing',
+    'pricing.desc': "All prices in CHF. No hidden fees. Invoiced monthly or per project — your choice.",
+    'pricing.starter': 'Starter', 'pricing.starter.period': '/ month',
+    'pricing.starter.desc': 'Ideal for startups and SMEs taking their first steps into AI marketing.',
+    'pricing.starter.f1': '1 marketing channel', 'pricing.starter.f2': 'AI content (8 pieces / mo)',
+    'pricing.starter.f3': 'Monthly performance report', 'pricing.starter.f4': 'Email support',
+    'pricing.starter.f5': 'Marketing automation', 'pricing.starter.f6': 'Custom dashboards',
+    'pricing.growth': 'Growth', 'pricing.growth.period': '/ month',
+    'pricing.growth.desc': 'For established businesses ready to scale with a full AI marketing stack.',
+    'pricing.growth.f1': 'Up to 3 marketing channels', 'pricing.growth.f2': 'AI content (24 pieces / mo)',
+    'pricing.growth.f3': 'Bi-weekly strategy calls', 'pricing.growth.f4': 'Marketing automation setup',
+    'pricing.growth.f5': 'Custom analytics dashboard', 'pricing.growth.f6': 'Priority Slack support',
+    'pricing.enterprise': 'Enterprise', 'pricing.enterprise.period': '/ tailored engagement',
+    'pricing.enterprise.desc': 'Full-service AI marketing partnerships for larger organizations with complex needs.',
+    'pricing.enterprise.f1': 'Unlimited channels', 'pricing.enterprise.f2': 'Dedicated AI model fine-tuning',
+    'pricing.enterprise.f3': 'Weekly strategy sessions', 'pricing.enterprise.f4': 'Full marketing automation',
+    'pricing.enterprise.f5': 'AI chatbot development', 'pricing.enterprise.f6': 'White-glove onboarding',
+    'pricing.popular': 'Most Popular', 'pricing.getStarted': 'Get Started', 'pricing.talkToMe': 'Talk to Me',
+    'pricing.custom': 'Custom', 'pricing.oneoff': 'Need a one-off project? I also offer fixed-price project engagements.',
+    'pricing.getInTouch': 'Get in touch', 'pricing.forQuote': 'for a custom quote.',
+
+    // ── FAQ ──
+    'faq.label': 'FAQ', 'faq.h2a': 'Common ', 'faq.h2b': 'Questions',
+    'faq.q1': 'Do you work with businesses outside of Switzerland?',
+    'faq.a1': 'Yes — while I am based in Zürich and specialize in the Swiss market, I work with clients throughout the DACH region and internationally. All consultations and reporting can be done remotely.',
+    'faq.q2': 'How long before I see results?',
+    'faq.a2': 'For paid advertising, meaningful improvements typically appear within 4–6 weeks. SEO and content strategies show significant traction after 3–4 months. I provide transparency at every stage so you always understand what is happening and why.',
+    'faq.q3': 'What tools and platforms do you use?',
+    'faq.a3': 'I work with the leading platforms: Google Ads, Meta Business Suite, LinkedIn Ads, HubSpot, Make (Integromat), n8n, OpenAI API, Semrush, Ahrefs, Looker Studio, and more. The specific stack is tailored to your needs and existing infrastructure.',
+    'faq.q4': 'Are contracts month-to-month or annual?',
+    'faq.a4': "I offer flexible month-to-month retainers with a 30-day notice period. For project-based work, payment is split: 50% upfront, 50% on delivery. Annual commitments come with a 10% discount.",
+    'faq.q5': 'Do you offer services in German or French?',
+    'faq.a5': 'Absolutely. I offer full bilingual service in German and English, and can coordinate French-language content production through my network. Campaigns targeting Swiss audiences can be run in all four national languages.',
+    'services.cta.h2a': "Let's build something ", 'services.cta.h2b': 'great together',
+    'services.cta.desc': "Book a free 30-minute call. No commitment, no sales pitch — just a conversation about your growth goals.",
+    'services.cta.btn': 'Book Free Discovery Call',
+
+    // ── PORTFOLIO ──
+    'portfolio.hero.label': 'Portfolio', 'portfolio.hero.h1a': 'Real Results for', 'portfolio.hero.h1b': 'Real Businesses',
+    'portfolio.hero.desc': 'Selected case studies from recent AI marketing engagements with Swiss and DACH-region clients.',
+    'portfolio.metric1': 'Average ROAS improvement', 'portfolio.metric2': 'Cost per acquisition reduction',
+    'portfolio.metric3': 'Organic traffic growth (avg.)', 'portfolio.metric4': 'Pipeline generated for clients',
+    'portfolio.filter.all': 'All Projects', 'portfolio.filter.ads': 'Paid Ads', 'portfolio.filter.seo': 'SEO & Content',
+    'portfolio.filter.automation': 'Automation', 'portfolio.filter.analytics': 'Analytics',
+    'portfolio.p1.cat': 'Paid Ads · Google & Meta', 'portfolio.p1.title': 'Alpine Digital AG — 3.2× ROAS',
+    'portfolio.p1.desc': 'Complete overhaul of Google Shopping and Meta retargeting campaigns using ML bid optimization and dynamic creative. Achieved 3.2× ROAS within 8 weeks.',
+    'portfolio.p2.cat': 'SEO & Content · B2B SaaS', 'portfolio.p2.title': 'NovaTech Solutions — 180% Organic Growth',
+    'portfolio.p2.desc': 'Built an AI-powered content engine producing 24 optimized articles per month in DE and EN. Organic traffic grew 180% and domain authority increased by 18 points in 6 months.',
+    'portfolio.p3.cat': 'Marketing Automation · E-Commerce', 'portfolio.p3.title': 'SwissHome Shop — 42% More Conversions',
+    'portfolio.p3.desc': 'Designed and implemented a multi-step email automation system with behavioral triggers and product recommendation AI. Cart abandonment recovery increased by 42%.',
+    'portfolio.p4.cat': 'Analytics · Financial Services', 'portfolio.p4.title': 'Helvetica Group — Full Attribution Stack',
+    'portfolio.p4.desc': 'Built a unified marketing data warehouse and custom Looker Studio dashboards, replacing 6 disconnected reporting tools with a single source of truth. Saved 12 hours/week.',
+    'portfolio.p5.cat': 'Paid Ads · B2B LinkedIn', 'portfolio.p5.title': 'Peak Ventures — CHF 380K Pipeline',
+    'portfolio.p5.desc': 'LinkedIn ABM campaign targeting Series A/B Swiss startups. AI-generated ad copy tested across 48 variants. Generated CHF 380K in qualified pipeline in Q1.',
+    'portfolio.p6.cat': 'AI Chatbot · Healthcare', 'portfolio.p6.title': 'MediConsult AG — 24/7 Lead Qualification',
+    'portfolio.p6.desc': 'Custom GPT-powered chatbot for a Zürich healthcare provider. Handles appointment booking, FAQs and lead qualification in DE, FR and EN — 24/7 without human support.',
+    'portfolio.p7.cat': 'SEO · Local Business', 'portfolio.p7.title': 'Zurich Realty — #1 for Target Keywords',
+    'portfolio.p7.desc': 'Comprehensive local SEO strategy for a Zürich real estate agency. Achieved top 3 rankings for 28 target keywords and doubled inbound inquiry volume in 5 months.',
+    'portfolio.p8.cat': 'Analytics · E-Commerce', 'portfolio.p8.title': 'SwissGear — Predictive CLV Model',
+    'portfolio.p8.desc': 'Built a machine-learning customer lifetime value model that identified the top 20% of customers responsible for 68% of revenue, enabling precision upsell campaigns.',
+    'portfolio.testimonial': '"Working with ImmoGrowth was a game-changer for our company. The results were measurable, the communication was excellent and the ROI was well beyond our expectations. Truly the Swiss quality of AI marketing."',
+    'portfolio.cta.h2a': 'Your project ', 'portfolio.cta.h2b': 'could be next.',
+    'portfolio.cta.desc': "Let's talk about your goals and build a custom AI marketing strategy together.",
+    'portfolio.cta.btn1': 'Start a Project →', 'portfolio.cta.btn2': 'View Services',
+
+    // ── ABOUT ──
+    'about.hero.label': 'About', 'about.hero.h1a': 'The Person Behind', 'about.hero.h1b': 'ImmoGrowth',
+    'about.hero.desc': 'A passionate AI marketing specialist based in Zürich, helping Swiss businesses compete in the age of artificial intelligence.',
+    'about.badge.small': 'Years in AI Marketing',
+    'about.story.label': 'My Story', 'about.story.h2a': "Hi, I'm Alex — ", 'about.story.h2b': 'your AI marketing partner.',
+    'about.story.p1': 'I started ImmoGrowth after spending years in growth roles at Swiss tech startups and digital agencies, where I saw firsthand how AI was changing marketing — but most businesses lacked the expertise to apply it effectively.',
+    'about.story.p2': 'Today I work exclusively with Swiss and DACH-region businesses, combining deep marketing strategy with the latest AI tools to build systems that scale. My background spans performance marketing, content strategy, marketing automation and data analytics.',
+    'about.story.p3': "I'm certified in Google Marketing Platform, Meta Blueprint, HubSpot, and hold a degree in Business & Digital Marketing from the University of Zürich.",
+    'about.v1.title': 'Swiss Quality', 'about.v1.desc': 'Precision, reliability and the highest standards in every deliverable.',
+    'about.v2.title': 'Data-Driven', 'about.v2.desc': 'Every decision is backed by data, not gut feeling.',
+    'about.v3.title': 'Privacy-First', 'about.v3.desc': 'Full DSGVO / nDSG compliance in every project.',
+    'about.v4.title': 'Always Learning', 'about.v4.desc': 'Continuously training on the latest AI tools and techniques.',
+    'about.skills.label': 'Expertise', 'about.skills.h2a': 'Skills & ', 'about.skills.h2b': 'Toolkit',
+    'about.skills.desc': 'Proficient in the tools and technologies that power modern AI marketing.',
+    'about.certs.label': 'Credentials', 'about.certs.h2a': 'Certifications & ', 'about.certs.h2b': 'Education',
+    'about.cta.h2a': 'Ready to grow ', 'about.cta.h2b': 'together?',
+    'about.cta.desc': "I'd love to learn about your business and explore how AI marketing can accelerate your growth.",
+    'about.cta.btn1': 'Book a Free Call →', 'about.cta.btn2': 'See My Work',
+
+    // ── BLOG ──
+    'blog.hero.label': 'Insights', 'blog.hero.h1a': 'AI Marketing', 'blog.hero.h1b': 'Intelligence',
+    'blog.hero.desc': 'Practical guides, case studies and trends on using AI to grow your business — written for Swiss marketers.',
+    'blog.featured': 'Featured',
+    'blog.featured.title': 'How Swiss SMEs Can Use AI Marketing Without Breaking the Budget',
+    'blog.featured.desc': 'A practical, step-by-step guide to implementing AI-powered marketing tools for small and medium businesses in Switzerland — with realistic budgets and Swiss market considerations.',
+    'blog.featured.btn': 'Read Article →', 'blog.latest.label': 'Latest Posts',
+    'blog.latest.h2a': 'Fresh ', 'blog.latest.h2b': 'Perspectives',
+    'blog.readMore': 'Read more →', 'blog.loadMore': 'Load More Articles →',
+    'blog.newsletter.label': 'Newsletter', 'blog.newsletter.h2a': 'Stay ahead of the ', 'blog.newsletter.h2b': 'AI marketing curve.',
+    'blog.newsletter.desc': 'Join 1,200+ Swiss marketers getting weekly AI tips, tool reviews and case studies — in your inbox every Tuesday.',
+    'blog.newsletter.placeholder': 'your@email.ch', 'blog.newsletter.btn': 'Subscribe Free →',
+    'blog.newsletter.privacy': 'No spam. Unsubscribe anytime. nDSG compliant.',
+    'blog.newsletter.success': "✓ You're subscribed! Check your inbox.",
+
+    // ── CONTACT ──
+    'contact.hero.label': 'Contact', 'contact.hero.h1a': "Let's Start a", 'contact.hero.h1b': 'Conversation',
+    'contact.hero.desc': 'Book a free 30-minute discovery call or send a message. I respond to all enquiries within 24 hours on business days.',
+    'contact.info.h3': 'How can I help?',
+    'contact.info.desc': "Whether you're looking to run your first AI-powered campaign, automate your marketing stack, or want a full strategy overhaul — let's talk.",
+    'contact.method1.title': 'Book a Free Call', 'contact.method1.desc': "30 minutes, no strings attached. Let's explore your goals.", 'contact.method1.link': 'Schedule via Calendly →',
+    'contact.method2.title': 'Email', 'contact.method2.desc': 'For detailed project enquiries',
+    'contact.method3.title': 'Phone', 'contact.method3.desc': 'Mon–Fri, 09:00–18:00 CET',
+    'contact.method4.title': 'Location', 'contact.method4.desc': 'Based in Zürich — working remotely across the DACH region and beyond.',
+    'contact.fast.title': '⚡ Fast Response', 'contact.fast.desc': 'I typically respond within 4 hours during business hours. For urgent matters, call directly.',
+    'contact.follow': 'Follow Along', 'contact.form.h3': 'Send a Message',
+    'contact.form.desc': "Tell me about your project and I'll get back to you with ideas and next steps.",
+    'contact.form.name': 'Full Name *', 'contact.form.company': 'Company',
+    'contact.form.email': 'Email Address *', 'contact.form.phone': 'Phone (optional)',
+    'contact.form.service': "I'm interested in...", 'contact.form.service.default': 'Select a service',
+    'contact.form.service.ads': 'AI Ad Optimization', 'contact.form.service.content': 'AI Content Strategy & SEO',
+    'contact.form.service.automation': 'Marketing Automation', 'contact.form.service.analytics': 'Analytics & Reporting',
+    'contact.form.service.chatbot': 'AI Chatbot Development', 'contact.form.service.full': 'Full-Service Retainer',
+    'contact.form.service.other': "Not sure yet — let's talk",
+    'contact.form.budget': 'Approximate Monthly Budget (CHF)', 'contact.form.budget.default': 'Select a range',
+    "contact.form.budget.lt1200": "Under CHF 1'200", "contact.form.budget.1200": "CHF 1'200 – 2'900",
+    "contact.form.budget.2900": "CHF 2'900 – 5'000", "contact.form.budget.5000": "CHF 5'000+",
+    'contact.form.budget.project': 'One-off project', 'contact.form.message': 'Tell me about your project *',
+    'contact.form.messagePlaceholder': 'What are your main marketing challenges? What does success look like for you in 12 months?',
+    'contact.form.dataNotice': 'Your data is used solely to process your enquiry and is not shared with third parties. ',
+    'contact.form.dataNoticeLink': 'Privacy Policy',
+    'contact.form.privacy': 'I agree that my data will be processed to handle my enquiry. See',
+    'contact.form.privacyLink': 'Privacy Policy', 'contact.form.privacyEnd': 'for details. I can withdraw consent at any time.',
+    'contact.form.submit': 'Send Message →', 'contact.success.h3': 'Message sent!',
+    'contact.success.p': "Thank you for reaching out. I'll get back to you within 24 hours.",
+    'contact.success.p2': 'In the meantime, feel free to connect on',
+    'contact.faq.label': 'Quick Answers', 'contact.faq.h2a': 'Before You ', 'contact.faq.h2b': 'Reach Out',
+    'contact.faq.q1': 'What happens after I submit the form?',
+    'contact.faq.a1': "I'll review your message and respond within 24 hours (usually much faster). If your project is a good fit, I'll suggest a 30-minute discovery call where we can explore your goals and I can share initial ideas.",
+    'contact.faq.q2': 'How quickly can you start on a project?',
+    'contact.faq.a2': "My typical lead time is 1–2 weeks from contract signing to project kickoff. If you have an urgent need, let me know in your message and I'll do my best to accommodate.",
+    'contact.faq.q3': 'Do you work with startups or only established businesses?',
+    'contact.faq.a3': "Both! I work with early-stage startups, growing SMEs and established companies. The approach is tailored to your stage — what works for a Series A startup looks very different from a 50-person Mittelstand company.",
+    'contact.faq.q4': 'Can I start with a smaller project to test the collaboration?',
+    'contact.faq.a4': "Absolutely. Many clients start with a one-off audit or a short-term project before committing to a monthly retainer. It's a great way to see how we work together before a longer engagement.",
+  },
+
+  de: {
+    // ── NAVBAR ──
+    'nav.home': 'Startseite', 'nav.services': 'Leistungen', 'nav.portfolio': 'Portfolio',
+    'nav.about': 'Über mich', 'nav.insights': 'Einblicke', 'nav.contact': 'Kontakt',
+    'nav.bookCall': 'Gespräch buchen',
+
+    // ── FOOTER ──
+    'footer.tagline': 'KI-gestütztes Marketing für Schweizer Unternehmen, die smarter und schneller wachsen wollen.',
+    'footer.col.services': 'Leistungen', 'footer.col.company': 'Unternehmen', 'footer.col.contact': 'Kontakt',
+    'footer.services.ads': 'KI-Anzeigenoptimierung', 'footer.services.content': 'Content-Strategie',
+    'footer.services.automation': 'Marketing-Automatisierung', 'footer.services.seo': 'KI-SEO',
+    'footer.services.analytics': 'Analytics', 'footer.company.about': 'Über mich',
+    'footer.company.portfolio': 'Portfolio', 'footer.company.insights': 'Einblicke',
+    'footer.company.contact': 'Kontakt',
+    'footer.copyright': '© 2026 ImmoGrowth — Freelance KI-Marketing · Zürich · CHE-123.456.789',
+
+    // ── INDEX HERO ──
+    'index.hero.badge': 'Verfügbar für neue Projekte · Zürich, Schweiz',
+    'index.hero.h1a': 'Marketing, das', 'index.hero.h1b': 'selbst denkt.',
+    'index.hero.subtitle': 'Ich helfe Schweizer Unternehmen, smarter zu skalieren – mit KI-gestütztem Marketing: von intelligentem Content und Anzeigenoptimierung bis hin zu vollständigen Marketing-Automatisierungssystemen.',
+    'index.hero.cta1': 'Projekt starten →', 'index.hero.cta2': 'Arbeiten ansehen',
+    'index.stat.projects': 'Abgeschlossene Projekte', 'index.stat.roas': 'Ø ROAS-Steigerung',
+    'index.stat.satisfaction': 'Kundenzufriedenheit', 'index.stat.experience': 'Jahre Erfahrung',
+    'trust.label': 'Vertraut von',
+
+    // ── INDEX SERVICES ──
+    'index.services.label': 'Was ich tue', 'index.services.h2a': 'KI-Marketing-', 'index.services.h2b': 'Leistungen',
+    'index.services.desc': 'End-to-End-Marketinglösungen auf Basis künstlicher Intelligenz – für messbare Ergebnisse und nachhaltiges Wachstum.',
+    'index.s1.title': 'KI-Anzeigenoptimierung', 'index.s1.desc': 'Machine-Learning-Modelle, die Ihre Kampagnen auf Google, Meta und LinkedIn kontinuierlich für maximalen ROAS optimieren.',
+    'index.s2.title': 'KI-Content-Strategie', 'index.s2.desc': 'Datengetriebene Content-Erstellung in grossem Massstab – von Blogbeiträgen bis zu Social-Copy – abgestimmt auf Ihre Marke und Zielgruppe.',
+    'index.s3.title': 'Marketing-Analytics', 'index.s3.desc': 'KI-gestützte Dashboards und prädiktive Analysen, die Rohdaten in umsetzbare Wachstumsentscheidungen verwandeln.',
+    'index.s4.title': 'Marketing-Automatisierung', 'index.s4.desc': 'Individuelle Automatisierungs-Workflows, die Leads pflegen, Kunden einbinden und repetitive Aufgaben rund um die Uhr erledigen.',
+    'index.s5.title': 'KI-SEO & Sichtbarkeit', 'index.s5.desc': 'Intelligente Keyword-Recherche, Content-Gap-Analyse und technisches SEO – KI-gestützt für dauerhaftes organisches Wachstum.',
+    'index.s6.title': 'KI-Chatbots & CX', 'index.s6.desc': 'Konversations-KI-Agenten für Kundensupport, Lead-Qualifizierung und personalisierte Käufer-Journeys.',
+    'index.services.learnMore': 'Mehr erfahren →', 'index.services.viewAll': 'Alle Leistungen →',
+
+    // ── INDEX PROCESS ──
+    'index.process.label': 'So funktioniert es', 'index.process.h2a': 'Von der Idee zu den ', 'index.process.h2b': 'Ergebnissen',
+    'index.process.desc': 'Ein klarer, strukturierter Prozess – damit Sie immer wissen, wo wir stehen und was als nächstes kommt.',
+    'index.step1.title': 'Erstgespräch', 'index.step1.desc': 'Wir besprechen Ihre Ziele, Ihr aktuelles Marketing-Setup und wo KI den grössten Einfluss haben kann.',
+    'index.step2.title': 'Strategie & Angebot', 'index.step2.desc': 'Ich entwickle eine massgeschneiderte KI-Marketing-Strategie mit klaren Deliverables, Zeitplan und Preisen.',
+    'index.step3.title': 'Aufbau & Launch', 'index.step3.desc': 'Schnelle Implementierung von KI-Tools, Kampagnen und Automatisierungen – mit vollständiger Transparenz.',
+    'index.step4.title': 'Optimieren & Skalieren', 'index.step4.desc': 'Laufendes Monitoring, A/B-Tests und iterative Verbesserungen für nachhaltig bessere Ergebnisse.',
+
+    // ── INDEX TESTIMONIALS ──
+    'index.testimonials.label': 'Kundenstimmen', 'index.testimonials.h2a': 'Was Kunden ', 'index.testimonials.h2b': 'sagen',
+    't1.text': '„ImmoGrowth hat unsere Google Ads-Performance transformiert. Innerhalb von 6 Wochen verdreifachte sich unser ROAS und die Kosten pro Akquisition sanken um 40 %. Der KI-gestützte Ansatz ist wirklich bemerkenswert."',
+    't2.text': '„Das Content-Automatisierungssystem allein hat uns 20 Stunden pro Woche gespart. Unser organischer Traffic wuchs in 4 Monaten um 180 %. Ich empfehle ImmoGrowth jedem Schweizer Startup, das ich betreue."',
+    't3.text': '„Professionell, reaktionsschnell und mit fundiertem Know-how im KI-Marketing. Die Strategie für unsere B2B-Kampagnen generierte im ersten Quartal CHF 380K Pipeline."',
+
+    // ── INDEX CTA ──
+    'index.cta.label': 'Zusammenarbeiten', 'index.cta.h2': 'Bereit, mit KI zu wachsen?',
+    'index.cta.desc': 'Buchen Sie ein kostenloses 30-minütiges Erstgespräch und erfahren Sie, wie KI-Marketing Ihr Unternehmen beschleunigen kann.',
+    'index.cta.btn1': 'Kostenloses Gespräch →', 'index.cta.btn2': 'Leistungen erkunden',
+
+    // ── SERVICES PAGE ──
+    'services.hero.label': 'Leistungen', 'services.hero.h1a': 'Intelligentes Marketing', 'services.hero.h1b': 'für skalierbares Wachstum',
+    'services.hero.desc': 'Jede Leistung ist auf ein Ziel ausgerichtet: messbares Wachstum durch angewandte künstliche Intelligenz.',
+    'services.s1.label': 'Performance Marketing', 'services.s1.title': 'KI-Anzeigenoptimierung',
+    'services.s1.desc': 'Hören Sie auf, Budget für Raterei zu verschwenden. Mein KI-gesteuerter Ansatz analysiert in Echtzeit Tausende von Signalen – Zielgruppensegmente, Creatives, Gebotsstrategien – und verfeinert Ihre Kampagnen kontinuierlich für höchste Effizienz.',
+    'services.s1.f1': 'Google Ads, Meta & LinkedIn Kampagnenverwaltung', 'services.s1.f2': 'Machine-Learning-Gebotsoptimierung',
+    'services.s1.f3': 'Audience-Modellierung & Lookalike-Targeting', 'services.s1.f4': 'Creative A/B-Tests in grossem Massstab',
+    'services.s1.f5': 'Monatliche Performance-Berichte mit Schweizer Markt-Benchmarks',
+    'services.s2.label': 'Content & SEO', 'services.s2.title': 'KI-Content-Strategie',
+    'services.s2.desc': 'Skalierbarer, markenkonformer Content – von Langform-Artikeln bis zu Social-Posts und E-Mail-Sequenzen – mit KI erstellt und für Ihre Zielgruppe verfeinert, ob deutsch-, französisch-, italienisch- oder englischsprachig.',
+    'services.s2.f1': 'Mehrsprachige Content-Produktion (DE / FR / IT / EN)', 'services.s2.f2': 'KI-SEO: Keyword-Clustering, Topic Authority Maps',
+    'services.s2.f3': 'Blog-, Newsletter- & Social-Content-Pipelines', 'services.s2.f4': 'Markensprach-Training & Style Guides',
+    'services.s2.f5': 'Content-Kalenderplanung & Scheduling',
+    'services.s3.label': 'Automatisierung', 'services.s3.title': 'Marketing-Automatisierung',
+    'services.s3.desc': 'Individuelle KI-Workflows, die 24/7 laufen – automatisches Lead-Nurturing, Personalisierung der Customer Journey und das Auslösen der richtigen Botschaft zum richtigen Zeitpunkt ohne manuellen Eingriff.',
+    'services.s3.f1': 'CRM-Integration & Lead-Scoring-Modelle', 'services.s3.f2': 'Automatisierte E-Mail- & SMS-Sequenzen',
+    'services.s3.f3': 'Verhaltensbasierte Trigger-Kampagnen', 'services.s3.f4': 'Multi-Plattform-Workflow-Orchestrierung',
+    'services.s3.f5': 'Re-Engagement & Churn-Prevention-Flows',
+    'services.s4.label': 'Daten & Analytics', 'services.s4.title': 'KI-gestützte Analytics',
+    'services.s4.desc': 'Verwandeln Sie Ihre Marketing-Daten in einen strategischen Vorteil. Ich entwickle individuelle Dashboards und prädiktive Modelle, die Leistung vorhersagen und die Erkenntnisse liefern, die wirklich den Unterschied machen.',
+    'services.s4.f1': 'Individuelle KPI-Dashboards (Looker Studio, Power BI)', 'services.s4.f2': 'Attributions-Modellierung & Kanalanalyse',
+    'services.s4.f3': 'Prädiktive Umsatz- & Churn-Modellierung', 'services.s4.f4': 'Customer Lifetime Value (CLV) Analyse',
+    'services.s4.f5': 'Wettbewerbsanalyse-Reports',
+    'services.s5.label': 'Konversations-KI', 'services.s5.title': 'KI-Chatbots & CX',
+    'services.s5.desc': 'Setzen Sie intelligente Konversationsagenten ein, die Kundenanfragen bearbeiten, Leads qualifizieren und das Kauferlebnis personalisieren – 24/7 in jeder Sprache Ihrer Kunden.',
+    'services.s5.f1': 'Massgeschneiderte GPT-Chatbots für Websites & Apps', 'services.s5.f2': 'Lead-Qualifizierungs- & Terminbuchungs-Bots',
+    'services.s5.f3': 'Mehrsprachige Support-Automatisierung', 'services.s5.f4': 'Übergabe an menschliche Agenten bei Bedarf',
+    'services.s5.f5': 'Integration mit CRM & Helpdesk-Plattformen',
+
+    // ── PRICING ──
+    'pricing.label': 'Investition', 'pricing.h2a': 'Einfache, transparente ', 'pricing.h2b': 'Preise',
+    'pricing.desc': 'Alle Preise in CHF. Keine versteckten Kosten. Monatlich oder pro Projekt abgerechnet – Ihre Wahl.',
+    'pricing.starter': 'Starter', 'pricing.starter.period': '/ Monat',
+    'pricing.starter.desc': 'Ideal für Startups und KMUs, die ihre ersten Schritte im KI-Marketing machen.',
+    'pricing.starter.f1': '1 Marketing-Kanal', 'pricing.starter.f2': 'KI-Content (8 Beiträge / Mo.)',
+    'pricing.starter.f3': 'Monatlicher Performance-Bericht', 'pricing.starter.f4': 'E-Mail-Support',
+    'pricing.starter.f5': 'Marketing-Automatisierung', 'pricing.starter.f6': 'Individuelle Dashboards',
+    'pricing.growth': 'Growth', 'pricing.growth.period': '/ Monat',
+    'pricing.growth.desc': 'Für etablierte Unternehmen, die mit einem vollständigen KI-Marketing-Stack skalieren möchten.',
+    'pricing.growth.f1': 'Bis zu 3 Marketing-Kanäle', 'pricing.growth.f2': 'KI-Content (24 Beiträge / Mo.)',
+    'pricing.growth.f3': 'Zweiwöchentliche Strategie-Calls', 'pricing.growth.f4': 'Marketing-Automatisierung Setup',
+    'pricing.growth.f5': 'Individuelles Analytics-Dashboard', 'pricing.growth.f6': 'Priority Slack-Support',
+    'pricing.enterprise': 'Enterprise', 'pricing.enterprise.period': '/ massgeschneidertes Engagement',
+    'pricing.enterprise.desc': 'Vollservice-KI-Marketing-Partnerschaften für grössere Organisationen mit komplexen Anforderungen.',
+    'pricing.enterprise.f1': 'Unbegrenzte Kanäle', 'pricing.enterprise.f2': 'Dediziertes KI-Modell Fine-Tuning',
+    'pricing.enterprise.f3': 'Wöchentliche Strategie-Sessions', 'pricing.enterprise.f4': 'Vollständige Marketing-Automatisierung',
+    'pricing.enterprise.f5': 'KI-Chatbot-Entwicklung', 'pricing.enterprise.f6': 'White-Glove Onboarding',
+    'pricing.popular': 'Beliebteste Wahl', 'pricing.getStarted': 'Jetzt starten', 'pricing.talkToMe': 'Kontakt aufnehmen',
+    'pricing.custom': 'Individuell', 'pricing.oneoff': 'Einzel-Projekt benötigt? Ich biete auch Festpreis-Projektengagements an.',
+    'pricing.getInTouch': 'Kontakt aufnehmen', 'pricing.forQuote': 'für ein individuelles Angebot.',
+
+    // ── FAQ ──
+    'faq.label': 'FAQ', 'faq.h2a': 'Häufige ', 'faq.h2b': 'Fragen',
+    'faq.q1': 'Arbeiten Sie auch mit Unternehmen ausserhalb der Schweiz?',
+    'faq.a1': 'Ja – obwohl ich in Zürich ansässig bin und mich auf den Schweizer Markt spezialisiert habe, arbeite ich mit Kunden im gesamten DACH-Raum und international zusammen. Alle Beratungen und Reports können remote durchgeführt werden.',
+    'faq.q2': 'Wie lange, bis ich Ergebnisse sehe?',
+    'faq.a2': 'Bei bezahlter Werbung zeigen sich bedeutsame Verbesserungen typischerweise innerhalb von 4–6 Wochen. SEO- und Content-Strategien zeigen signifikante Wirkung nach 3–4 Monaten. Ich schaffe in jeder Phase volle Transparenz.',
+    'faq.q3': 'Welche Tools und Plattformen verwenden Sie?',
+    'faq.a3': 'Ich arbeite mit führenden Plattformen: Google Ads, Meta Business Suite, LinkedIn Ads, HubSpot, Make (Integromat), n8n, OpenAI API, Semrush, Ahrefs, Looker Studio und weiteren. Der spezifische Stack wird auf Ihre Bedürfnisse zugeschnitten.',
+    'faq.q4': 'Sind Verträge monatlich oder jährlich?',
+    'faq.a4': 'Ich biete flexible Monatsverträge mit 30 Tagen Kündigungsfrist an. Bei projektbasierter Arbeit wird die Zahlung aufgeteilt: 50 % im Voraus, 50 % bei Lieferung. Jahresvereinbarungen kommen mit 10 % Rabatt.',
+    'faq.q5': 'Bieten Sie Leistungen auf Deutsch oder Französisch an?',
+    'faq.a5': 'Absolut. Ich biete vollständigen zweisprachigen Service auf Deutsch und Englisch an und kann über mein Netzwerk auch die französischsprachige Content-Produktion koordinieren. Kampagnen für Schweizer Zielgruppen können in allen vier Landessprachen durchgeführt werden.',
+    'services.cta.h2a': 'Lassen Sie uns gemeinsam etwas ', 'services.cta.h2b': 'Grossartiges aufbauen',
+    'services.cta.desc': 'Buchen Sie ein kostenloses 30-minütiges Gespräch. Keine Verpflichtung, kein Verkaufspitch – nur ein Gespräch über Ihre Wachstumsziele.',
+    'services.cta.btn': 'Kostenloses Erstgespräch buchen',
+
+    // ── PORTFOLIO ──
+    'portfolio.hero.label': 'Portfolio', 'portfolio.hero.h1a': 'Echte Ergebnisse für', 'portfolio.hero.h1b': 'echte Unternehmen',
+    'portfolio.hero.desc': 'Ausgewählte Fallstudien aus aktuellen KI-Marketing-Projekten mit Schweizer und DACH-Kunden.',
+    'portfolio.metric1': 'Ø ROAS-Verbesserung', 'portfolio.metric2': 'Reduktion der Akquisitionskosten',
+    'portfolio.metric3': 'Organisches Traffic-Wachstum (Ø)', 'portfolio.metric4': 'Pipeline für Kunden generiert',
+    'portfolio.filter.all': 'Alle Projekte', 'portfolio.filter.ads': 'Bezahlte Anzeigen', 'portfolio.filter.seo': 'SEO & Content',
+    'portfolio.filter.automation': 'Automatisierung', 'portfolio.filter.analytics': 'Analytics',
+    'portfolio.p1.cat': 'Bezahlte Anzeigen · Google & Meta', 'portfolio.p1.title': 'Alpine Digital AG — 3,2× ROAS',
+    'portfolio.p1.desc': 'Vollständige Überarbeitung von Google Shopping und Meta Retargeting-Kampagnen mit ML-Gebotsoptimierung und dynamischen Creatives. 3,2× ROAS in 8 Wochen erreicht.',
+    'portfolio.p2.cat': 'SEO & Content · B2B SaaS', 'portfolio.p2.title': 'NovaTech Solutions — 180% organisches Wachstum',
+    'portfolio.p2.desc': 'Aufbau einer KI-Content-Engine, die 24 optimierte Artikel pro Monat auf DE und EN produziert. Organischer Traffic +180 %, Domain Authority +18 Punkte in 6 Monaten.',
+    'portfolio.p3.cat': 'Marketing-Automatisierung · E-Commerce', 'portfolio.p3.title': 'SwissHome Shop — 42% mehr Conversions',
+    'portfolio.p3.desc': 'Design und Implementierung eines mehrstufigen E-Mail-Automatisierungssystems mit Verhaltens-Triggern und Produktempfehlungs-KI. Warenkorbabbruch-Rückgewinnung um 42 % gesteigert.',
+    'portfolio.p4.cat': 'Analytics · Finanzdienstleistungen', 'portfolio.p4.title': 'Helvetica Group — Vollständiger Attribution Stack',
+    'portfolio.p4.desc': 'Aufbau eines einheitlichen Marketing-Data-Warehouses und individueller Looker Studio-Dashboards, die 6 getrennte Reporting-Tools ersetzten. 12 Stunden/Woche gespart.',
+    'portfolio.p5.cat': 'Bezahlte Anzeigen · B2B LinkedIn', 'portfolio.p5.title': 'Peak Ventures — CHF 380K Pipeline',
+    'portfolio.p5.desc': 'LinkedIn ABM-Kampagne für Schweizer Series A/B Startups. KI-generierte Anzeigentexte in 48 Varianten getestet. CHF 380K qualifizierte Pipeline in Q1 generiert.',
+    'portfolio.p6.cat': 'KI-Chatbot · Gesundheitswesen', 'portfolio.p6.title': 'MediConsult AG — 24/7 Lead-Qualifizierung',
+    'portfolio.p6.desc': 'Massgeschneiderter GPT-Chatbot für einen Zürcher Gesundheitsdienstleister. Bearbeitet Terminbuchungen, FAQs und Lead-Qualifizierung auf DE, FR und EN – 24/7 ohne menschlichen Support.',
+    'portfolio.p7.cat': 'SEO · Lokales Unternehmen', 'portfolio.p7.title': 'Zurich Realty — #1 für Ziel-Keywords',
+    'portfolio.p7.desc': 'Umfassende lokale SEO-Strategie für eine Zürcher Immobilienagentur. Top-3-Rankings für 28 Ziel-Keywords, Anfragevolumen in 5 Monaten verdoppelt.',
+    'portfolio.p8.cat': 'Analytics · E-Commerce', 'portfolio.p8.title': 'SwissGear — Prädiktives CLV-Modell',
+    'portfolio.p8.desc': 'Entwicklung eines Machine-Learning-CLV-Modells, das die Top 20 % der Kunden identifizierte, die für 68 % des Umsatzes verantwortlich sind – für präzise Upsell-Kampagnen.',
+    'portfolio.testimonial': '„Die Zusammenarbeit mit ImmoGrowth war ein Game-Changer für unser Unternehmen. Die Ergebnisse waren messbar, die Kommunikation hervorragend und der ROI weit über unseren Erwartungen. Echte Schweizer Qualität im KI-Marketing."',
+    'portfolio.cta.h2a': 'Ihr Projekt ', 'portfolio.cta.h2b': 'könnte als nächstes kommen.',
+    'portfolio.cta.desc': 'Sprechen wir über Ihre Ziele und entwickeln gemeinsam eine massgeschneiderte KI-Marketing-Strategie.',
+    'portfolio.cta.btn1': 'Projekt starten →', 'portfolio.cta.btn2': 'Leistungen ansehen',
+
+    // ── ABOUT ──
+    'about.hero.label': 'Über mich', 'about.hero.h1a': 'Die Person hinter', 'about.hero.h1b': 'ImmoGrowth',
+    'about.hero.desc': 'Ein leidenschaftlicher KI-Marketing-Spezialist aus Zürich, der Schweizer Unternehmen hilft, im Zeitalter der künstlichen Intelligenz wettbewerbsfähig zu sein.',
+    'about.badge.small': 'Jahre KI-Marketing',
+    'about.story.label': 'Meine Geschichte', 'about.story.h2a': 'Hallo, ich bin Alex – ', 'about.story.h2b': 'Ihr KI-Marketing-Partner.',
+    'about.story.p1': 'Ich gründete ImmoGrowth nach Jahren in Wachstumsrollen bei Schweizer Tech-Startups und Digitalagenturen, wo ich aus erster Hand erlebt habe, wie KI das Marketing verändert – aber die meisten Unternehmen fehlte das Know-how, es effektiv anzuwenden.',
+    'about.story.p2': 'Heute arbeite ich ausschliesslich mit Schweizer und DACH-Unternehmen zusammen, verbinde tiefe Marketing-Strategie mit den neuesten KI-Tools und entwickle Systeme, die skalieren. Mein Hintergrund umfasst Performance Marketing, Content-Strategie, Marketing-Automatisierung und Datenanalyse.',
+    'about.story.p3': 'Ich bin zertifiziert in Google Marketing Platform, Meta Blueprint, HubSpot und halte einen Abschluss in Business & Digital Marketing der Universität Zürich.',
+    'about.v1.title': 'Schweizer Qualität', 'about.v1.desc': 'Präzision, Zuverlässigkeit und höchste Standards in jedem Deliverable.',
+    'about.v2.title': 'Datenbasiert', 'about.v2.desc': 'Jede Entscheidung wird durch Daten gestützt, nicht durch Bauchgefühl.',
+    'about.v3.title': 'Privacy-First', 'about.v3.desc': 'Vollständige DSGVO / nDSG-Konformität in jedem Projekt.',
+    'about.v4.title': 'Kontinuierliches Lernen', 'about.v4.desc': 'Ständige Weiterbildung zu den neuesten KI-Tools und Techniken.',
+    'about.skills.label': 'Expertise', 'about.skills.h2a': 'Fähigkeiten & ', 'about.skills.h2b': 'Werkzeuge',
+    'about.skills.desc': 'Versiert in den Tools und Technologien, die modernes KI-Marketing antreiben.',
+    'about.certs.label': 'Referenzen', 'about.certs.h2a': 'Zertifizierungen & ', 'about.certs.h2b': 'Ausbildung',
+    'about.cta.h2a': 'Bereit, gemeinsam zu ', 'about.cta.h2b': 'wachsen?',
+    'about.cta.desc': 'Ich würde gerne mehr über Ihr Unternehmen erfahren und erkunden, wie KI-Marketing Ihr Wachstum beschleunigen kann.',
+    'about.cta.btn1': 'Kostenloses Gespräch →', 'about.cta.btn2': 'Meine Arbeiten ansehen',
+
+    // ── BLOG ──
+    'blog.hero.label': 'Einblicke', 'blog.hero.h1a': 'KI-Marketing-', 'blog.hero.h1b': 'Wissen',
+    'blog.hero.desc': 'Praxisanleitungen, Fallstudien und Trends zum Einsatz von KI für Ihr Geschäftswachstum – für Schweizer Marketing-Fachleute.',
+    'blog.featured': 'Empfohlen',
+    'blog.featured.title': 'Wie Schweizer KMUs KI-Marketing nutzen können, ohne das Budget zu sprengen',
+    'blog.featured.desc': 'Eine praktische, schrittweise Anleitung zur Implementierung KI-gestützter Marketing-Tools für kleine und mittlere Unternehmen in der Schweiz – mit realistischen Budgets und Schweizer Marktüberlegungen.',
+    'blog.featured.btn': 'Artikel lesen →', 'blog.latest.label': 'Neueste Beiträge',
+    'blog.latest.h2a': 'Aktuelle ', 'blog.latest.h2b': 'Perspektiven',
+    'blog.readMore': 'Mehr lesen →', 'blog.loadMore': 'Weitere Artikel laden →',
+    'blog.newsletter.label': 'Newsletter', 'blog.newsletter.h2a': 'Immer einen Schritt voraus im ', 'blog.newsletter.h2b': 'KI-Marketing.',
+    'blog.newsletter.desc': 'Schliessen Sie sich 1.200+ Schweizer Marketing-Fachleuten an, die wöchentlich KI-Tipps, Tool-Reviews und Fallstudien erhalten – jeden Dienstag in Ihrem Posteingang.',
+    'blog.newsletter.placeholder': 'ihre@email.ch', 'blog.newsletter.btn': 'Kostenlos abonnieren →',
+    'blog.newsletter.privacy': 'Kein Spam. Jederzeit abmeldbar. nDSG-konform.',
+    'blog.newsletter.success': '✓ Abonniert! Prüfen Sie Ihren Posteingang.',
+
+    // ── CONTACT ──
+    'contact.hero.label': 'Kontakt', 'contact.hero.h1a': 'Starten wir ein', 'contact.hero.h1b': 'Gespräch',
+    'contact.hero.desc': 'Buchen Sie ein kostenloses 30-minütiges Erstgespräch oder senden Sie eine Nachricht. Ich beantworte alle Anfragen innerhalb von 24 Stunden an Werktagen.',
+    'contact.info.h3': 'Wie kann ich helfen?',
+    'contact.info.desc': 'Ob Sie Ihre erste KI-gestützte Kampagne starten, Ihren Marketing-Stack automatisieren oder eine vollständige Strategieüberarbeitung wünschen – sprechen wir.',
+    'contact.method1.title': 'Kostenloses Gespräch buchen', 'contact.method1.desc': '30 Minuten, keine Verpflichtung. Lassen Sie uns Ihre Ziele erkunden.', 'contact.method1.link': 'Über Calendly planen →',
+    'contact.method2.title': 'E-Mail', 'contact.method2.desc': 'Für detaillierte Projektanfragen',
+    'contact.method3.title': 'Telefon', 'contact.method3.desc': 'Mo–Fr, 09:00–18:00 Uhr MEZ',
+    'contact.method4.title': 'Standort', 'contact.method4.desc': 'In Zürich ansässig – remote tätig im gesamten DACH-Raum und darüber hinaus.',
+    'contact.fast.title': '⚡ Schnelle Antwort', 'contact.fast.desc': 'Ich antworte typischerweise innerhalb von 4 Stunden während der Geschäftszeiten. Bei dringenden Anliegen rufen Sie direkt an.',
+    'contact.follow': 'Folgen Sie mir', 'contact.form.h3': 'Nachricht senden',
+    'contact.form.desc': 'Erzählen Sie mir von Ihrem Projekt und ich melde mich mit Ideen und nächsten Schritten.',
+    'contact.form.name': 'Vollständiger Name *', 'contact.form.company': 'Unternehmen',
+    'contact.form.email': 'E-Mail-Adresse *', 'contact.form.phone': 'Telefon (optional)',
+    'contact.form.service': 'Mich interessiert...', 'contact.form.service.default': 'Leistung auswählen',
+    'contact.form.service.ads': 'KI-Anzeigenoptimierung', 'contact.form.service.content': 'KI-Content-Strategie & SEO',
+    'contact.form.service.automation': 'Marketing-Automatisierung', 'contact.form.service.analytics': 'Analytics & Reporting',
+    'contact.form.service.chatbot': 'KI-Chatbot-Entwicklung', 'contact.form.service.full': 'Full-Service Retainer',
+    'contact.form.service.other': 'Noch unsicher – sprechen wir',
+    'contact.form.budget': 'Ungefähres Monatsbudget (CHF)', 'contact.form.budget.default': 'Bereich auswählen',
+    "contact.form.budget.lt1200": "Unter CHF 1'200", "contact.form.budget.1200": "CHF 1'200 – 2'900",
+    "contact.form.budget.2900": "CHF 2'900 – 5'000", "contact.form.budget.5000": "CHF 5'000+",
+    'contact.form.budget.project': 'Einzel-Projekt', 'contact.form.message': 'Erzählen Sie mir von Ihrem Projekt *',
+    'contact.form.messagePlaceholder': 'Was sind Ihre grössten Marketing-Herausforderungen? Wie sieht Erfolg für Sie in 12 Monaten aus?',
+    'contact.form.dataNotice': 'Ihre Daten werden ausschliesslich zur Bearbeitung Ihrer Anfrage verwendet und nicht an Dritte weitergegeben. ',
+    'contact.form.dataNoticeLink': 'Datenschutzerklärung',
+    'contact.form.privacy': 'Ich stimme zu, dass meine Daten zur Bearbeitung meiner Anfrage verarbeitet werden. Siehe',
+    'contact.form.privacyLink': 'Datenschutzerklärung', 'contact.form.privacyEnd': 'für Details. Ich kann meine Einwilligung jederzeit widerrufen.',
+    'contact.form.submit': 'Nachricht senden →', 'contact.success.h3': 'Nachricht gesendet!',
+    'contact.success.p': 'Danke für Ihre Anfrage. Ich melde mich innerhalb von 24 Stunden.',
+    'contact.success.p2': 'In der Zwischenzeit können Sie mir auf',
+    'contact.faq.label': 'Schnelle Antworten', 'contact.faq.h2a': 'Bevor Sie ', 'contact.faq.h2b': 'sich melden',
+    'contact.faq.q1': 'Was passiert, nachdem ich das Formular abgeschickt habe?',
+    'contact.faq.a1': 'Ich werde Ihre Nachricht prüfen und innerhalb von 24 Stunden antworten (meist viel schneller). Wenn Ihr Projekt gut passt, werde ich einen 30-minütigen Discovery Call vorschlagen.',
+    'contact.faq.q2': 'Wie schnell können Sie mit einem Projekt beginnen?',
+    'contact.faq.a2': 'Meine typische Vorlaufzeit beträgt 1–2 Wochen vom Vertragsabschluss bis zum Projektstart. Bei dringendem Bedarf bitte in der Nachricht erwähnen.',
+    'contact.faq.q3': 'Arbeiten Sie mit Startups oder nur mit etablierten Unternehmen?',
+    'contact.faq.a3': 'Beides! Ich arbeite mit frühen Startups, wachsenden KMUs und etablierten Unternehmen. Der Ansatz ist auf Ihre Phase zugeschnitten.',
+    'contact.faq.q4': 'Kann ich mit einem kleineren Projekt beginnen, um die Zusammenarbeit zu testen?',
+    'contact.faq.a4': 'Absolut. Viele Kunden beginnen mit einem einmaligen Audit oder einem kurzfristigen Projekt, bevor sie sich auf ein Monatsretainer einlassen.',
+  },
+
+  fr: {
+    // ── NAVBAR ──
+    'nav.home': 'Accueil', 'nav.services': 'Services', 'nav.portfolio': 'Portfolio',
+    'nav.about': 'À propos', 'nav.insights': 'Insights', 'nav.contact': 'Contact',
+    'nav.bookCall': 'Réserver un appel',
+
+    // ── FOOTER ──
+    'footer.tagline': "Marketing alimenté par l'IA pour les entreprises suisses qui veulent croître plus intelligemment.",
+    'footer.col.services': 'Services', 'footer.col.company': 'Entreprise', 'footer.col.contact': 'Contact',
+    'footer.services.ads': 'Optimisation publicitaire IA', 'footer.services.content': 'Stratégie de contenu',
+    'footer.services.automation': 'Automatisation marketing', 'footer.services.seo': 'SEO IA',
+    'footer.services.analytics': 'Analytique', 'footer.company.about': 'À propos',
+    'footer.company.portfolio': 'Portfolio', 'footer.company.insights': 'Insights',
+    'footer.company.contact': 'Contact',
+    'footer.copyright': '© 2026 ImmoGrowth — Marketing IA Freelance · Zurich · CHE-123.456.789',
+
+    // ── INDEX HERO ──
+    'index.hero.badge': 'Disponible pour de nouveaux projets · Zurich, Suisse',
+    'index.hero.h1a': 'Un marketing qui', 'index.hero.h1b': 'pense par lui-même.',
+    'index.hero.subtitle': "J'aide les entreprises suisses à se développer plus intelligemment grâce au marketing IA — du contenu intelligent et l'optimisation des annonces aux systèmes d'automatisation marketing complets.",
+    'index.hero.cta1': 'Lancer un projet →', 'index.hero.cta2': 'Voir les travaux',
+    'index.stat.projects': 'Projets réalisés', 'index.stat.roas': 'Amélioration ROAS moy.',
+    'index.stat.satisfaction': 'Satisfaction client', "index.stat.experience": "Années d'expérience",
+    'trust.label': 'Ils nous font confiance',
+
+    // ── INDEX SERVICES ──
+    'index.services.label': 'Ce que je fais', 'index.services.h2a': 'Services ', 'index.services.h2b': 'Marketing IA',
+    "index.services.desc": "Solutions marketing end-to-end propulsées par l'intelligence artificielle — conçues pour des résultats mesurables et une croissance durable.",
+    'index.s1.title': 'Optimisation publicitaire IA', 'index.s1.desc': "Des modèles de machine learning qui optimisent en continu vos campagnes sur Google, Meta et LinkedIn pour un ROAS maximum.",
+    'index.s2.title': 'Stratégie de contenu IA', 'index.s2.desc': "Création de contenu axée sur les données à grande échelle — des articles de blog aux textes sociaux — adaptée à votre voix de marque et à votre audience.",
+    'index.s3.title': 'Analytique marketing', 'index.s3.desc': "Tableaux de bord IA et analyses prédictives qui transforment les données brutes en décisions de croissance concrètes.",
+    'index.s4.title': 'Automatisation marketing', 'index.s4.desc': "Workflows d'automatisation personnalisés qui nourrissent les prospects, engagent les clients et gèrent les tâches répétitives en continu.",
+    'index.s5.title': 'SEO IA & Visibilité', 'index.s5.desc': "Recherche de mots-clés intelligente, analyse des lacunes de contenu et SEO technique alimentés par l'IA pour une croissance organique durable.",
+    'index.s6.title': 'Chatbots IA & CX', 'index.s6.desc': "Agents conversationnels IA pour le support client, la qualification des prospects et les parcours d'achat personnalisés.",
+    'index.services.learnMore': 'En savoir plus →', 'index.services.viewAll': 'Voir tous les services →',
+
+    // ── INDEX PROCESS ──
+    'index.process.label': 'Comment ça marche', 'index.process.h2a': 'Du brief aux ', 'index.process.h2b': 'résultats',
+    'index.process.desc': 'Un processus clair et structuré pour que vous sachiez toujours où nous en sommes et ce qui vient ensuite.',
+    'index.step1.title': 'Appel de découverte', 'index.step1.desc': "Nous discutons de vos objectifs, de votre configuration marketing actuelle et des domaines où l'IA peut avoir le plus grand impact.",
+    'index.step2.title': 'Stratégie & Proposition', 'index.step2.desc': "Je construis une stratégie marketing IA sur mesure avec des livrables clairs, des délais et des tarifs.",
+    'index.step3.title': 'Créer & Lancer', 'index.step3.desc': "Mise en œuvre rapide des outils IA, des campagnes et des automatisations — avec une transparence totale.",
+    'index.step4.title': 'Optimiser & Scaler', 'index.step4.desc': "Monitoring continu, tests A/B et améliorations itératives pour amplifier vos résultats.",
+
+    // ── INDEX TESTIMONIALS ──
+    'index.testimonials.label': 'Avis clients', 'index.testimonials.h2a': 'Ce que disent ', 'index.testimonials.h2b': 'les clients',
+    't1.text': '« ImmoGrowth a transformé nos performances Google Ads. En 6 semaines, notre ROAS a triplé et notre coût par acquisition a chuté de 40 %. L\'approche pilotée par l\'IA est véritablement remarquable. »',
+    't2.text': '« Le système d\'automatisation de contenu seul nous a économisé 20 heures par semaine. Notre trafic organique a augmenté de 180 % en 4 mois. Je recommande ImmoGrowth à chaque startup suisse que je conseille. »',
+    't3.text': '« Professionnel, réactif et profondément compétent en marketing IA. La stratégie construite pour nos campagnes B2B a généré CHF 380K de pipeline dès le premier trimestre. »',
+
+    // ── INDEX CTA ──
+    'index.cta.label': 'Travaillons ensemble', "index.cta.h2": "Prêt à grandir avec l'IA ?",
+    'index.cta.desc': "Réservez un appel de découverte gratuit de 30 minutes et découvrez comment le marketing IA peut accélérer votre entreprise.",
+    'index.cta.btn1': 'Appel gratuit →', 'index.cta.btn2': 'Explorer les services',
+
+    // ── SERVICES PAGE ──
+    'services.hero.label': 'Services', 'services.hero.h1a': 'Marketing intelligent', 'services.hero.h1b': 'conçu pour scaler',
+    'services.hero.desc': "Chaque service est conçu autour d'un objectif : une croissance mesurable grâce à l'intelligence artificielle appliquée.",
+    'services.s1.label': 'Performance Marketing', 'services.s1.title': 'Optimisation publicitaire IA',
+    'services.s1.desc': "Arrêtez de gaspiller votre budget. Mon approche pilotée par l'IA analyse des milliers de signaux en temps réel — segments d'audience, créatifs, stratégies d'enchères — et affine continuellement vos campagnes.",
+    'services.s1.f1': 'Gestion de campagnes Google Ads, Meta & LinkedIn', 'services.s1.f2': "Optimisation des enchères par machine learning",
+    'services.s1.f3': "Modélisation d'audience & ciblage lookalike", 'services.s1.f4': "Tests A/B créatifs à grande échelle",
+    'services.s1.f5': 'Rapports de performance mensuels avec benchmarks suisses',
+    'services.s2.label': 'Contenu & SEO', 'services.s2.title': 'Stratégie de contenu IA',
+    'services.s2.desc': "Contenu évolutif et conforme à la marque — des articles longs aux posts sociaux et séquences email — créé avec l'IA et affiné pour votre audience spécifique.",
+    'services.s2.f1': 'Production de contenu multilingue (DE / FR / IT / EN)', 'services.s2.f2': "SEO IA : clustering de mots-clés, cartes d'autorité thématique",
+    'services.s2.f3': 'Pipelines de contenu blog, newsletter & social', 'services.s2.f4': "Formation à la voix de marque & guides de style",
+    'services.s2.f5': 'Planification de calendrier éditorial & scheduling',
+    'services.s3.label': 'Automatisation', 'services.s3.title': 'Automatisation marketing',
+    'services.s3.desc': "Workflows IA personnalisés fonctionnant 24h/24, 7j/7 — nurturing automatique des prospects, personnalisation des parcours clients et déclenchement du bon message au bon moment.",
+    'services.s3.f1': 'Intégration CRM & modèles de scoring des prospects', 'services.s3.f2': 'Séquences email & SMS automatisées',
+    'services.s3.f3': 'Campagnes déclenchées par le comportement', 'services.s3.f4': 'Orchestration de workflows multi-plateformes',
+    'services.s3.f5': 'Flows de ré-engagement & prévention du churn',
+    'services.s4.label': 'Données & Analytique', 'services.s4.title': "Analytique propulsée par l'IA",
+    'services.s4.desc': "Transformez vos données marketing en actif stratégique. Je construis des tableaux de bord personnalisés et des modèles prédictifs qui prévoient les performances.",
+    'services.s4.f1': 'Tableaux de bord KPI personnalisés (Looker Studio, Power BI)', 'services.s4.f2': "Modélisation d'attribution & analyse des canaux",
+    'services.s4.f3': 'Modélisation prédictive des revenus & du churn', 'services.s4.f4': 'Analyse de la valeur vie client (CLV)',
+    'services.s4.f5': "Rapports d'intelligence concurrentielle",
+    'services.s5.label': 'IA Conversationnelle', 'services.s5.title': 'Chatbots IA & CX',
+    'services.s5.desc': "Déployez des agents conversationnels intelligents qui gèrent les demandes clients, qualifient les prospects et personnalisent l'expérience d'achat — disponibles 24h/24.",
+    'services.s5.f1': 'Chatbots GPT personnalisés pour sites web & apps', 'services.s5.f2': "Bots de qualification de prospects & prise de rendez-vous",
+    'services.s5.f3': 'Automatisation du support multilingue', 'services.s5.f4': 'Transfert vers des agents humains si nécessaire',
+    'services.s5.f5': 'Intégration avec CRM & plateformes helpdesk',
+
+    // ── PRICING ──
+    'pricing.label': 'Investissement', 'pricing.h2a': 'Tarifs simples et ', 'pricing.h2b': 'transparents',
+    'pricing.desc': 'Tous les prix en CHF. Aucun frais caché. Facturation mensuelle ou par projet — à votre choix.',
+    'pricing.starter': 'Starter', 'pricing.starter.period': '/ mois',
+    "pricing.starter.desc": "Idéal pour les startups et PME qui font leurs premiers pas dans le marketing IA.",
+    'pricing.starter.f1': '1 canal marketing', 'pricing.starter.f2': 'Contenu IA (8 pièces / mois)',
+    'pricing.starter.f3': 'Rapport de performance mensuel', 'pricing.starter.f4': 'Support par email',
+    'pricing.starter.f5': 'Automatisation marketing', 'pricing.starter.f6': 'Tableaux de bord personnalisés',
+    'pricing.growth': 'Croissance', 'pricing.growth.period': '/ mois',
+    'pricing.growth.desc': "Pour les entreprises établies prêtes à scaler avec une pile marketing IA complète.",
+    "pricing.growth.f1": "Jusqu'à 3 canaux marketing", 'pricing.growth.f2': 'Contenu IA (24 pièces / mois)',
+    'pricing.growth.f3': 'Appels stratégie bi-hebdomadaires', "pricing.growth.f4": "Configuration d'automatisation marketing",
+    'pricing.growth.f5': 'Tableau de bord analytique personnalisé', 'pricing.growth.f6': 'Support Slack prioritaire',
+    'pricing.enterprise': 'Entreprise', 'pricing.enterprise.period': '/ engagement sur mesure',
+    'pricing.enterprise.desc': 'Partenariats marketing IA complets pour les grandes organisations avec des besoins complexes.',
+    'pricing.enterprise.f1': 'Canaux illimités', 'pricing.enterprise.f2': "Fine-tuning dédié de modèle IA",
+    'pricing.enterprise.f3': 'Sessions stratégie hebdomadaires', 'pricing.enterprise.f4': 'Automatisation marketing complète',
+    'pricing.enterprise.f5': 'Développement de chatbot IA', 'pricing.enterprise.f6': 'Onboarding white-glove',
+    'pricing.popular': 'Le plus populaire', 'pricing.getStarted': 'Commencer', 'pricing.talkToMe': 'Me contacter',
+    'pricing.custom': 'Sur mesure', 'pricing.oneoff': "Besoin d'un projet ponctuel ? Je propose aussi des engagements à prix fixe.",
+    'pricing.getInTouch': 'Contactez-moi', 'pricing.forQuote': 'pour un devis personnalisé.',
+
+    // ── FAQ ──
+    'faq.label': 'FAQ', 'faq.h2a': 'Questions ', 'faq.h2b': 'fréquentes',
+    'faq.q1': 'Travaillez-vous avec des entreprises en dehors de la Suisse ?',
+    'faq.a1': "Oui — bien que je sois basé à Zurich et spécialisé dans le marché suisse, je travaille avec des clients dans toute la région DACH et à l'international. Toutes les consultations peuvent être effectuées à distance.",
+    'faq.q2': 'Combien de temps avant de voir des résultats ?',
+    'faq.a2': "Pour la publicité payante, des améliorations significatives apparaissent généralement dans les 4 à 6 semaines. Les stratégies SEO et contenu montrent une traction significative après 3 à 4 mois.",
+    'faq.q3': 'Quels outils et plateformes utilisez-vous ?',
+    'faq.a3': "Je travaille avec les plateformes leaders : Google Ads, Meta Business Suite, LinkedIn Ads, HubSpot, Make (Integromat), n8n, OpenAI API, Semrush, Ahrefs, Looker Studio, et plus.",
+    'faq.q4': 'Les contrats sont-ils mensuels ou annuels ?',
+    'faq.a4': "Je propose des retainers mensuels flexibles avec un préavis de 30 jours. Pour les projets, le paiement est divisé : 50 % à l'avance, 50 % à la livraison. Les engagements annuels bénéficient d'une remise de 10 %.",
+    'faq.q5': 'Proposez-vous des services en allemand ou en français ?',
+    'faq.a5': "Absolument. Je propose un service complet bilingue en allemand et en anglais, et peux coordonner la production de contenu en français via mon réseau.",
+    'services.cta.h2a': 'Construisons quelque chose ', 'services.cta.h2b': 'de remarquable ensemble',
+    'services.cta.desc': "Réservez un appel gratuit de 30 minutes. Sans engagement, sans discours commercial — juste une conversation sur vos objectifs de croissance.",
+    'services.cta.btn': 'Réserver un appel de découverte gratuit',
+
+    // ── PORTFOLIO ──
+    'portfolio.hero.label': 'Portfolio', 'portfolio.hero.h1a': 'De vrais résultats pour', 'portfolio.hero.h1b': 'de vraies entreprises',
+    'portfolio.hero.desc': "Études de cas sélectionnées d'engagements marketing IA récents avec des clients suisses et de la région DACH.",
+    'portfolio.metric1': 'Amélioration ROAS moyenne', 'portfolio.metric2': "Réduction du coût par acquisition",
+    'portfolio.metric3': 'Croissance du trafic organique (moy.)', 'portfolio.metric4': 'Pipeline généré pour les clients',
+    'portfolio.filter.all': 'Tous les projets', 'portfolio.filter.ads': 'Annonces payantes', 'portfolio.filter.seo': 'SEO & Contenu',
+    'portfolio.filter.automation': 'Automatisation', 'portfolio.filter.analytics': 'Analytique',
+    'portfolio.p1.cat': 'Annonces payantes · Google & Meta', 'portfolio.p1.title': 'Alpine Digital AG — ROAS 3,2×',
+    'portfolio.p1.desc': "Refonte complète des campagnes Google Shopping et Meta retargeting avec optimisation ML des enchères et créatifs dynamiques. ROAS 3,2× atteint en 8 semaines.",
+    'portfolio.p2.cat': 'SEO & Contenu · B2B SaaS', 'portfolio.p2.title': 'NovaTech Solutions — 180% de croissance organique',
+    'portfolio.p2.desc': "Construction d'un moteur de contenu IA produisant 24 articles optimisés par mois en DE et EN. Trafic organique +180 %, autorité de domaine +18 points en 6 mois.",
+    'portfolio.p3.cat': 'Automatisation marketing · E-Commerce', 'portfolio.p3.title': 'SwissHome Shop — 42% de conversions en plus',
+    'portfolio.p3.desc': "Conception et mise en œuvre d'un système d'automatisation email multi-étapes avec déclencheurs comportementaux et IA de recommandation produit. Récupération d'abandon de panier +42 %.",
+    'portfolio.p4.cat': 'Analytique · Services financiers', 'portfolio.p4.title': 'Helvetica Group — Stack d\'attribution complet',
+    'portfolio.p4.desc': "Construction d'un entrepôt de données marketing unifié et de tableaux de bord Looker Studio personnalisés, remplaçant 6 outils de reporting. 12 heures/semaine économisées.",
+    'portfolio.p5.cat': 'Annonces payantes · B2B LinkedIn', 'portfolio.p5.title': 'Peak Ventures — Pipeline CHF 380K',
+    'portfolio.p5.desc': "Campagne LinkedIn ABM ciblant des startups suisses Series A/B. Textes publicitaires générés par IA testés sur 48 variantes. CHF 380K de pipeline qualifié généré au T1.",
+    'portfolio.p6.cat': 'Chatbot IA · Santé', 'portfolio.p6.title': 'MediConsult AG — Qualification 24/7',
+    'portfolio.p6.desc': "Chatbot GPT personnalisé pour un prestataire de santé zurichois. Gère la prise de rendez-vous, les FAQ et la qualification des prospects en DE, FR et EN — 24h/24.",
+    'portfolio.p7.cat': 'SEO · Commerce local', 'portfolio.p7.title': 'Zurich Realty — N°1 sur les mots-clés cibles',
+    'portfolio.p7.desc': "Stratégie SEO locale complète pour une agence immobilière zurichoise. Top 3 pour 28 mots-clés cibles, volume d'enquêtes doublé en 5 mois.",
+    'portfolio.p8.cat': 'Analytique · E-Commerce', 'portfolio.p8.title': 'SwissGear — Modèle CLV prédictif',
+    'portfolio.p8.desc': "Construction d'un modèle CLV par machine learning identifiant les 20 % supérieurs de clients responsables de 68 % des revenus, permettant des campagnes d'upsell précises.",
+    'portfolio.testimonial': '« Travailler avec ImmoGrowth a été un tournant pour notre entreprise. Les résultats étaient mesurables, la communication excellente et le ROI bien au-delà de nos attentes. La vraie qualité suisse du marketing IA. »',
+    'portfolio.cta.h2a': 'Votre projet ', 'portfolio.cta.h2b': 'pourrait être le prochain.',
+    'portfolio.cta.desc': "Parlons de vos objectifs et construisons ensemble une stratégie marketing IA sur mesure.",
+    'portfolio.cta.btn1': 'Démarrer un projet →', 'portfolio.cta.btn2': 'Voir les services',
+
+    // ── ABOUT ──
+    'about.hero.label': 'À propos', 'about.hero.h1a': 'La personne derrière', 'about.hero.h1b': 'ImmoGrowth',
+    'about.hero.desc': "Un spécialiste passionné du marketing IA basé à Zurich, aidant les entreprises suisses à rester compétitives à l'ère de l'intelligence artificielle.",
+    'about.badge.small': 'Années en marketing IA',
+    'about.story.label': 'Mon histoire', 'about.story.h2a': 'Bonjour, je suis Alex — ', 'about.story.h2b': 'votre partenaire marketing IA.',
+    'about.story.p1': "J'ai créé ImmoGrowth après avoir passé des années dans des rôles de croissance au sein de startups tech suisses et d'agences digitales, où j'ai vu de première main comment l'IA transformait le marketing.",
+    'about.story.p2': "Aujourd'hui, je travaille exclusivement avec des entreprises suisses et de la région DACH, combinant une stratégie marketing approfondie avec les derniers outils IA pour construire des systèmes qui évoluent.",
+    'about.story.p3': "Je suis certifié Google Marketing Platform, Meta Blueprint, HubSpot, et titulaire d'un diplôme en Business & Digital Marketing de l'Université de Zurich.",
+    'about.v1.title': 'Qualité suisse', 'about.v1.desc': 'Précision, fiabilité et les plus hauts standards dans chaque livrable.',
+    'about.v2.title': 'Axé sur les données', 'about.v2.desc': "Chaque décision est soutenue par des données, pas par l'instinct.",
+    'about.v3.title': 'Privacy-First', 'about.v3.desc': 'Conformité RGPD / nLPD complète dans chaque projet.',
+    'about.v4.title': 'Apprentissage continu', 'about.v4.desc': 'Formation continue sur les derniers outils et techniques IA.',
+    'about.skills.label': 'Expertise', 'about.skills.h2a': 'Compétences & ', 'about.skills.h2b': 'Outils',
+    'about.skills.desc': "Maîtrise des outils et technologies qui propulsent le marketing IA moderne.",
+    'about.certs.label': 'Références', 'about.certs.h2a': 'Certifications & ', 'about.certs.h2b': 'Formation',
+    'about.cta.h2a': 'Prêt à grandir ', 'about.cta.h2b': 'ensemble ?',
+    "about.cta.desc": "J'adorerais en savoir plus sur votre entreprise et explorer comment le marketing IA peut accélérer votre croissance.",
+    'about.cta.btn1': 'Réserver un appel gratuit →', 'about.cta.btn2': 'Voir mes travaux',
+
+    // ── BLOG ──
+    'blog.hero.label': 'Insights', 'blog.hero.h1a': 'Intelligence', 'blog.hero.h1b': 'Marketing IA',
+    'blog.hero.desc': "Guides pratiques, études de cas et tendances sur l'utilisation de l'IA pour développer votre entreprise — écrits pour les marketeurs suisses.",
+    'blog.featured': 'À la une',
+    'blog.featured.title': 'Comment les PME suisses peuvent utiliser le marketing IA sans exploser leur budget',
+    'blog.featured.desc': "Un guide pratique étape par étape pour implémenter des outils marketing IA pour les petites et moyennes entreprises en Suisse — avec des budgets réalistes.",
+    'blog.featured.btn': "Lire l'article →", 'blog.latest.label': 'Derniers articles',
+    'blog.latest.h2a': 'Nouvelles ', 'blog.latest.h2b': 'perspectives',
+    'blog.readMore': 'Lire la suite →', 'blog.loadMore': "Charger plus d'articles →",
+    'blog.newsletter.label': 'Newsletter', 'blog.newsletter.h2a': 'Gardez une longueur d\'avance en ', 'blog.newsletter.h2b': 'marketing IA.',
+    'blog.newsletter.desc': "Rejoignez 1 200+ marketeurs suisses recevant chaque semaine des conseils IA, des revues d'outils et des études de cas — dans votre boîte mail chaque mardi.",
+    'blog.newsletter.placeholder': 'votre@email.ch', 'blog.newsletter.btn': 'S\'abonner gratuitement →',
+    'blog.newsletter.privacy': 'Pas de spam. Désabonnement à tout moment. Conforme nLPD.',
+    'blog.newsletter.success': '✓ Abonné ! Vérifiez votre boîte mail.',
+
+    // ── CONTACT ──
+    'contact.hero.label': 'Contact', 'contact.hero.h1a': 'Commençons une', 'contact.hero.h1b': 'conversation',
+    'contact.hero.desc': "Réservez un appel de découverte gratuit de 30 minutes ou envoyez un message. Je réponds à toutes les demandes dans les 24 heures en jours ouvrables.",
+    'contact.info.h3': 'Comment puis-je vous aider ?',
+    'contact.info.desc': "Que vous souhaitiez lancer votre première campagne IA, automatiser votre stack marketing, ou voulez une refonte complète de stratégie — parlons-en.",
+    'contact.method1.title': 'Réserver un appel gratuit', 'contact.method1.desc': "30 minutes, sans engagement. Explorons vos objectifs.", 'contact.method1.link': 'Planifier via Calendly →',
+    'contact.method2.title': 'Email', 'contact.method2.desc': 'Pour des demandes de projets détaillées',
+    'contact.method3.title': 'Téléphone', 'contact.method3.desc': 'Lun–Ven, 09h00–18h00 CET',
+    'contact.method4.title': 'Localisation', 'contact.method4.desc': 'Basé à Zurich — travaillant à distance dans toute la région DACH et au-delà.',
+    'contact.fast.title': '⚡ Réponse rapide', 'contact.fast.desc': "Je réponds généralement dans les 4 heures pendant les heures ouvrables. Pour les urgences, appelez directement.",
+    'contact.follow': 'Suivez-moi', 'contact.form.h3': 'Envoyer un message',
+    'contact.form.desc': "Parlez-moi de votre projet et je vous répondrai avec des idées et des prochaines étapes.",
+    'contact.form.name': 'Nom complet *', 'contact.form.company': 'Entreprise',
+    'contact.form.email': 'Adresse email *', 'contact.form.phone': 'Téléphone (optionnel)',
+    'contact.form.service': 'Je suis intéressé par...', "contact.form.service.default": "Sélectionner un service",
+    'contact.form.service.ads': 'Optimisation publicitaire IA', 'contact.form.service.content': 'Stratégie de contenu IA & SEO',
+    'contact.form.service.automation': 'Automatisation marketing', 'contact.form.service.analytics': 'Analytique & Reporting',
+    'contact.form.service.chatbot': 'Développement de chatbot IA', 'contact.form.service.full': 'Retainer full-service',
+    "contact.form.service.other": "Pas encore sûr — parlons-en",
+    'contact.form.budget': 'Budget mensuel approximatif (CHF)', 'contact.form.budget.default': 'Sélectionner une fourchette',
+    "contact.form.budget.lt1200": "Moins de CHF 1'200", "contact.form.budget.1200": "CHF 1'200 – 2'900",
+    "contact.form.budget.2900": "CHF 2'900 – 5'000", "contact.form.budget.5000": "CHF 5'000+",
+    'contact.form.budget.project': 'Projet ponctuel', 'contact.form.message': 'Parlez-moi de votre projet *',
+    'contact.form.messagePlaceholder': 'Quels sont vos principaux défis marketing ? À quoi ressemble le succès pour vous dans 12 mois ?',
+    'contact.form.dataNotice': "Vos données sont utilisées uniquement pour traiter votre demande et ne sont pas transmises à des tiers. ",
+    'contact.form.dataNoticeLink': 'Politique de confidentialité',
+    'contact.form.privacy': "J'accepte que mes données soient traitées pour gérer ma demande. Voir la",
+    'contact.form.privacyLink': 'Politique de confidentialité', 'contact.form.privacyEnd': 'pour les détails. Je peux retirer mon consentement à tout moment.',
+    'contact.form.submit': 'Envoyer le message →', 'contact.success.h3': 'Message envoyé !',
+    'contact.success.p': "Merci de m'avoir contacté. Je vous répondrai dans les 24 heures.",
+    'contact.success.p2': "En attendant, n'hésitez pas à me rejoindre sur",
+    'contact.faq.label': 'Réponses rapides', 'contact.faq.h2a': 'Avant de ', 'contact.faq.h2b': 'nous contacter',
+    'contact.faq.q1': 'Que se passe-t-il après avoir soumis le formulaire ?',
+    'contact.faq.a1': "Je vais examiner votre message et répondre dans les 24 heures (généralement bien plus tôt). Si votre projet est adapté, je suggérerai un appel de découverte de 30 minutes.",
+    'contact.faq.q2': 'Combien de temps pour démarrer un projet ?',
+    'contact.faq.a2': "Mon délai habituel est de 1 à 2 semaines entre la signature du contrat et le lancement du projet.",
+    'contact.faq.q3': 'Travaillez-vous avec des startups ou seulement des entreprises établies ?',
+    'contact.faq.a3': "Les deux ! Je travaille avec des startups en phase initiale, des PME en croissance et des entreprises établies. L'approche est adaptée à votre stade de développement.",
+    'contact.faq.q4': 'Puis-je commencer par un projet plus petit pour tester la collaboration ?',
+    'contact.faq.a4': "Absolument. Beaucoup de clients commencent par un audit ponctuel ou un projet à court terme avant de s'engager dans un retainer mensuel.",
+  }
+};
+
+// ── Language Switcher Logic ──────────────────────────────────────────────────
+
+const LANG_KEY = 'vektor-lang';
+
+function getLang() {
+  return localStorage.getItem(LANG_KEY) || 'en';
+}
+
+function setLang(lang) {
+  localStorage.setItem(LANG_KEY, lang);
+  applyTranslations(lang);
+  document.documentElement.lang = lang;
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.lang === lang);
+  });
+}
+
+function t(key, lang) {
+  const dict = translations[lang] || translations['en'];
+  return dict[key] !== undefined ? dict[key] : (translations['en'][key] || key);
+}
+
+function applyTranslations(lang) {
+  // Plain text
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.dataset.i18n;
+    el.textContent = t(key, lang);
+  });
+  // Placeholder attributes
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+    el.placeholder = t(el.dataset.i18nPlaceholder, lang);
+  });
+  // data-i18n-value for option text (select options have special handling)
+  document.querySelectorAll('[data-i18n-option]').forEach(el => {
+    el.textContent = t(el.dataset.i18nOption, lang);
+  });
+  // data-i18n-filter-text for filter buttons (data-filter must stay)
+  document.querySelectorAll('[data-i18n-text]').forEach(el => {
+    el.textContent = t(el.dataset.i18nText, lang);
+  });
+  // aria-labels
+  document.querySelectorAll('[data-i18n-aria]').forEach(el => {
+    el.setAttribute('aria-label', t(el.dataset.i18nAria, lang));
+  });
+}
+
+// Init on DOM ready
+document.addEventListener('DOMContentLoaded', () => {
+  const lang = getLang();
+  applyTranslations(lang);
+  document.documentElement.lang = lang;
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.lang === lang);
+    btn.addEventListener('click', () => setLang(btn.dataset.lang));
+  });
+});
