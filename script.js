@@ -81,6 +81,18 @@
   }
 })();
 
+// ── Hero video smooth fade-in ──
+const heroVideo = document.querySelector('.hero-video');
+if (heroVideo) {
+  const onReady = () => heroVideo.classList.add('loaded');
+  if (heroVideo.readyState >= 3) {
+    onReady();
+  } else {
+    heroVideo.addEventListener('canplaythrough', onReady, { once: true });
+    setTimeout(onReady, 2000); // fallback if event doesn't fire
+  }
+}
+
 // ── Dynamic copyright year ──
 document.querySelectorAll('.copyright-year').forEach(el => {
   el.textContent = new Date().getFullYear();
