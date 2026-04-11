@@ -197,35 +197,109 @@
   </div>
 </section>
 
+<!-- ══ VISIBILITY REVEAL ══ -->
+<section class="section reveal-section">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="section-label" data-i18n="index.reveal.label">The Difference</div>
+      <h2><span data-i18n="index.reveal.h2a">Your property, </span><span class="gradient-text" data-i18n="index.reveal.h2b">in a different light.</span></h2>
+      <p data-i18n="index.reveal.desc">The house hasn't changed — only the light has. Digital visibility works the same way. Your business is already great; we just make sure the world can see it.</p>
+    </div>
+    <div class="reveal-wrapper fade-up" id="revealWrapper" aria-label="Before and after comparison slider">
+      <!-- After: full colour (behind) -->
+      <div class="reveal-after">
+        <img src="assets/images/house-reveal.jpg" alt="Property with full digital visibility" draggable="false" />
+      </div>
+      <!-- Before: greyscale, clipped via clip-path -->
+      <div class="reveal-before" id="revealBefore">
+        <img src="assets/images/house-reveal.jpg" alt="Property without digital visibility" draggable="false" />
+      </div>
+      <!-- Drag handle -->
+      <div class="reveal-handle" id="revealHandle" role="slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" aria-label="Drag to compare">
+        <div class="reveal-handle-line"></div>
+        <div class="reveal-handle-btn">
+          <i class="ph ph-arrows-left-right"></i>
+        </div>
+        <div class="reveal-handle-line"></div>
+      </div>
+      <!-- Labels -->
+      <div class="reveal-label reveal-label--before" data-i18n="index.reveal.before">Without ImmoGrowth</div>
+      <div class="reveal-label reveal-label--after" data-i18n="index.reveal.after">With ImmoGrowth</div>
+    </div>
+  </div>
+</section>
+
 <!-- ══ PROCESS ══ -->
-<section class="section section-alt" id="process" >
+<section id="process" class="section">
   <div class="container">
     <div class="section-header fade-up">
       <div class="section-label teal" data-i18n="index.process.label">How It Works</div>
       <h2><span data-i18n="index.process.h2a">From Brief to </span><span class="gradient-text" data-i18n="index.process.h2b">Results</span></h2>
       <p data-i18n="index.process.desc">A clear, structured process so you always know where we stand and what comes next.</p>
     </div>
-    <div class="process-steps fade-up">
-      <div class="process-step">
-        <div class="step-num">01</div>
-        <h4 data-i18n="index.step1.title">Discovery Call</h4>
-        <p data-i18n="index.step1.desc">We discuss your goals, current marketing setup, and where AI can make the biggest impact.</p>
+    <div class="process-scroll-layout">
+
+      <!-- LEFT: sticky visual panel -->
+      <div class="process-sticky-panel">
+        <div class="process-visual-card">
+          <div class="process-visual-bar">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="process-visual-body">
+            <div class="process-visual-stats">
+              <div class="process-visual-stat">
+                <div class="process-visual-val accent">48+</div>
+                <div class="process-visual-lbl" data-i18n="index.stat.projects">Projects Delivered</div>
+              </div>
+              <div class="process-visual-stat">
+                <div class="process-visual-val teal">3×</div>
+                <div class="process-visual-lbl" data-i18n="index.stat.roas">Avg. ROAS Increase</div>
+              </div>
+              <div class="process-visual-stat">
+                <div class="process-visual-val accent">94%</div>
+                <div class="process-visual-lbl" data-i18n="index.stat.satisfaction">Client Satisfaction</div>
+              </div>
+              <div class="process-visual-stat">
+                <div class="process-visual-val teal">5+</div>
+                <div class="process-visual-lbl" data-i18n="index.stat.experience">Years Experience</div>
+              </div>
+            </div>
+            <div class="process-visual-progress" id="processProgress">
+              <div class="process-visual-progress-bar" style="width: 25%"></div>
+            </div>
+            <div class="process-visual-step-label" id="processStepLabel" data-i18n="index.step1.title">Discovery Call</div>
+          </div>
+        </div>
       </div>
-      <div class="process-step">
-        <div class="step-num">02</div>
-        <h4 data-i18n="index.step2.title">Strategy & Proposal</h4>
-        <p data-i18n="index.step2.desc">I build a tailored AI marketing strategy with clear deliverables, timelines and pricing.</p>
+
+      <!-- RIGHT: scrolling steps -->
+      <div class="process-scroll-steps">
+        <div class="process-scroll-step" data-step="0">
+          <div class="process-scroll-num">01</div>
+          <h3 data-i18n="index.step1.title">Discovery Call</h3>
+          <p data-i18n="index.step1.desc">We discuss your goals, current marketing setup, and where AI can make the biggest impact. No sales pitch — just an honest conversation about where you are and where you want to go.</p>
+          <div class="process-scroll-tag teal" data-i18n="index.step1.tag">Week 1</div>
+        </div>
+        <div class="process-scroll-step" data-step="1">
+          <div class="process-scroll-num">02</div>
+          <h3 data-i18n="index.step2.title">Strategy & Proposal</h3>
+          <p data-i18n="index.step2.desc">I build a tailored AI marketing strategy with clear deliverables, timelines and pricing. You get a full written proposal — no surprises, no hidden costs.</p>
+          <div class="process-scroll-tag" data-i18n="index.step2.tag">Week 1–2</div>
+        </div>
+        <div class="process-scroll-step" data-step="2">
+          <div class="process-scroll-num">03</div>
+          <h3 data-i18n="index.step3.title">Build & Launch</h3>
+          <p data-i18n="index.step3.desc">Rapid implementation of AI tools, campaigns and automations — with full transparency at every step. You always know what's being built and why.</p>
+          <div class="process-scroll-tag teal" data-i18n="index.step3.tag">Week 2–4</div>
+        </div>
+        <div class="process-scroll-step" data-step="3">
+          <div class="process-scroll-num">04</div>
+          <h3 data-i18n="index.step4.title">Optimize & Scale</h3>
+          <p data-i18n="index.step4.desc">Ongoing monitoring, A/B testing and iterative improvement to compound your results month over month. Data in, better decisions out.</p>
+          <div class="process-scroll-tag" data-i18n="index.step4.tag">Ongoing</div>
+        </div>
       </div>
-      <div class="process-step">
-        <div class="step-num">03</div>
-        <h4 data-i18n="index.step3.title">Build & Launch</h4>
-        <p data-i18n="index.step3.desc">Rapid implementation of AI tools, campaigns and automations — with full transparency.</p>
-      </div>
-      <div class="process-step">
-        <div class="step-num">04</div>
-        <h4 data-i18n="index.step4.title">Optimize & Scale</h4>
-        <p data-i18n="index.step4.desc">Ongoing monitoring, A/B testing and iterative improvement to compound your results.</p>
-      </div>
+
     </div>
   </div>
 </section>

@@ -45,10 +45,10 @@ const translations = {
     'index.process.label': 'How It Works', 'index.process.h2a': 'From Brief to ',
     'index.process.h2b': 'Results',
     'index.process.desc': 'A clear, structured process so you always know where we stand and what comes next.',
-    'index.step1.title': 'Discovery Call', 'index.step1.desc': 'We discuss your goals, current marketing setup, and where AI can make the biggest impact.',
-    'index.step2.title': 'Strategy & Proposal', 'index.step2.desc': 'I build a tailored AI marketing strategy with clear deliverables, timelines and pricing.',
-    'index.step3.title': 'Build & Launch', 'index.step3.desc': 'Rapid implementation of AI tools, campaigns and automations — with full transparency.',
-    'index.step4.title': 'Optimize & Scale', 'index.step4.desc': 'Ongoing monitoring, A/B testing and iterative improvement to compound your results.',
+    'index.step1.title': 'Discovery Call', 'index.step1.desc': 'We discuss your goals, current marketing setup, and where AI can make the biggest impact. No sales pitch — just an honest conversation about where you are and where you want to go.', 'index.step1.tag': 'Week 1',
+    'index.step2.title': 'Strategy & Proposal', 'index.step2.desc': 'I build a tailored AI marketing strategy with clear deliverables, timelines and pricing. You get a full written proposal — no surprises, no hidden costs.', 'index.step2.tag': 'Week 1–2',
+    'index.step3.title': 'Build & Launch', 'index.step3.desc': 'Rapid implementation of AI tools, campaigns and automations — with full transparency at every step. You always know what\'s being built and why.', 'index.step3.tag': 'Week 2–4',
+    'index.step4.title': 'Optimize & Scale', 'index.step4.desc': 'Ongoing monitoring, A/B testing and iterative improvement to compound your results month over month. Data in, better decisions out.', 'index.step4.tag': 'Ongoing',
 
     // ── INDEX TESTIMONIALS ──
     'index.testimonials.label': 'Client Feedback', 'index.testimonials.h2a': 'What Clients ', 'index.testimonials.h2b': 'Say',
@@ -282,10 +282,10 @@ const translations = {
     // ── INDEX PROCESS ──
     'index.process.label': 'So funktioniert es', 'index.process.h2a': 'Von der Idee zu den ', 'index.process.h2b': 'Ergebnissen',
     'index.process.desc': 'Ein klarer, strukturierter Prozess – damit Sie immer wissen, wo wir stehen und was als nächstes kommt.',
-    'index.step1.title': 'Erstgespräch', 'index.step1.desc': 'Wir besprechen Ihre Ziele, Ihr aktuelles Marketing-Setup und wo KI den grössten Einfluss haben kann.',
-    'index.step2.title': 'Strategie & Angebot', 'index.step2.desc': 'Ich entwickle eine massgeschneiderte KI-Marketing-Strategie mit klaren Deliverables, Zeitplan und Preisen.',
-    'index.step3.title': 'Aufbau & Launch', 'index.step3.desc': 'Schnelle Implementierung von KI-Tools, Kampagnen und Automatisierungen – mit vollständiger Transparenz.',
-    'index.step4.title': 'Optimieren & Skalieren', 'index.step4.desc': 'Laufendes Monitoring, A/B-Tests und iterative Verbesserungen für nachhaltig bessere Ergebnisse.',
+    'index.step1.title': 'Erstgespräch', 'index.step1.desc': 'Wir besprechen Ihre Ziele, Ihr aktuelles Marketing-Setup und wo KI den grössten Einfluss haben kann. Kein Verkaufsgespräch – nur eine ehrliche Unterhaltung.', 'index.step1.tag': 'Woche 1',
+    'index.step2.title': 'Strategie & Angebot', 'index.step2.desc': 'Ich entwickle eine massgeschneiderte KI-Marketing-Strategie mit klaren Deliverables, Zeitplan und Preisen. Vollständiges schriftliches Angebot – keine versteckten Kosten.', 'index.step2.tag': 'Woche 1–2',
+    'index.step3.title': 'Aufbau & Launch', 'index.step3.desc': 'Schnelle Implementierung von KI-Tools, Kampagnen und Automatisierungen – mit vollständiger Transparenz bei jedem Schritt.', 'index.step3.tag': 'Woche 2–4',
+    'index.step4.title': 'Optimieren & Skalieren', 'index.step4.desc': 'Laufendes Monitoring, A/B-Tests und iterative Verbesserungen für nachhaltig bessere Ergebnisse Monat für Monat.', 'index.step4.tag': 'Laufend',
 
     // ── INDEX TESTIMONIALS ──
     'index.testimonials.label': 'Kundenstimmen', 'index.testimonials.h2a': 'Was Kunden ', 'index.testimonials.h2b': 'sagen',
@@ -518,10 +518,10 @@ const translations = {
     // ── INDEX PROCESS ──
     'index.process.label': 'Comment ça marche', 'index.process.h2a': 'Du brief aux ', 'index.process.h2b': 'résultats',
     'index.process.desc': 'Un processus clair et structuré pour que vous sachiez toujours où nous en sommes et ce qui vient ensuite.',
-    'index.step1.title': 'Appel de découverte', 'index.step1.desc': "Nous discutons de vos objectifs, de votre configuration marketing actuelle et des domaines où l'IA peut avoir le plus grand impact.",
-    'index.step2.title': 'Stratégie & Proposition', 'index.step2.desc': "Je construis une stratégie marketing IA sur mesure avec des livrables clairs, des délais et des tarifs.",
-    'index.step3.title': 'Créer & Lancer', 'index.step3.desc': "Mise en œuvre rapide des outils IA, des campagnes et des automatisations — avec une transparence totale.",
-    'index.step4.title': 'Optimiser & Scaler', 'index.step4.desc': "Monitoring continu, tests A/B et améliorations itératives pour amplifier vos résultats.",
+    'index.step1.title': 'Appel de découverte', 'index.step1.desc': "Nous discutons de vos objectifs, de votre configuration marketing actuelle et des domaines où l'IA peut avoir le plus grand impact. Pas de discours commercial — juste une conversation honnête.", 'index.step1.tag': 'Semaine 1',
+    'index.step2.title': 'Stratégie & Proposition', 'index.step2.desc': "Je construis une stratégie marketing IA sur mesure avec des livrables clairs, des délais et des tarifs. Proposition écrite complète — sans surprises.", 'index.step2.tag': 'Semaine 1–2',
+    'index.step3.title': 'Créer & Lancer', 'index.step3.desc': "Mise en œuvre rapide des outils IA, des campagnes et des automatisations — avec une transparence totale à chaque étape.", 'index.step3.tag': 'Semaine 2–4',
+    'index.step4.title': 'Optimiser & Scaler', 'index.step4.desc': "Monitoring continu, tests A/B et améliorations itératives pour amplifier vos résultats mois après mois.", 'index.step4.tag': 'En continu',
 
     // ── INDEX TESTIMONIALS ──
     'index.testimonials.label': 'Avis clients', 'index.testimonials.h2a': 'Ce que disent ', 'index.testimonials.h2b': 'les clients',

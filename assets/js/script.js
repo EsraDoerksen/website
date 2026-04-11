@@ -180,19 +180,44 @@ filterBtns.forEach(btn => {
 });
 
 // ── Contact form ──
+// SETUP: Go to https://formspree.io, create a form for esra.doerksen@immogrowth.digital,
+// then replace YOUR_FORM_ID below with the ID from your Formspree dashboard.
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/xojpgeka';
+
 const contactForm = document.getElementById('contactForm');
 const successMsg = document.querySelector('.success-msg');
 
-contactForm?.addEventListener('submit', (e) => {
+contactForm?.addEventListener('submit', async (e) => {
   e.preventDefault();
+
+  // Honeypot — abort silently if a bot filled the hidden field
+  if (contactForm.querySelector('[name="_honeypot"]')?.value) return;
+
   const btn = contactForm.querySelector('button[type="submit"]');
-  btn.textContent = 'Sending...';
+  const originalText = btn.textContent;
+  btn.textContent = 'Sending…';
   btn.disabled = true;
 
-  setTimeout(() => {
-    contactForm.style.display = 'none';
-    if (successMsg) successMsg.style.display = 'block';
-  }, 1200);
+  try {
+    const res = await fetch(FORMSPREE_ENDPOINT, {
+      method: 'POST',
+      body: new FormData(contactForm),
+      headers: { 'Accept': 'application/json' },
+    });
+
+    if (res.ok) {
+      contactForm.style.display = 'none';
+      if (successMsg) successMsg.style.display = 'block';
+    } else {
+      const data = await res.json().catch(() => ({}));
+      throw new Error(data?.error || 'Server error');
+    }
+  } catch (err) {
+    console.error('Form submission failed:', err);
+    btn.textContent = originalText;
+    btn.disabled = false;
+    alert('Something went wrong — please try again or email esra.doerksen@immogrowth.digital directly.');
+  }
 });
 
 // ── Smooth counter animation ──
@@ -248,3 +273,95 @@ if (currentPage === 'index.html' || currentPage === '') {
     });
   });
 }
+
+// ── Process scroll: sticky left panel / active step highlight ──
+(function () {
+  const steps = document.querySelectorAll('.process-scroll-step');
+  const progressBar = document.getElementById('processProgress')?.querySelector('.process-visual-progress-bar');
+  const stepLabel = document.getElementById('processStepLabel');
+  if (!steps.length) return;
+
+  // Activate first step immediately
+  steps[0].classList.add('active');
+
+  const stepTitles = Array.from(steps).map(s => s.querySelector('h3')?.textContent || '');
+  const progressValues = ['25%', '50%', '75%', '100%'];
+
+  function activate(index) {
+    steps.forEach((s, i) => s.classList.toggle('active', i === index));
+    if (progressBar) progressBar.style.width = progressValues[index];
+    if (stepLabel) stepLabel.textContent = stepTitles[index];
+  }
+
+  const obs = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        activate(parseInt(entry.target.dataset.step));
+      }
+    });
+  }, { threshold: 0.55 });
+
+  steps.forEach(step => obs.observe(step));
+})();
+
+// ── Before/After Reveal Slider ──
+(function () {
+  const wrapper = document.getElementById('revealWrapper');
+  if (!wrapper) return;
+
+  const handle = document.getElementById('revealHandle');
+  let dragging = false;
+  let currentPct = 50;
+
+  function setPos(x) {
+    const rect = wrapper.getBoundingClientRect();
+    let ratio = (x - rect.left) / rect.width;
+    ratio = Math.max(0.02, Math.min(0.98, ratio));
+    currentPct = ratio * 100;
+    const pct = currentPct.toFixed(2) + '%';
+    wrapper.style.setProperty('--reveal-pos', pct);
+    handle.setAttribute('aria-valuenow', Math.round(currentPct));
+  }
+
+  function onMove(e) {
+    if (!dragging) return;
+    const x = e.touches ? e.touches[0].clientX : e.clientX;
+    setPos(x);
+  }
+
+  function onUp() {
+    dragging = false;
+    wrapper.classList.remove('dragging');
+    document.removeEventListener('mousemove', onMove);
+    document.removeEventListener('mouseup', onUp);
+    document.removeEventListener('touchmove', onMove);
+    document.removeEventListener('touchend', onUp);
+  }
+
+  wrapper.addEventListener('mousedown', (e) => {
+    dragging = true;
+    wrapper.classList.add('dragging');
+    setPos(e.clientX);
+    document.addEventListener('mousemove', onMove);
+    document.addEventListener('mouseup', onUp);
+  });
+
+  wrapper.addEventListener('touchstart', (e) => {
+    dragging = true;
+    wrapper.classList.add('dragging');
+    setPos(e.touches[0].clientX);
+    document.addEventListener('touchmove', onMove, { passive: true });
+    document.addEventListener('touchend', onUp);
+  }, { passive: true });
+
+  // Keyboard support on the handle
+  handle.setAttribute('tabindex', '0');
+  handle.style.pointerEvents = 'auto';
+  handle.style.cursor = 'ew-resize';
+  handle.addEventListener('keydown', (e) => {
+    const rect = wrapper.getBoundingClientRect();
+    const step = e.shiftKey ? 10 : 2;
+    if (e.key === 'ArrowLeft') setPos(rect.left + rect.width * ((currentPct - step) / 100));
+    if (e.key === 'ArrowRight') setPos(rect.left + rect.width * ((currentPct + step) / 100));
+  });
+})();
