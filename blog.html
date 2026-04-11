@@ -21,8 +21,9 @@
   <meta property="og:image:height" content="630" />
   <meta property="og:locale" content="de_CH" />
   <meta property="og:site_name" content="ImmoGrowth" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%233D7EFF'/><polyline points='4,24 11,14 17,18 28,6' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' fill='none'/><polyline points='22,6 28,6 28,12' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' fill='none'/></svg>">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+  <link rel="icon" href="assets/images/logo.png" type="image/png">
 </head>
 <body>
 
@@ -30,19 +31,19 @@
 <nav class="navbar">
   <div class="container">
     <div class="navbar-inner">
-      <a href="index.html" class="logo"><div class="logo-icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><polyline points="1,14 6,8 10,11 17,3" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><polyline points="12,3 17,3 17,8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>ImmoGrowth</a>
+      <a href="index.html" class="logo"><img src="assets/images/logo.png" alt="ImmoGrowth" class="logo-img">ImmoGrowth</a>
       <ul class="nav-links">
         <li><a href="index.html" data-i18n="nav.home">Home</a></li>
         <li class="nav-dropdown">
           <a href="services.html" data-i18n="nav.services">Services <span class="dropdown-arrow">▾</span></a>
           <div class="dropdown-menu">
-            <a href="service-web-development.html"><span class="menu-icon">🌐</span> Website Development</a>
-            <a href="service-real-estate.html"><span class="menu-icon">🏠</span> Real Estate Application</a>
-            <a href="service-seo.html"><span class="menu-icon">🔍</span> SEO</a>
-            <a href="service-geo.html"><span class="menu-icon">🌍</span> GEO</a>
-            <a href="service-ui-ux.html"><span class="menu-icon">🎨</span> UI / UX Strategy</a>
-            <a href="service-sea.html"><span class="menu-icon">📢</span> SEA</a>
-            <a href="service-social-media.html"><span class="menu-icon">📱</span> Social Media & Automation</a>
+            <a href="service-web-development.html"><span class="menu-icon"><i class="ph ph-globe"></i></span> Website Development</a>
+            <a href="service-real-estate.html"><span class="menu-icon"><i class="ph ph-house-simple"></i></span> Real Estate Application</a>
+            <a href="service-seo.html"><span class="menu-icon"><i class="ph ph-magnifying-glass"></i></span> SEO</a>
+            <a href="service-geo.html"><span class="menu-icon"><i class="ph ph-globe-hemisphere-west"></i></span> GEO</a>
+            <a href="service-ui-ux.html"><span class="menu-icon"><i class="ph ph-palette"></i></span> UI / UX Strategy</a>
+            <a href="service-sea.html"><span class="menu-icon"><i class="ph ph-megaphone-simple"></i></span> SEA</a>
+            <a href="service-social-media.html"><span class="menu-icon"><i class="ph ph-device-mobile-camera"></i></span> Social Media & Automation</a>
           </div>
         </li>
         <li><a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a></li>
@@ -99,17 +100,17 @@
 <!-- ══ FEATURED POST ══ -->
 <section class="section-sm">
   <div class="container">
-    <div style="background: var(--dark-2); border: 1px solid var(--border); border-radius: var(--radius-xl); overflow: hidden; display: grid; grid-template-columns: 1fr 1fr; gap: 0;" class="fade-up">
-      <div style="background: linear-gradient(135deg, rgba(61,126,255,0.15) 0%, rgba(0,212,170,0.08) 100%); display: flex; align-items: center; justify-content: center; font-size: 6rem; min-height: 320px; padding: 48px;">🧠</div>
-      <div style="padding: 48px;">
-        <div style="display: flex; gap: 12px; align-items: center; margin-bottom: 16px;">
-          <span style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent);" data-i18n="blog.featured">Featured</span>
-          <span style="font-size: 0.8rem; color: var(--text-3);">March 15, 2026</span>
-          <span style="font-size: 0.8rem; color: var(--text-3);">· 8 min read</span>
+    <div class="featured-post fade-up">
+      <div class="featured-post-thumb"><i class="ph ph-brain"></i></div>
+      <div class="featured-post-body">
+        <div class="featured-post-meta">
+          <span class="blog-category" data-i18n="blog.featured">Featured</span>
+          <span class="blog-date">March 15, 2026</span>
+          <span class="blog-readtime">· 8 min read</span>
         </div>
-        <h2 style="font-size: 1.6rem; margin-bottom: 14px;" data-i18n="blog.featured.title">How Swiss SMEs Can Use AI Marketing Without Breaking the Budget</h2>
-        <p style="margin-bottom: 24px;" data-i18n="blog.featured.desc">A practical, step-by-step guide to implementing AI-powered marketing tools for small and medium businesses in Switzerland — with realistic budgets and Swiss market considerations.</p>
-        <a href="#" class="btn btn-primary" data-i18n="blog.featured.btn">Read Article →</a>
+        <h2 class="mb-16" data-i18n="blog.featured.title">How Swiss SMEs Can Use AI Marketing Without Breaking the Budget</h2>
+        <p class="mb-0" data-i18n="blog.featured.desc">A practical, step-by-step guide to implementing AI-powered marketing tools for small and medium businesses in Switzerland — with realistic budgets and Swiss market considerations.</p>
+        <div class="mt-24"><a href="#" class="btn btn-primary" data-i18n="blog.featured.btn">Read Article →</a></div>
       </div>
     </div>
   </div>
@@ -125,7 +126,7 @@
     <div class="blog-grid fade-up">
 
       <div class="blog-card">
-        <div class="blog-thumb blue">🎯</div>
+        <div class="blog-thumb blue"><i class="ph ph-target"></i></div>
         <div class="blog-body">
           <div class="blog-meta"><span class="blog-category">Paid Ads</span><span class="blog-date">Mar 10, 2026</span><span class="blog-readtime">· 6 min</span></div>
           <h3>5 AI Bidding Strategies That Outperform Manual Google Ads in 2026</h3>
@@ -135,7 +136,7 @@
       </div>
 
       <div class="blog-card">
-        <div class="blog-thumb teal">✍️</div>
+        <div class="blog-thumb teal"><i class="ph ph-pencil-simple"></i></div>
         <div class="blog-body">
           <div class="blog-meta"><span class="blog-category">Content</span><span class="blog-date">Mar 3, 2026</span><span class="blog-readtime">· 7 min</span></div>
           <h3>Building a Multilingual AI Content Pipeline for Swiss Brands</h3>
@@ -145,7 +146,7 @@
       </div>
 
       <div class="blog-card">
-        <div class="blog-thumb purple">📊</div>
+        <div class="blog-thumb purple"><i class="ph ph-chart-bar"></i></div>
         <div class="blog-body">
           <div class="blog-meta"><span class="blog-category">Analytics</span><span class="blog-date">Feb 24, 2026</span><span class="blog-readtime">· 5 min</span></div>
           <h3>nDSG & AI Marketing: What Swiss Marketers Must Know in 2026</h3>
@@ -155,7 +156,7 @@
       </div>
 
       <div class="blog-card">
-        <div class="blog-thumb blue">🤖</div>
+        <div class="blog-thumb blue"><i class="ph ph-robot"></i></div>
         <div class="blog-body">
           <div class="blog-meta"><span class="blog-category">Automation</span><span class="blog-date">Feb 17, 2026</span><span class="blog-readtime">· 9 min</span></div>
           <h3>Make vs n8n for Marketing Automation: Which is Right for Your Business?</h3>
@@ -165,7 +166,7 @@
       </div>
 
       <div class="blog-card">
-        <div class="blog-thumb teal">🔍</div>
+        <div class="blog-thumb teal"><i class="ph ph-magnifying-glass"></i></div>
         <div class="blog-body">
           <div class="blog-meta"><span class="blog-category">SEO</span><span class="blog-date">Feb 10, 2026</span><span class="blog-readtime">· 6 min</span></div>
           <h3>AI SEO in 2026: How to Rank in Both Google and ChatGPT Search</h3>
@@ -175,7 +176,7 @@
       </div>
 
       <div class="blog-card">
-        <div class="blog-thumb purple">💡</div>
+        <div class="blog-thumb purple"><i class="ph ph-lightbulb"></i></div>
         <div class="blog-body">
           <div class="blog-meta"><span class="blog-category">Strategy</span><span class="blog-date">Feb 3, 2026</span><span class="blog-readtime">· 8 min</span></div>
           <h3>The AI Marketing Audit: 10 Questions Every Swiss Business Should Ask</h3>
@@ -185,7 +186,7 @@
       </div>
 
       <div class="blog-card">
-        <div class="blog-thumb blue">📧</div>
+        <div class="blog-thumb blue"><i class="ph ph-envelope"></i></div>
         <div class="blog-body">
           <div class="blog-meta"><span class="blog-category">Email Marketing</span><span class="blog-date">Jan 27, 2026</span><span class="blog-readtime">· 5 min</span></div>
           <h3>AI-Personalized Email Campaigns: A Case Study with 68% Open Rate</h3>
@@ -195,7 +196,7 @@
       </div>
 
       <div class="blog-card">
-        <div class="blog-thumb teal">🚀</div>
+        <div class="blog-thumb teal"><i class="ph ph-rocket"></i></div>
         <div class="blog-body">
           <div class="blog-meta"><span class="blog-category">Growth</span><span class="blog-date">Jan 20, 2026</span><span class="blog-readtime">· 7 min</span></div>
           <h3>From 0 to CHF 1M ARR: How AI Marketing Accelerated This Zürich Startup</h3>
@@ -205,7 +206,7 @@
       </div>
 
       <div class="blog-card">
-        <div class="blog-thumb purple">🎥</div>
+        <div class="blog-thumb purple"><i class="ph ph-video-camera"></i></div>
         <div class="blog-body">
           <div class="blog-meta"><span class="blog-category">Content</span><span class="blog-date">Jan 13, 2026</span><span class="blog-readtime">· 4 min</span></div>
           <h3>AI Video Marketing Tools Compared: Sora, Runway & Kling for Business</h3>
@@ -226,14 +227,14 @@
 <section class="section-sm">
   <div class="container">
     <div class="cta-band fade-up">
-      <div class="section-label" style="margin: 0 auto 20px;" data-i18n="blog.newsletter.label">Newsletter</div>
+      <div class="section-label section-label--centered" data-i18n="blog.newsletter.label">Newsletter</div>
       <h2><span data-i18n="blog.newsletter.h2a">Stay ahead of the </span><span class="gradient-text" data-i18n="blog.newsletter.h2b">AI marketing curve.</span></h2>
       <p data-i18n="blog.newsletter.desc">Join 1,200+ Swiss marketers getting weekly AI tips, tool reviews and case studies — in your inbox every Tuesday.</p>
-      <form id="newsletterForm" style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-top: 32px;">
-        <input type="email" data-i18n-placeholder="blog.newsletter.placeholder" placeholder="your@email.ch" required style="background: var(--dark-3); border: 1px solid var(--border); border-radius: 100px; padding: 14px 24px; font-family: inherit; font-size: 0.95rem; color: var(--text); outline: none; min-width: 280px; transition: border-color 0.3s;" onfocus="this.style.borderColor='var(--accent)'" onblur="this.style.borderColor='var(--border)'">
+      <form id="newsletterForm" class="newsletter-form">
+        <input type="email" class="newsletter-input" data-i18n-placeholder="blog.newsletter.placeholder" placeholder="your@email.ch" required>
         <button type="submit" class="btn btn-primary" data-i18n="blog.newsletter.btn">Subscribe Free →</button>
       </form>
-      <p style="font-size: 0.8rem; color: var(--text-3); margin-top: 12px;" data-i18n="blog.newsletter.privacy">No spam. Unsubscribe anytime. nDSG compliant.</p>
+      <p class="newsletter-note" data-i18n="blog.newsletter.privacy">No spam. Unsubscribe anytime. nDSG compliant.</p>
     </div>
   </div>
 </section>
@@ -243,7 +244,7 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="index.html" class="logo"><div class="logo-icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><polyline points="1,14 6,8 10,11 17,3" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><polyline points="12,3 17,3 17,8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>ImmoGrowth</a>
+        <a href="index.html" class="logo"><img src="assets/images/logo.png" alt="ImmoGrowth" class="logo-img">ImmoGrowth</a>
         <p data-i18n="footer.tagline">AI-powered marketing for Swiss businesses that want to grow smarter, faster.</p>
         <div class="footer-social"><a href="#" class="social-link" aria-label="LinkedIn">in</a><a href="#" class="social-link" aria-label="Twitter / X">𝕏</a><a href="#" class="social-link" aria-label="Instagram">◻</a></div>
       </div>
@@ -272,8 +273,8 @@
   </div>
 </footer>
 
-<script src="i18n.js"></script>
-<script src="script.js"></script>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/script.js"></script>
 <script>
   // Newsletter form
   document.getElementById('newsletterForm')?.addEventListener('submit', function(e) {

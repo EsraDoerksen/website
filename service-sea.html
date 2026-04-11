@@ -21,8 +21,9 @@
   <meta property="og:image:height" content="630" />
   <meta property="og:locale" content="de_CH" />
   <meta property="og:site_name" content="ImmoGrowth" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%233D7EFF'/><polyline points='4,24 11,14 17,18 28,6' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' fill='none'/><polyline points='22,6 28,6 28,12' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' fill='none'/></svg>">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+  <link rel="icon" href="assets/images/logo.png" type="image/png">
 </head>
 <body>
 
@@ -30,19 +31,19 @@
 <nav class="navbar">
   <div class="container">
     <div class="navbar-inner">
-      <a href="index.html" class="logo"><div class="logo-icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><polyline points="1,14 6,8 10,11 17,3" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><polyline points="12,3 17,3 17,8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>ImmoGrowth</a>
+      <a href="index.html" class="logo"><img src="assets/images/logo.png" alt="ImmoGrowth" class="logo-img">ImmoGrowth</a>
       <ul class="nav-links">
         <li><a href="index.html" data-i18n="nav.home">Home</a></li>
         <li class="nav-dropdown">
           <a href="services.html" class="active" data-i18n="nav.services">Services <span class="dropdown-arrow">▾</span></a>
           <div class="dropdown-menu">
-            <a href="service-web-development.html"><span class="menu-icon">🌐</span> Website Development</a>
-            <a href="service-real-estate.html"><span class="menu-icon">🏠</span> Real Estate Application</a>
-            <a href="service-seo.html"><span class="menu-icon">🔍</span> SEO</a>
-            <a href="service-geo.html"><span class="menu-icon">🌍</span> GEO</a>
-            <a href="service-ui-ux.html"><span class="menu-icon">🎨</span> UI / UX Strategy</a>
-            <a href="service-sea.html" class="active"><span class="menu-icon">📢</span> SEA</a>
-            <a href="service-social-media.html"><span class="menu-icon">📱</span> Social Media & Automation</a>
+            <a href="service-web-development.html"><span class="menu-icon"><i class="ph ph-globe"></i></span> Website Development</a>
+            <a href="service-real-estate.html"><span class="menu-icon"><i class="ph ph-house-simple"></i></span> Real Estate Application</a>
+            <a href="service-seo.html"><span class="menu-icon"><i class="ph ph-magnifying-glass"></i></span> SEO</a>
+            <a href="service-geo.html"><span class="menu-icon"><i class="ph ph-globe-hemisphere-west"></i></span> GEO</a>
+            <a href="service-ui-ux.html"><span class="menu-icon"><i class="ph ph-palette"></i></span> UI / UX Strategy</a>
+            <a href="service-sea.html" class="active"><span class="menu-icon"><i class="ph ph-megaphone-simple"></i></span> SEA</a>
+            <a href="service-social-media.html"><span class="menu-icon"><i class="ph ph-device-mobile-camera"></i></span> Social Media & Automation</a>
           </div>
         </li>
         <li><a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a></li>
@@ -106,22 +107,22 @@
     </div>
     <div class="objectives-grid">
       <div class="objective-card fade-up">
-        <div class="objective-icon">💰</div>
+        <div class="objective-icon"><i class="ph ph-currency-circle-dollar"></i></div>
         <h3>Maximum ROAS</h3>
         <p>Return on ad spend is the ultimate measure. Every campaign structure, bid strategy, and ad copy decision is optimised to generate the highest possible revenue relative to your investment.</p>
       </div>
       <div class="objective-card fade-up delay-1">
-        <div class="objective-icon">🎯</div>
+        <div class="objective-icon"><i class="ph ph-target"></i></div>
         <h3>Precision Targeting</h3>
         <p>Reach the right person, with the right message, at exactly the moment they're searching for what you offer. Granular audience segmentation and keyword matching eliminate wasted impressions.</p>
       </div>
       <div class="objective-card fade-up delay-2">
-        <div class="objective-icon">📊</div>
+        <div class="objective-icon"><i class="ph ph-chart-bar"></i></div>
         <h3>Full Funnel Coverage</h3>
         <p>Campaigns for every stage — from awareness-building brand terms to bottom-funnel commercial queries that capture buyers who are ready to act right now.</p>
       </div>
       <div class="objective-card fade-up delay-3">
-        <div class="objective-icon">📉</div>
+        <div class="objective-icon"><i class="ph ph-chart-line-down"></i></div>
         <h3>Continuous CPC Reduction</h3>
         <p>Improve Quality Scores, refine audience signals, and eliminate wasteful keywords over time — driving down your cost per click while improving ad position and conversion rate.</p>
       </div>
@@ -130,7 +131,7 @@
 </section>
 
 <!-- ══ OUR APPROACH ══ -->
-<section class="section" style="background: var(--dark-2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+<section class="section section-alt" >
   <div class="container">
     <div class="section-header fade-up">
       <div class="section-label teal">Our Approach</div>
@@ -201,35 +202,35 @@
     <div class="strategy-layout fade-up">
       <div class="strategy-items">
         <div class="strategy-item">
-          <div class="strategy-item-icon">🇨🇭</div>
+          <div class="strategy-item-icon"><i class="ph ph-flag"></i></div>
           <div>
             <h4>Swiss Market Intelligence</h4>
             <p>Swiss CPCs, search volumes, and seasonal patterns differ significantly from Germany or the UK. Your campaigns are calibrated with Swiss-specific benchmarks and competitor intelligence from the start.</p>
           </div>
         </div>
         <div class="strategy-item">
-          <div class="strategy-item-icon teal">🌐</div>
+          <div class="strategy-item-icon teal"><i class="ph ph-globe"></i></div>
           <div>
             <h4>Multilingual Campaign Management</h4>
             <p>Separate, optimised campaigns for each Swiss linguistic market — German, French, Italian, and English — with native-quality ad copy and regionally appropriate messaging for each audience.</p>
           </div>
         </div>
         <div class="strategy-item">
-          <div class="strategy-item-icon">🛒</div>
+          <div class="strategy-item-icon"><i class="ph ph-shopping-cart-simple"></i></div>
           <div>
             <h4>E-commerce & Shopping Campaigns</h4>
             <p>Google Shopping campaigns with optimised product feeds, custom labels, and segmented bidding strategies for high and low-margin products — maximising revenue from your catalogue.</p>
           </div>
         </div>
         <div class="strategy-item">
-          <div class="strategy-item-icon teal">🔁</div>
+          <div class="strategy-item-icon teal"><i class="ph ph-arrows-clockwise"></i></div>
           <div>
             <h4>Remarketing & Audience Strategies</h4>
             <p>Recapture visitors who didn't convert with precisely timed, personalised remarketing — across Google Display, YouTube, and search — keeping your brand front of mind through the full buyer journey.</p>
           </div>
         </div>
         <div class="strategy-item">
-          <div class="strategy-item-icon">🔬</div>
+          <div class="strategy-item-icon"><i class="ph ph-microscope"></i></div>
           <div>
             <h4>Landing Page Alignment</h4>
             <p>Ads alone don't convert — landing pages do. I audit and advise on landing page experience to ensure Quality Scores stay high and conversion rates match the quality of clicks you're buying.</p>
@@ -237,7 +238,7 @@
         </div>
       </div>
       <div class="strategy-visual">
-        <div class="strategy-visual-icon">📢</div>
+        <div class="strategy-visual-icon"><i class="ph ph-megaphone-simple"></i></div>
         <div class="strategy-visual-stats">
           <div class="strategy-stat">
             <span class="label">Avg. ROAS Improvement</span>
@@ -280,7 +281,7 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="index.html" class="logo"><div class="logo-icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><polyline points="1,14 6,8 10,11 17,3" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><polyline points="12,3 17,3 17,8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>ImmoGrowth</a>
+        <a href="index.html" class="logo"><img src="assets/images/logo.png" alt="ImmoGrowth" class="logo-img">ImmoGrowth</a>
         <p>AI-powered marketing for Swiss businesses that want to grow smarter, faster.</p>
         <div class="footer-social"><a href="#" class="social-link" aria-label="LinkedIn">in</a><a href="#" class="social-link" aria-label="Twitter / X">𝕏</a><a href="#" class="social-link" aria-label="Instagram">◻</a></div>
       </div>
@@ -312,8 +313,8 @@
   </div>
 </footer>
 
-<script src="i18n.js"></script>
-<script src="script.js"></script>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/script.js"></script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

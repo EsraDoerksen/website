@@ -21,8 +21,9 @@
   <meta property="og:image:height" content="630" />
   <meta property="og:locale" content="de_CH" />
   <meta property="og:site_name" content="ImmoGrowth" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%233D7EFF'/><polyline points='4,24 11,14 17,18 28,6' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' fill='none'/><polyline points='22,6 28,6 28,12' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' fill='none'/></svg>">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+  <link rel="icon" href="assets/images/logo.png" type="image/png">
 </head>
 <body>
 
@@ -30,19 +31,19 @@
 <nav class="navbar">
   <div class="container">
     <div class="navbar-inner">
-      <a href="index.html" class="logo"><div class="logo-icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><polyline points="1,14 6,8 10,11 17,3" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><polyline points="12,3 17,3 17,8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>ImmoGrowth</a>
+      <a href="index.html" class="logo"><img src="assets/images/logo.png" alt="ImmoGrowth" class="logo-img">ImmoGrowth</a>
       <ul class="nav-links">
         <li><a href="index.html" data-i18n="nav.home">Home</a></li>
         <li class="nav-dropdown">
           <a href="services.html" data-i18n="nav.services">Services <span class="dropdown-arrow">▾</span></a>
           <div class="dropdown-menu">
-            <a href="service-web-development.html"><span class="menu-icon">🌐</span> Website Development</a>
-            <a href="service-real-estate.html"><span class="menu-icon">🏠</span> Real Estate Application</a>
-            <a href="service-seo.html"><span class="menu-icon">🔍</span> SEO</a>
-            <a href="service-geo.html"><span class="menu-icon">🌍</span> GEO</a>
-            <a href="service-ui-ux.html"><span class="menu-icon">🎨</span> UI / UX Strategy</a>
-            <a href="service-sea.html"><span class="menu-icon">📢</span> SEA</a>
-            <a href="service-social-media.html"><span class="menu-icon">📱</span> Social Media & Automation</a>
+            <a href="service-web-development.html"><span class="menu-icon"><i class="ph ph-globe"></i></span> Website Development</a>
+            <a href="service-real-estate.html"><span class="menu-icon"><i class="ph ph-house-simple"></i></span> Real Estate Application</a>
+            <a href="service-seo.html"><span class="menu-icon"><i class="ph ph-magnifying-glass"></i></span> SEO</a>
+            <a href="service-geo.html"><span class="menu-icon"><i class="ph ph-globe-hemisphere-west"></i></span> GEO</a>
+            <a href="service-ui-ux.html"><span class="menu-icon"><i class="ph ph-palette"></i></span> UI / UX Strategy</a>
+            <a href="service-sea.html"><span class="menu-icon"><i class="ph ph-megaphone-simple"></i></span> SEA</a>
+            <a href="service-social-media.html"><span class="menu-icon"><i class="ph ph-device-mobile-camera"></i></span> Social Media & Automation</a>
           </div>
         </li>
         <li><a href="portfolio.html" class="active" data-i18n="nav.portfolio">Portfolio</a></li>
@@ -97,24 +98,24 @@
 </section>
 
 <!-- ══ RESULTS METRICS ══ -->
-<section class="section-sm" style="background: var(--dark-2); border-bottom: 1px solid var(--border);">
+<section class="section-sm section-alt-bottom" >
   <div class="container">
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 24px; text-align: center;">
+    <div class="stats-grid">
       <div class="fade-up">
-        <div style="font-family: 'Space Grotesk', sans-serif; font-size: 2.8rem; font-weight: 800; color: var(--accent);">3.4×</div>
-        <div style="color: var(--text-2); font-size: 0.9rem; margin-top: 4px;" data-i18n="portfolio.metric1">Average ROAS improvement</div>
+        <div class="stat-big">3.4×</div>
+        <div class="stat-label" data-i18n="portfolio.metric1">Average ROAS improvement</div>
       </div>
       <div class="fade-up delay-1">
-        <div style="font-family: 'Space Grotesk', sans-serif; font-size: 2.8rem; font-weight: 800; color: var(--accent-2);">-38%</div>
-        <div style="color: var(--text-2); font-size: 0.9rem; margin-top: 4px;" data-i18n="portfolio.metric2">Cost per acquisition reduction</div>
+        <div class="stat-big teal">-38%</div>
+        <div class="stat-label" data-i18n="portfolio.metric2">Cost per acquisition reduction</div>
       </div>
       <div class="fade-up delay-2">
-        <div style="font-family: 'Space Grotesk', sans-serif; font-size: 2.8rem; font-weight: 800; color: var(--accent);">+190%</div>
-        <div style="color: var(--text-2); font-size: 0.9rem; margin-top: 4px;" data-i18n="portfolio.metric3">Organic traffic growth (avg.)</div>
+        <div class="stat-big">+190%</div>
+        <div class="stat-label" data-i18n="portfolio.metric3">Organic traffic growth (avg.)</div>
       </div>
       <div class="fade-up delay-3">
-        <div style="font-family: 'Space Grotesk', sans-serif; font-size: 2.8rem; font-weight: 800; color: var(--accent-2);">CHF 2M+</div>
-        <div style="color: var(--text-2); font-size: 0.9rem; margin-top: 4px;" data-i18n="portfolio.metric4">Pipeline generated for clients</div>
+        <div class="stat-big teal">CHF 2M+</div>
+        <div class="stat-label" data-i18n="portfolio.metric4">Pipeline generated for clients</div>
       </div>
     </div>
   </div>
@@ -134,7 +135,7 @@
     <div class="portfolio-grid fade-up">
 
       <div class="portfolio-card" data-category="ads">
-        <div class="portfolio-thumb blue">🎯</div>
+        <div class="portfolio-thumb blue"><i class="ph ph-target"></i></div>
         <div class="portfolio-info">
           <div class="portfolio-category" data-i18n="portfolio.p1.cat">Paid Ads · Google & Meta</div>
           <h3 data-i18n="portfolio.p1.title">Alpine Digital AG — 3.2× ROAS</h3>
@@ -144,7 +145,7 @@
       </div>
 
       <div class="portfolio-card" data-category="seo">
-        <div class="portfolio-thumb teal">📝</div>
+        <div class="portfolio-thumb teal"><i class="ph ph-note-pencil"></i></div>
         <div class="portfolio-info">
           <div class="portfolio-category" data-i18n="portfolio.p2.cat">SEO & Content · B2B SaaS</div>
           <h3 data-i18n="portfolio.p2.title">NovaTech Solutions — 180% Organic Growth</h3>
@@ -154,7 +155,7 @@
       </div>
 
       <div class="portfolio-card" data-category="automation">
-        <div class="portfolio-thumb purple">⚙️</div>
+        <div class="portfolio-thumb purple"><i class="ph ph-gear"></i></div>
         <div class="portfolio-info">
           <div class="portfolio-category" data-i18n="portfolio.p3.cat">Marketing Automation · E-Commerce</div>
           <h3 data-i18n="portfolio.p3.title">SwissHome Shop — 42% More Conversions</h3>
@@ -164,7 +165,7 @@
       </div>
 
       <div class="portfolio-card" data-category="analytics">
-        <div class="portfolio-thumb blue">📊</div>
+        <div class="portfolio-thumb blue"><i class="ph ph-chart-bar"></i></div>
         <div class="portfolio-info">
           <div class="portfolio-category" data-i18n="portfolio.p4.cat">Analytics · Financial Services</div>
           <h3 data-i18n="portfolio.p4.title">Helvetica Group — Full Attribution Stack</h3>
@@ -174,7 +175,7 @@
       </div>
 
       <div class="portfolio-card" data-category="ads">
-        <div class="portfolio-thumb orange">💼</div>
+        <div class="portfolio-thumb orange"><i class="ph ph-briefcase"></i></div>
         <div class="portfolio-info">
           <div class="portfolio-category" data-i18n="portfolio.p5.cat">Paid Ads · B2B LinkedIn</div>
           <h3 data-i18n="portfolio.p5.title">Peak Ventures — CHF 380K Pipeline</h3>
@@ -184,7 +185,7 @@
       </div>
 
       <div class="portfolio-card" data-category="automation">
-        <div class="portfolio-thumb teal">🤖</div>
+        <div class="portfolio-thumb teal"><i class="ph ph-robot"></i></div>
         <div class="portfolio-info">
           <div class="portfolio-category" data-i18n="portfolio.p6.cat">AI Chatbot · Healthcare</div>
           <h3 data-i18n="portfolio.p6.title">MediConsult AG — 24/7 Lead Qualification</h3>
@@ -194,7 +195,7 @@
       </div>
 
       <div class="portfolio-card" data-category="seo">
-        <div class="portfolio-thumb purple">🔍</div>
+        <div class="portfolio-thumb purple"><i class="ph ph-magnifying-glass"></i></div>
         <div class="portfolio-info">
           <div class="portfolio-category" data-i18n="portfolio.p7.cat">SEO · Local Business</div>
           <h3 data-i18n="portfolio.p7.title">Zurich Realty — #1 for Target Keywords</h3>
@@ -204,7 +205,7 @@
       </div>
 
       <div class="portfolio-card" data-category="analytics">
-        <div class="portfolio-thumb orange">🧠</div>
+        <div class="portfolio-thumb orange"><i class="ph ph-brain"></i></div>
         <div class="portfolio-info">
           <div class="portfolio-category" data-i18n="portfolio.p8.cat">Analytics · E-Commerce</div>
           <h3 data-i18n="portfolio.p8.title">SwissGear — Predictive CLV Model</h3>
@@ -218,14 +219,14 @@
 </section>
 
 <!-- ══ TESTIMONIAL ══ -->
-<section class="section-sm" style="background: var(--dark-2); border-top: 1px solid var(--border);">
-  <div class="container" style="max-width: 760px;">
-    <div class="testimonial-card fade-up" style="text-align: center;">
-      <div class="testimonial-stars" style="text-align: center; font-size: 1.1rem; margin-bottom: 24px;">★★★★★</div>
-      <p class="testimonial-text" style="font-size: 1.15rem;" data-i18n="portfolio.testimonial">"Working with ImmoGrowth was a game-changer for our company. The results were measurable, the communication was excellent and the ROI was well beyond our expectations. Truly the Swiss quality of AI marketing."</p>
-      <div class="testimonial-author" style="justify-content: center; margin-top: 28px;">
+<section class="section-sm section-alt-top" >
+  <div class="container testimonial-narrow">
+    <div class="testimonial-card testimonial-card--centered fade-up">
+      <div class="testimonial-stars testimonial-stars--lg">★★★★★</div>
+      <p class="testimonial-text testimonial-text--lg" data-i18n="portfolio.testimonial">"Working with ImmoGrowth was a game-changer for our company. The results were measurable, the communication was excellent and the ROI was well beyond our expectations. Truly the Swiss quality of AI marketing."</p>
+      <div class="testimonial-author testimonial-author--centered">
         <div class="author-avatar">MB</div>
-        <div style="text-align: left;">
+        <div class="author-info">
           <div class="author-name">Michael Brandt</div>
           <div class="author-role">CEO · SwissGear Online, Zürich</div>
         </div>
@@ -253,7 +254,7 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="index.html" class="logo"><div class="logo-icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><polyline points="1,14 6,8 10,11 17,3" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><polyline points="12,3 17,3 17,8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>ImmoGrowth</a>
+        <a href="index.html" class="logo"><img src="assets/images/logo.png" alt="ImmoGrowth" class="logo-img">ImmoGrowth</a>
         <p data-i18n="footer.tagline">AI-powered marketing for Swiss businesses that want to grow smarter, faster.</p>
         <div class="footer-social"><a href="#" class="social-link" aria-label="LinkedIn">in</a><a href="#" class="social-link" aria-label="Twitter / X">𝕏</a><a href="#" class="social-link" aria-label="Instagram">◻</a></div>
       </div>
@@ -282,8 +283,8 @@
   </div>
 </footer>
 
-<script src="i18n.js"></script>
-<script src="script.js"></script>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/script.js"></script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

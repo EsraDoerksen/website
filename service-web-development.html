@@ -21,8 +21,9 @@
   <meta property="og:image:height" content="630" />
   <meta property="og:locale" content="de_CH" />
   <meta property="og:site_name" content="ImmoGrowth" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%233D7EFF'/><polyline points='4,24 11,14 17,18 28,6' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' fill='none'/><polyline points='22,6 28,6 28,12' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' fill='none'/></svg>">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+  <link rel="icon" href="assets/images/logo.png" type="image/png">
 </head>
 <body>
 
@@ -30,19 +31,19 @@
 <nav class="navbar">
   <div class="container">
     <div class="navbar-inner">
-      <a href="index.html" class="logo"><div class="logo-icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><polyline points="1,14 6,8 10,11 17,3" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><polyline points="12,3 17,3 17,8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>ImmoGrowth</a>
+      <a href="index.html" class="logo"><img src="assets/images/logo.png" alt="ImmoGrowth" class="logo-img">ImmoGrowth</a>
       <ul class="nav-links">
         <li><a href="index.html" data-i18n="nav.home">Home</a></li>
         <li class="nav-dropdown">
           <a href="services.html" class="active" data-i18n="nav.services">Services <span class="dropdown-arrow">▾</span></a>
           <div class="dropdown-menu">
-            <a href="service-web-development.html" class="active"><span class="menu-icon">🌐</span> Website Development</a>
-            <a href="service-real-estate.html"><span class="menu-icon">🏠</span> Real Estate Application</a>
-            <a href="service-seo.html"><span class="menu-icon">🔍</span> SEO</a>
-            <a href="service-geo.html"><span class="menu-icon">🌍</span> GEO</a>
-            <a href="service-ui-ux.html"><span class="menu-icon">🎨</span> UI / UX Strategy</a>
-            <a href="service-sea.html"><span class="menu-icon">📢</span> SEA</a>
-            <a href="service-social-media.html"><span class="menu-icon">📱</span> Social Media & Automation</a>
+            <a href="service-web-development.html" class="active"><span class="menu-icon"><i class="ph ph-globe"></i></span> Website Development</a>
+            <a href="service-real-estate.html"><span class="menu-icon"><i class="ph ph-house-simple"></i></span> Real Estate Application</a>
+            <a href="service-seo.html"><span class="menu-icon"><i class="ph ph-magnifying-glass"></i></span> SEO</a>
+            <a href="service-geo.html"><span class="menu-icon"><i class="ph ph-globe-hemisphere-west"></i></span> GEO</a>
+            <a href="service-ui-ux.html"><span class="menu-icon"><i class="ph ph-palette"></i></span> UI / UX Strategy</a>
+            <a href="service-sea.html"><span class="menu-icon"><i class="ph ph-megaphone-simple"></i></span> SEA</a>
+            <a href="service-social-media.html"><span class="menu-icon"><i class="ph ph-device-mobile-camera"></i></span> Social Media & Automation</a>
           </div>
         </li>
         <li><a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a></li>
@@ -106,22 +107,22 @@
     </div>
     <div class="objectives-grid">
       <div class="objective-card fade-up">
-        <div class="objective-icon">⚡</div>
+        <div class="objective-icon"><i class="ph ph-lightning"></i></div>
         <h3>Peak Performance</h3>
         <p>Core Web Vitals scores in the green. Sub-second load times on all devices. Speed is not a feature — it's the foundation every conversion is built on.</p>
       </div>
       <div class="objective-card fade-up delay-1">
-        <div class="objective-icon">🎯</div>
+        <div class="objective-icon"><i class="ph ph-target"></i></div>
         <h3>Conversion-First Design</h3>
         <p>Beautiful aesthetics paired with intentional UX flows. Every page has a clear purpose: guide the visitor toward the action that matters most to your business.</p>
       </div>
       <div class="objective-card fade-up delay-2">
-        <div class="objective-icon">🔍</div>
+        <div class="objective-icon"><i class="ph ph-magnifying-glass"></i></div>
         <h3>SEO-Ready from Day One</h3>
         <p>Semantic markup, structured data, clean architecture, and crawlable content — the technical foundation that lets search engines love your website immediately.</p>
       </div>
       <div class="objective-card fade-up delay-3">
-        <div class="objective-icon">📈</div>
+        <div class="objective-icon"><i class="ph ph-chart-line-up"></i></div>
         <h3>Scalable Architecture</h3>
         <p>Built to grow with you. Whether you expand your team, add new markets, or launch new products — the codebase and CMS can handle it without a rebuild.</p>
       </div>
@@ -130,7 +131,7 @@
 </section>
 
 <!-- ══ OUR APPROACH ══ -->
-<section class="section" style="background: var(--dark-2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+<section class="section section-alt" >
   <div class="container">
     <div class="section-header fade-up">
       <div class="section-label teal">Our Approach</div>
@@ -201,35 +202,35 @@
     <div class="strategy-layout fade-up">
       <div class="strategy-items">
         <div class="strategy-item">
-          <div class="strategy-item-icon">🛠️</div>
+          <div class="strategy-item-icon"><i class="ph ph-wrench"></i></div>
           <div>
             <h4>Technology Stack Selection</h4>
             <p>The right tool for your context — from ultra-fast static sites to fully dynamic web applications. I recommend the stack that best fits your team's capabilities and your growth roadmap.</p>
           </div>
         </div>
         <div class="strategy-item">
-          <div class="strategy-item-icon teal">📝</div>
+          <div class="strategy-item-icon teal"><i class="ph ph-note-pencil"></i></div>
           <div>
             <h4>Content Management Strategy</h4>
             <p>Whether your team needs a simple blog editor or a full multi-user CMS with workflow approval, I configure the right solution so your team can publish independently.</p>
           </div>
         </div>
         <div class="strategy-item">
-          <div class="strategy-item-icon">🌍</div>
+          <div class="strategy-item-icon"><i class="ph ph-globe-hemisphere-west"></i></div>
           <div>
             <h4>Multilingual & Localisation</h4>
             <p>Serving Swiss customers in German, French, Italian, and English is not optional — it's expected. I build multilingual architecture that scales to new languages without technical debt.</p>
           </div>
         </div>
         <div class="strategy-item">
-          <div class="strategy-item-icon teal">📊</div>
+          <div class="strategy-item-icon teal"><i class="ph ph-chart-bar"></i></div>
           <div>
             <h4>Analytics & Conversion Tracking</h4>
             <p>Full GA4 setup, event tracking, goal funnels, and a custom dashboard so you always know exactly how your website is performing and where to optimise next.</p>
           </div>
         </div>
         <div class="strategy-item">
-          <div class="strategy-item-icon">♿</div>
+          <div class="strategy-item-icon"><i class="ph ph-wheelchair"></i></div>
           <div>
             <h4>Accessibility & Compliance</h4>
             <p>WCAG 2.1 AA compliance, GDPR-ready cookie management, and Swiss legal requirements — built in from the start, not bolted on as an afterthought.</p>
@@ -237,7 +238,7 @@
         </div>
       </div>
       <div class="strategy-visual">
-        <div class="strategy-visual-icon">🌐</div>
+        <div class="strategy-visual-icon"><i class="ph ph-globe"></i></div>
         <div class="strategy-visual-stats">
           <div class="strategy-stat">
             <span class="label">Avg. Page Load Speed</span>
@@ -280,7 +281,7 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="index.html" class="logo"><div class="logo-icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><polyline points="1,14 6,8 10,11 17,3" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><polyline points="12,3 17,3 17,8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>ImmoGrowth</a>
+        <a href="index.html" class="logo"><img src="assets/images/logo.png" alt="ImmoGrowth" class="logo-img">ImmoGrowth</a>
         <p>AI-powered marketing for Swiss businesses that want to grow smarter, faster.</p>
         <div class="footer-social"><a href="#" class="social-link" aria-label="LinkedIn">in</a><a href="#" class="social-link" aria-label="Twitter / X">𝕏</a><a href="#" class="social-link" aria-label="Instagram">◻</a></div>
       </div>
@@ -312,8 +313,8 @@
   </div>
 </footer>
 
-<script src="i18n.js"></script>
-<script src="script.js"></script>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/script.js"></script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

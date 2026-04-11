@@ -21,8 +21,9 @@
   <meta property="og:image:height" content="630" />
   <meta property="og:locale" content="de_CH" />
   <meta property="og:site_name" content="ImmoGrowth" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%233D7EFF'/><polyline points='4,24 11,14 17,18 28,6' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' fill='none'/><polyline points='22,6 28,6 28,12' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' fill='none'/></svg>">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+  <link rel="icon" href="assets/images/logo.png" type="image/png">
 </head>
 <body>
 
@@ -30,19 +31,19 @@
 <nav class="navbar">
   <div class="container">
     <div class="navbar-inner">
-      <a href="index.html" class="logo"><div class="logo-icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><polyline points="1,14 6,8 10,11 17,3" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><polyline points="12,3 17,3 17,8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>ImmoGrowth</a>
+      <a href="index.html" class="logo"><img src="assets/images/logo.png" alt="ImmoGrowth" class="logo-img">ImmoGrowth</a>
       <ul class="nav-links">
         <li><a href="index.html" data-i18n="nav.home">Home</a></li>
         <li class="nav-dropdown">
           <a href="services.html" data-i18n="nav.services">Services <span class="dropdown-arrow">▾</span></a>
           <div class="dropdown-menu">
-            <a href="service-web-development.html"><span class="menu-icon">🌐</span> Website Development</a>
-            <a href="service-real-estate.html"><span class="menu-icon">🏠</span> Real Estate Application</a>
-            <a href="service-seo.html"><span class="menu-icon">🔍</span> SEO</a>
-            <a href="service-geo.html"><span class="menu-icon">🌍</span> GEO</a>
-            <a href="service-ui-ux.html"><span class="menu-icon">🎨</span> UI / UX Strategy</a>
-            <a href="service-sea.html"><span class="menu-icon">📢</span> SEA</a>
-            <a href="service-social-media.html"><span class="menu-icon">📱</span> Social Media & Automation</a>
+            <a href="service-web-development.html"><span class="menu-icon"><i class="ph ph-globe"></i></span> Website Development</a>
+            <a href="service-real-estate.html"><span class="menu-icon"><i class="ph ph-house-simple"></i></span> Real Estate Application</a>
+            <a href="service-seo.html"><span class="menu-icon"><i class="ph ph-magnifying-glass"></i></span> SEO</a>
+            <a href="service-geo.html"><span class="menu-icon"><i class="ph ph-globe-hemisphere-west"></i></span> GEO</a>
+            <a href="service-ui-ux.html"><span class="menu-icon"><i class="ph ph-palette"></i></span> UI / UX Strategy</a>
+            <a href="service-sea.html"><span class="menu-icon"><i class="ph ph-megaphone-simple"></i></span> SEA</a>
+            <a href="service-social-media.html"><span class="menu-icon"><i class="ph ph-device-mobile-camera"></i></span> Social Media & Automation</a>
           </div>
         </li>
         <li><a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a></li>
@@ -102,7 +103,7 @@
     <div class="about-intro fade-up">
       <div class="about-photo-wrap">
         <div class="about-photo">
-          🧑‍💻
+          <i class="ph ph-user-circle"></i>
           <div class="about-badge">
             <div class="big">5+</div>
             <div class="small" data-i18n="about.badge.small">Years in AI Marketing</div>
@@ -117,22 +118,22 @@
         <p data-i18n="about.story.p3">I'm certified in Google Marketing Platform, Meta Blueprint, HubSpot, and hold a degree in Business & Digital Marketing from the University of Zürich.</p>
         <div class="about-values">
           <div class="about-value">
-            <div class="icon">🇨🇭</div>
+            <div class="icon"><i class="ph ph-flag"></i></div>
             <h4 data-i18n="about.v1.title">Swiss Quality</h4>
             <p data-i18n="about.v1.desc">Precision, reliability and the highest standards in every deliverable.</p>
           </div>
           <div class="about-value">
-            <div class="icon">📊</div>
+            <div class="icon"><i class="ph ph-chart-bar"></i></div>
             <h4 data-i18n="about.v2.title">Data-Driven</h4>
             <p data-i18n="about.v2.desc">Every decision is backed by data, not gut feeling.</p>
           </div>
           <div class="about-value">
-            <div class="icon">🔒</div>
+            <div class="icon"><i class="ph ph-lock-simple"></i></div>
             <h4 data-i18n="about.v3.title">Privacy-First</h4>
             <p data-i18n="about.v3.desc">Full DSGVO / nDSG compliance in every project.</p>
           </div>
           <div class="about-value">
-            <div class="icon">⚡</div>
+            <div class="icon"><i class="ph ph-lightning"></i></div>
             <h4 data-i18n="about.v4.title">Always Learning</h4>
             <p data-i18n="about.v4.desc">Continuously training on the latest AI tools and techniques.</p>
           </div>
@@ -143,7 +144,7 @@
 </section>
 
 <!-- ══ SKILLS ══ -->
-<section class="section" style="background: var(--dark-2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+<section class="section section-alt" >
   <div class="container">
     <div class="section-header fade-up">
       <div class="section-label teal" data-i18n="about.skills.label">Expertise</div>
@@ -151,18 +152,18 @@
       <p data-i18n="about.skills.desc">Proficient in the tools and technologies that power modern AI marketing.</p>
     </div>
     <div class="skills-grid fade-up">
-      <div class="skill-item"><span class="skill-icon">🤖</span> OpenAI / GPT</div>
-      <div class="skill-item"><span class="skill-icon">🎯</span> Google Ads</div>
-      <div class="skill-item"><span class="skill-icon">📘</span> Meta Ads</div>
-      <div class="skill-item"><span class="skill-icon">💼</span> LinkedIn Ads</div>
-      <div class="skill-item"><span class="skill-icon">📈</span> Google Analytics 4</div>
-      <div class="skill-item"><span class="skill-icon">📊</span> Looker Studio</div>
-      <div class="skill-item"><span class="skill-icon">🔗</span> HubSpot CRM</div>
-      <div class="skill-item"><span class="skill-icon">⚙️</span> Make / n8n</div>
-      <div class="skill-item"><span class="skill-icon">🔍</span> Semrush / Ahrefs</div>
-      <div class="skill-item"><span class="skill-icon">✉️</span> Klaviyo / Mailchimp</div>
-      <div class="skill-item"><span class="skill-icon">💬</span> Chatbot Builders</div>
-      <div class="skill-item"><span class="skill-icon">🐍</span> Python (ML basics)</div>
+      <div class="skill-item"><span class="skill-icon"><i class="ph ph-robot"></i></span> OpenAI / GPT</div>
+      <div class="skill-item"><span class="skill-icon"><i class="ph ph-target"></i></span> Google Ads</div>
+      <div class="skill-item"><span class="skill-icon"><i class="ph ph-book"></i></span> Meta Ads</div>
+      <div class="skill-item"><span class="skill-icon"><i class="ph ph-briefcase"></i></span> LinkedIn Ads</div>
+      <div class="skill-item"><span class="skill-icon"><i class="ph ph-chart-line-up"></i></span> Google Analytics 4</div>
+      <div class="skill-item"><span class="skill-icon"><i class="ph ph-chart-bar"></i></span> Looker Studio</div>
+      <div class="skill-item"><span class="skill-icon"><i class="ph ph-link-simple"></i></span> HubSpot CRM</div>
+      <div class="skill-item"><span class="skill-icon"><i class="ph ph-gear"></i></span> Make / n8n</div>
+      <div class="skill-item"><span class="skill-icon"><i class="ph ph-magnifying-glass"></i></span> Semrush / Ahrefs</div>
+      <div class="skill-item"><span class="skill-icon"><i class="ph ph-envelope-simple"></i></span> Klaviyo / Mailchimp</div>
+      <div class="skill-item"><span class="skill-icon"><i class="ph ph-chat-circle-text"></i></span> Chatbot Builders</div>
+      <div class="skill-item"><span class="skill-icon"><i class="ph ph-code"></i></span> Python (ML basics)</div>
     </div>
   </div>
 </section>
@@ -175,12 +176,12 @@
       <h2><span data-i18n="about.certs.h2a">Certifications & </span><span class="gradient-text" data-i18n="about.certs.h2b">Education</span></h2>
     </div>
     <div class="services-grid fade-up">
-      <div class="service-card"><div class="service-icon">🎓</div><h3>BSc Business & Digital Marketing</h3><p>University of Zürich · 2019</p></div>
-      <div class="service-card"><div class="service-icon teal">📋</div><h3>Google Marketing Platform</h3><p>Certified in Analytics, Ads & Campaign Manager · 2024</p></div>
-      <div class="service-card"><div class="service-icon">📘</div><h3>Meta Blueprint Certification</h3><p>Meta Certified Media Planning Professional · 2023</p></div>
-      <div class="service-card"><div class="service-icon teal">🔗</div><h3>HubSpot Marketing Certified</h3><p>Inbound Marketing & CRM Automation · 2024</p></div>
-      <div class="service-card"><div class="service-icon">🤖</div><h3>AI for Marketing (Stanford Online)</h3><p>Applied AI in Digital Marketing · 2023</p></div>
-      <div class="service-card"><div class="service-icon teal">📊</div><h3>Data Analytics Professional</h3><p>Google Data Analytics Certificate · 2022</p></div>
+      <div class="service-card"><div class="service-icon"><i class="ph ph-graduation-cap"></i></div><h3>BSc Business & Digital Marketing</h3><p>University of Zürich · 2019</p></div>
+      <div class="service-card"><div class="service-icon teal"><i class="ph ph-certificate"></i></div><h3>Google Marketing Platform</h3><p>Certified in Analytics, Ads & Campaign Manager · 2024</p></div>
+      <div class="service-card"><div class="service-icon"><i class="ph ph-book"></i></div><h3>Meta Blueprint Certification</h3><p>Meta Certified Media Planning Professional · 2023</p></div>
+      <div class="service-card"><div class="service-icon teal"><i class="ph ph-link-simple"></i></div><h3>HubSpot Marketing Certified</h3><p>Inbound Marketing & CRM Automation · 2024</p></div>
+      <div class="service-card"><div class="service-icon"><i class="ph ph-robot"></i></div><h3>AI for Marketing (Stanford Online)</h3><p>Applied AI in Digital Marketing · 2023</p></div>
+      <div class="service-card"><div class="service-icon teal"><i class="ph ph-chart-bar"></i></div><h3>Data Analytics Professional</h3><p>Google Data Analytics Certificate · 2022</p></div>
     </div>
   </div>
 </section>
@@ -204,7 +205,7 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="index.html" class="logo"><div class="logo-icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><polyline points="1,14 6,8 10,11 17,3" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><polyline points="12,3 17,3 17,8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>ImmoGrowth</a>
+        <a href="index.html" class="logo"><img src="assets/images/logo.png" alt="ImmoGrowth" class="logo-img">ImmoGrowth</a>
         <p data-i18n="footer.tagline">AI-powered marketing for Swiss businesses that want to grow smarter, faster.</p>
         <div class="footer-social"><a href="#" class="social-link" aria-label="LinkedIn">in</a><a href="#" class="social-link" aria-label="Twitter / X">𝕏</a><a href="#" class="social-link" aria-label="Instagram">◻</a></div>
       </div>
@@ -233,8 +234,8 @@
   </div>
 </footer>
 
-<script src="i18n.js"></script>
-<script src="script.js"></script>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/script.js"></script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

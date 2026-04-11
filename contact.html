@@ -21,8 +21,9 @@
   <meta property="og:image:height" content="630" />
   <meta property="og:locale" content="de_CH" />
   <meta property="og:site_name" content="ImmoGrowth" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%233D7EFF'/><polyline points='4,24 11,14 17,18 28,6' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' fill='none'/><polyline points='22,6 28,6 28,12' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' fill='none'/></svg>">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+  <link rel="icon" href="assets/images/logo.png" type="image/png">
 </head>
 <body>
 
@@ -30,19 +31,19 @@
 <nav class="navbar">
   <div class="container">
     <div class="navbar-inner">
-      <a href="index.html" class="logo"><div class="logo-icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><polyline points="1,14 6,8 10,11 17,3" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><polyline points="12,3 17,3 17,8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>ImmoGrowth</a>
+      <a href="index.html" class="logo"><img src="assets/images/logo.png" alt="ImmoGrowth" class="logo-img">ImmoGrowth</a>
       <ul class="nav-links">
         <li><a href="index.html" data-i18n="nav.home">Home</a></li>
         <li class="nav-dropdown">
           <a href="services.html" data-i18n="nav.services">Services <span class="dropdown-arrow">▾</span></a>
           <div class="dropdown-menu">
-            <a href="service-web-development.html"><span class="menu-icon">🌐</span> Website Development</a>
-            <a href="service-real-estate.html"><span class="menu-icon">🏠</span> Real Estate Application</a>
-            <a href="service-seo.html"><span class="menu-icon">🔍</span> SEO</a>
-            <a href="service-geo.html"><span class="menu-icon">🌍</span> GEO</a>
-            <a href="service-ui-ux.html"><span class="menu-icon">🎨</span> UI / UX Strategy</a>
-            <a href="service-sea.html"><span class="menu-icon">📢</span> SEA</a>
-            <a href="service-social-media.html"><span class="menu-icon">📱</span> Social Media & Automation</a>
+            <a href="service-web-development.html"><span class="menu-icon"><i class="ph ph-globe"></i></span> Website Development</a>
+            <a href="service-real-estate.html"><span class="menu-icon"><i class="ph ph-house-simple"></i></span> Real Estate Application</a>
+            <a href="service-seo.html"><span class="menu-icon"><i class="ph ph-magnifying-glass"></i></span> SEO</a>
+            <a href="service-geo.html"><span class="menu-icon"><i class="ph ph-globe-hemisphere-west"></i></span> GEO</a>
+            <a href="service-ui-ux.html"><span class="menu-icon"><i class="ph ph-palette"></i></span> UI / UX Strategy</a>
+            <a href="service-sea.html"><span class="menu-icon"><i class="ph ph-megaphone-simple"></i></span> SEA</a>
+            <a href="service-social-media.html"><span class="menu-icon"><i class="ph ph-device-mobile-camera"></i></span> Social Media & Automation</a>
           </div>
         </li>
         <li><a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a></li>
@@ -108,7 +109,7 @@
 
         <div class="contact-methods">
           <div class="contact-method">
-            <div class="contact-method-icon">📅</div>
+            <div class="contact-method-icon"><i class="ph ph-calendar-blank"></i></div>
             <div>
               <h4 data-i18n="contact.method1.title">Book a Free Call</h4>
               <p data-i18n="contact.method1.desc">30 minutes, no strings attached. Let's explore your goals.</p>
@@ -116,7 +117,7 @@
             </div>
           </div>
           <div class="contact-method">
-            <div class="contact-method-icon teal">✉️</div>
+            <div class="contact-method-icon teal"><i class="ph ph-envelope-simple"></i></div>
             <div>
               <h4 data-i18n="contact.method2.title">Email</h4>
               <p data-i18n="contact.method2.desc">For detailed project enquiries</p>
@@ -124,7 +125,7 @@
             </div>
           </div>
           <div class="contact-method">
-            <div class="contact-method-icon">📞</div>
+            <div class="contact-method-icon"><i class="ph ph-phone"></i></div>
             <div>
               <h4 data-i18n="contact.method3.title">Phone</h4>
               <p data-i18n="contact.method3.desc">Mon–Fri, 09:00–18:00 CET</p>
@@ -132,7 +133,7 @@
             </div>
           </div>
           <div class="contact-method">
-            <div class="contact-method-icon teal">📍</div>
+            <div class="contact-method-icon teal"><i class="ph ph-map-pin"></i></div>
             <div>
               <h4 data-i18n="contact.method4.title">Location</h4>
               <p data-i18n="contact.method4.desc">Based in Muttenz (Basel) — working remotely across the DACH region and beyond.</p>
@@ -140,17 +141,15 @@
           </div>
         </div>
 
-        <div style="margin-top: 40px; padding: 20px 24px; background: var(--accent-glow); border: 1px solid rgba(61,126,255,0.2); border-radius: var(--radius);">
-          <h4 style="font-size: 0.9rem; margin-bottom: 6px;" data-i18n="contact.fast.title">⚡ Fast Response</h4>
-          <p style="font-size: 0.85rem;" data-i18n="contact.fast.desc">I typically respond within 4 hours during business hours. For urgent matters, call directly.</p>
+        <div class="contact-fast-box">
+          <h4 data-i18n="contact.fast.title">Fast Response</h4>
+          <p data-i18n="contact.fast.desc">I typically respond within 4 hours during business hours. For urgent matters, call directly.</p>
         </div>
 
-        <div style="margin-top: 32px;">
-          <p style="font-size: 0.85rem; color: var(--text-3); margin-bottom: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em;" data-i18n="contact.follow">Follow Along</p>
-          <div style="display: flex; gap: 12px;">
-            <a href="#" class="social-link" style="width: auto; padding: 0 16px; gap: 8px; border-radius: 100px; font-size: 0.85rem; font-weight: 600; display: inline-flex; align-items: center; height: 36px; color: var(--text-2); border: 1px solid var(--border); transition: all 0.3s;">LinkedIn</a>
-            <a href="#" class="social-link" style="width: auto; padding: 0 16px; gap: 8px; border-radius: 100px; font-size: 0.85rem; font-weight: 600; display: inline-flex; align-items: center; height: 36px; color: var(--text-2); border: 1px solid var(--border); transition: all 0.3s;">Twitter / X</a>
-          </div>
+        <p class="contact-follow-label" data-i18n="contact.follow">Follow Along</p>
+        <div class="contact-social-row">
+          <a href="#" class="social-link-pill">LinkedIn</a>
+          <a href="#" class="social-link-pill">Twitter / X</a>
         </div>
       </div>
 
@@ -158,13 +157,13 @@
       <div class="contact-form">
         <h3 data-i18n="contact.form.h3">Send a Message</h3>
         <p data-i18n="contact.form.desc">Tell me about your project and I'll get back to you with ideas and next steps.</p>
-        <p style="font-size: 0.82rem; color: var(--text-3); margin-bottom: 24px; padding: 14px 18px; background: var(--dark-3); border-radius: var(--radius); border: 1px solid var(--border);">
-          <span data-i18n="contact.form.dataNotice">Your data is used solely to process your enquiry and is not shared with third parties. </span><a href="legal.html#privacy" style="color: var(--accent);" data-i18n="contact.form.dataNoticeLink">Privacy Policy</a>.
+        <p class="contact-privacy-notice">
+          <span data-i18n="contact.form.dataNotice">Your data is used solely to process your enquiry and is not shared with third parties. </span><a href="legal.html#privacy" data-i18n="contact.form.dataNoticeLink">Privacy Policy</a>.
         </p>
 
         <form id="contactForm">
           <!-- Honeypot spam protection — hidden from users, bots fill this field -->
-          <input type="text" name="_honeypot" tabindex="-1" aria-hidden="true" autocomplete="off" style="display:none !important; position:absolute; left:-9999px;" />
+          <input type="text" name="_honeypot" tabindex="-1" aria-hidden="true" autocomplete="off" class="honeypot" />
           <div class="form-row">
             <div class="form-group">
               <label for="name" data-i18n="contact.form.name">Full Name *</label>
@@ -212,11 +211,11 @@
             <textarea id="message" name="message" data-i18n-placeholder="contact.form.messagePlaceholder" placeholder="What are your main marketing challenges? What does success look like for you in 12 months?" required></textarea>
           </div>
 
-          <div style="display: flex; gap: 12px; align-items: flex-start; margin-bottom: 20px;">
-            <input type="checkbox" id="privacy" name="privacy" required style="margin-top: 3px; accent-color: var(--accent); width: 16px; height: 16px; flex-shrink: 0;" />
-            <label for="privacy" style="font-size: 0.82rem; color: var(--text-3); cursor: pointer;">
+          <div class="contact-checkbox-row">
+            <input type="checkbox" id="privacy" name="privacy" required />
+            <label for="privacy" class="contact-checkbox-label">
               <span data-i18n="contact.form.privacy">I agree that my data will be processed to handle my enquiry. See</span>
-              <a href="legal.html#privacy" style="color: var(--accent);" data-i18n="contact.form.privacyLink">Privacy Policy</a>
+              <a href="legal.html#privacy" data-i18n="contact.form.privacyLink">Privacy Policy</a>
               <span data-i18n="contact.form.privacyEnd">for details. I can withdraw consent at any time.</span>
             </label>
           </div>
@@ -228,7 +227,7 @@
           <div class="check-circle">✓</div>
           <h3 data-i18n="contact.success.h3">Message sent!</h3>
           <p data-i18n="contact.success.p">Thank you for reaching out. I'll get back to you within 24 hours.</p>
-          <p style="font-size: 0.85rem; margin-top: 8px;"><span data-i18n="contact.success.p2">In the meantime, feel free to connect on</span> <a href="#" style="color: var(--accent);">LinkedIn</a>.</p>
+          <p class="mt-8"><span data-i18n="contact.success.p2">In the meantime, feel free to connect on</span> <a href="#" class="accent">LinkedIn</a>.</p>
         </div>
       </div>
 
@@ -237,7 +236,7 @@
 </section>
 
 <!-- ══ FAQ ══ -->
-<section class="section" style="background: var(--dark-2); border-top: 1px solid var(--border);">
+<section class="section section-alt-top" >
   <div class="container">
     <div class="section-header fade-up">
       <div class="section-label teal" data-i18n="contact.faq.label">Quick Answers</div>
@@ -269,7 +268,7 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="index.html" class="logo"><div class="logo-icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><polyline points="1,14 6,8 10,11 17,3" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><polyline points="12,3 17,3 17,8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>ImmoGrowth</a>
+        <a href="index.html" class="logo"><img src="assets/images/logo.png" alt="ImmoGrowth" class="logo-img">ImmoGrowth</a>
         <p data-i18n="footer.tagline">AI-powered marketing for Swiss businesses that want to grow smarter, faster.</p>
         <div class="footer-social"><a href="#" class="social-link" aria-label="LinkedIn">in</a><a href="#" class="social-link" aria-label="Twitter / X">𝕏</a><a href="#" class="social-link" aria-label="Instagram">◻</a></div>
       </div>
@@ -298,8 +297,8 @@
   </div>
 </footer>
 
-<script src="i18n.js"></script>
-<script src="script.js"></script>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/script.js"></script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

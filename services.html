@@ -21,8 +21,9 @@
   <meta property="og:image:height" content="630" />
   <meta property="og:locale" content="de_CH" />
   <meta property="og:site_name" content="ImmoGrowth" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%233D7EFF'/><polyline points='4,24 11,14 17,18 28,6' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' fill='none'/><polyline points='22,6 28,6 28,12' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' fill='none'/></svg>">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+  <link rel="icon" href="assets/images/logo.png" type="image/png">
 </head>
 <body>
 
@@ -30,19 +31,19 @@
 <nav class="navbar">
   <div class="container">
     <div class="navbar-inner">
-      <a href="index.html" class="logo"><div class="logo-icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><polyline points="1,14 6,8 10,11 17,3" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><polyline points="12,3 17,3 17,8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>ImmoGrowth</a>
+      <a href="index.html" class="logo"><img src="assets/images/logo.png" alt="ImmoGrowth" class="logo-img">ImmoGrowth</a>
       <ul class="nav-links">
         <li><a href="index.html" data-i18n="nav.home">Home</a></li>
         <li class="nav-dropdown">
           <a href="services.html" class="active" data-i18n="nav.services">Services <span class="dropdown-arrow">▾</span></a>
           <div class="dropdown-menu">
-            <a href="service-web-development.html"><span class="menu-icon">🌐</span> Website Development</a>
-            <a href="service-real-estate.html"><span class="menu-icon">🏠</span> Real Estate Application</a>
-            <a href="service-seo.html"><span class="menu-icon">🔍</span> SEO</a>
-            <a href="service-geo.html"><span class="menu-icon">🌍</span> GEO</a>
-            <a href="service-ui-ux.html"><span class="menu-icon">🎨</span> UI / UX Strategy</a>
-            <a href="service-sea.html"><span class="menu-icon">📢</span> SEA</a>
-            <a href="service-social-media.html"><span class="menu-icon">📱</span> Social Media & Automation</a>
+            <a href="service-web-development.html"><span class="menu-icon"><i class="ph ph-globe"></i></span> Website Development</a>
+            <a href="service-real-estate.html"><span class="menu-icon"><i class="ph ph-house-simple"></i></span> Real Estate Application</a>
+            <a href="service-seo.html"><span class="menu-icon"><i class="ph ph-magnifying-glass"></i></span> SEO</a>
+            <a href="service-geo.html"><span class="menu-icon"><i class="ph ph-globe-hemisphere-west"></i></span> GEO</a>
+            <a href="service-ui-ux.html"><span class="menu-icon"><i class="ph ph-palette"></i></span> UI / UX Strategy</a>
+            <a href="service-sea.html"><span class="menu-icon"><i class="ph ph-megaphone-simple"></i></span> SEA</a>
+            <a href="service-social-media.html"><span class="menu-icon"><i class="ph ph-device-mobile-camera"></i></span> Social Media & Automation</a>
           </div>
         </li>
         <li><a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a></li>
@@ -102,81 +103,113 @@
     <div class="services-detailed">
 
       <div class="service-feature fade-up">
-        <div class="service-feature-visual"><div class="visual-icon-big">🎯</div></div>
+        <div class="service-feature-visual"><div class="visual-icon-big"><i class="ph ph-globe"></i></div></div>
         <div class="service-feature-text">
-          <div class="section-label" data-i18n="services.s1.label">Performance Marketing</div>
-          <h2 data-i18n="services.s1.title">AI Ad Optimization</h2>
-          <p data-i18n="services.s1.desc">Stop wasting budget on guesswork. My AI-driven approach analyzes thousands of signals in real time — audience segments, creatives, bid strategies — and continuously refines your campaigns for peak efficiency.</p>
+          <div class="section-label" data-i18n="services.s1.label">Web Design</div>
+          <h2 data-i18n="services.s1.title">Website Development</h2>
+          <p data-i18n="services.s1.desc">Professional, responsive websites built for performance and conversion — from landing pages to full corporate sites with CMS integration and SEO-ready structure.</p>
           <div class="feature-list">
-            <div class="feature-item" data-i18n="services.s1.f1">Google Ads, Meta & LinkedIn campaign management</div>
-            <div class="feature-item" data-i18n="services.s1.f2">Machine-learning bid optimization</div>
-            <div class="feature-item" data-i18n="services.s1.f3">Audience modeling & lookalike targeting</div>
-            <div class="feature-item" data-i18n="services.s1.f4">Creative A/B testing at scale</div>
-            <div class="feature-item" data-i18n="services.s1.f5">Monthly performance reports with Swiss-market benchmarks</div>
+            <div class="feature-item" data-i18n="services.s1.f1">Custom design & development</div>
+            <div class="feature-item" data-i18n="services.s1.f2">Mobile-first & fully responsive</div>
+            <div class="feature-item" data-i18n="services.s1.f3">CMS integration (WordPress, Webflow)</div>
+            <div class="feature-item" data-i18n="services.s1.f4">SEO-optimized HTML structure</div>
+            <div class="feature-item" data-i18n="services.s1.f5">Performance & Core Web Vitals optimization</div>
           </div>
         </div>
       </div>
 
       <div class="service-feature reverse fade-up">
-        <div class="service-feature-visual" style="background: linear-gradient(135deg, rgba(0,212,170,0.08), rgba(61,126,255,0.05));"><div class="visual-icon-big">✍️</div></div>
+        <div class="service-feature-visual service-visual-teal" ><div class="visual-icon-big"><i class="ph ph-house-simple"></i></div></div>
         <div class="service-feature-text">
-          <div class="section-label teal" data-i18n="services.s2.label">Content & SEO</div>
-          <h2 data-i18n="services.s2.title">AI Content Strategy</h2>
-          <p data-i18n="services.s2.desc">Scalable, on-brand content — from long-form articles to social posts and email sequences — crafted with AI and refined for your specific audience, whether German, French, Italian or English speaking.</p>
+          <div class="section-label teal" data-i18n="services.s2.label">PropTech</div>
+          <h2 data-i18n="services.s2.title">Real Estate Application</h2>
+          <p data-i18n="services.s2.desc">Custom digital applications for the real estate sector — property listings, virtual tours, lead capture portals and client management tools tailored to the Swiss market.</p>
           <div class="feature-list">
-            <div class="feature-item" data-i18n="services.s2.f1">Multilingual content production (DE / FR / IT / EN)</div>
-            <div class="feature-item" data-i18n="services.s2.f2">AI SEO: keyword clustering, topic authority maps</div>
-            <div class="feature-item" data-i18n="services.s2.f3">Blog, newsletter & social content pipelines</div>
-            <div class="feature-item" data-i18n="services.s2.f4">Brand voice training & style guides</div>
-            <div class="feature-item" data-i18n="services.s2.f5">Content calendar planning & scheduling</div>
+            <div class="feature-item" data-i18n="services.s2.f1">Property listing & search platforms</div>
+            <div class="feature-item" data-i18n="services.s2.f2">Virtual tour integration</div>
+            <div class="feature-item" data-i18n="services.s2.f3">Lead capture & CRM connection</div>
+            <div class="feature-item" data-i18n="services.s2.f4">Swiss real estate compliance</div>
+            <div class="feature-item" data-i18n="services.s2.f5">Mobile app & web application development</div>
           </div>
         </div>
       </div>
 
       <div class="service-feature fade-up">
-        <div class="service-feature-visual"><div class="visual-icon-big">⚙️</div></div>
+        <div class="service-feature-visual"><div class="visual-icon-big"><i class="ph ph-magnifying-glass"></i></div></div>
         <div class="service-feature-text">
-          <div class="section-label" data-i18n="services.s3.label">Automation</div>
-          <h2 data-i18n="services.s3.title">Marketing Automation</h2>
-          <p data-i18n="services.s3.desc">Custom AI workflows that run 24/7 — automatically nurturing leads, personalizing customer journeys, and triggering the right message at the right moment without manual intervention.</p>
+          <div class="section-label" data-i18n="services.s3.label">Organic Growth</div>
+          <h2 data-i18n="services.s3.title">Search Engine Optimization</h2>
+          <p data-i18n="services.s3.desc">Data-driven SEO strategies that improve your visibility in Swiss and DACH search results — combining technical SEO, content optimization and authoritative link building.</p>
           <div class="feature-list">
-            <div class="feature-item" data-i18n="services.s3.f1">CRM integration & lead scoring models</div>
-            <div class="feature-item" data-i18n="services.s3.f2">Automated email & SMS sequences</div>
-            <div class="feature-item" data-i18n="services.s3.f3">Behavioral trigger campaigns</div>
-            <div class="feature-item" data-i18n="services.s3.f4">Multi-platform workflow orchestration</div>
-            <div class="feature-item" data-i18n="services.s3.f5">Re-engagement & churn prevention flows</div>
+            <div class="feature-item" data-i18n="services.s3.f1">Technical SEO audit & implementation</div>
+            <div class="feature-item" data-i18n="services.s3.f2">Keyword research & content strategy</div>
+            <div class="feature-item" data-i18n="services.s3.f3">On-page optimization</div>
+            <div class="feature-item" data-i18n="services.s3.f4">Local SEO for Swiss markets (DE / FR / IT)</div>
+            <div class="feature-item" data-i18n="services.s3.f5">Backlink building & authority growth</div>
           </div>
         </div>
       </div>
 
       <div class="service-feature reverse fade-up">
-        <div class="service-feature-visual" style="background: linear-gradient(135deg, rgba(0,212,170,0.08), rgba(61,126,255,0.05));"><div class="visual-icon-big">📊</div></div>
+        <div class="service-feature-visual service-visual-teal" ><div class="visual-icon-big"><i class="ph ph-globe-hemisphere-west"></i></div></div>
         <div class="service-feature-text">
-          <div class="section-label teal" data-i18n="services.s4.label">Data & Analytics</div>
-          <h2 data-i18n="services.s4.title">AI-Powered Analytics</h2>
-          <p data-i18n="services.s4.desc">Transform your marketing data into a strategic asset. I build custom dashboards and predictive models that forecast performance and surface the insights that actually move the needle.</p>
+          <div class="section-label teal" data-i18n="services.s4.label">AI Visibility</div>
+          <h2 data-i18n="services.s4.title">Generative Engine Optimization</h2>
+          <p data-i18n="services.s4.desc">Future-proof your digital presence for AI-driven search — ensuring your brand is cited and recommended by ChatGPT, Google AI Overviews, Perplexity and other generative AI platforms.</p>
           <div class="feature-list">
-            <div class="feature-item" data-i18n="services.s4.f1">Custom KPI dashboards (Looker Studio, Power BI)</div>
-            <div class="feature-item" data-i18n="services.s4.f2">Attribution modeling & channel analysis</div>
-            <div class="feature-item" data-i18n="services.s4.f3">Predictive revenue & churn modeling</div>
-            <div class="feature-item" data-i18n="services.s4.f4">Customer lifetime value (CLV) analysis</div>
-            <div class="feature-item" data-i18n="services.s4.f5">Competitor intelligence reports</div>
+            <div class="feature-item" data-i18n="services.s4.f1">AI answer engine visibility analysis</div>
+            <div class="feature-item" data-i18n="services.s4.f2">Brand citation & entity optimization</div>
+            <div class="feature-item" data-i18n="services.s4.f3">Structured data & schema markup</div>
+            <div class="feature-item" data-i18n="services.s4.f4">Content optimization for LLM training signals</div>
+            <div class="feature-item" data-i18n="services.s4.f5">Monitoring across ChatGPT, Perplexity & Google SGE</div>
           </div>
         </div>
       </div>
 
       <div class="service-feature fade-up">
-        <div class="service-feature-visual"><div class="visual-icon-big">🤖</div></div>
+        <div class="service-feature-visual"><div class="visual-icon-big"><i class="ph ph-palette"></i></div></div>
         <div class="service-feature-text">
-          <div class="section-label" data-i18n="services.s5.label">Conversational AI</div>
-          <h2 data-i18n="services.s5.title">AI Chatbots & CX</h2>
-          <p data-i18n="services.s5.desc">Deploy intelligent conversational agents that handle customer inquiries, qualify leads and personalize the buyer experience — available 24/7 in any language your customers speak.</p>
+          <div class="section-label" data-i18n="services.s5.label">Design Strategy</div>
+          <h2 data-i18n="services.s5.title">UI / UX Strategy</h2>
+          <p data-i18n="services.s5.desc">User-centered design strategies that convert visitors into customers — from UX research and wireframing to interface design and usability testing tailored to your audience.</p>
           <div class="feature-list">
-            <div class="feature-item" data-i18n="services.s5.f1">Custom GPT-powered chatbots for websites & apps</div>
-            <div class="feature-item" data-i18n="services.s5.f2">Lead qualification & appointment booking bots</div>
-            <div class="feature-item" data-i18n="services.s5.f3">Multilingual support automation</div>
-            <div class="feature-item" data-i18n="services.s5.f4">Handoff to human agents when needed</div>
-            <div class="feature-item" data-i18n="services.s5.f5">Integration with CRM & helpdesk platforms</div>
+            <div class="feature-item" data-i18n="services.s5.f1">UX research & user journey mapping</div>
+            <div class="feature-item" data-i18n="services.s5.f2">Wireframing & interactive prototyping</div>
+            <div class="feature-item" data-i18n="services.s5.f3">Visual UI design & design systems</div>
+            <div class="feature-item" data-i18n="services.s5.f4">Usability testing & conversion optimization</div>
+            <div class="feature-item" data-i18n="services.s5.f5">Development handoff with Figma</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="service-feature reverse fade-up">
+        <div class="service-feature-visual service-visual-teal" ><div class="visual-icon-big"><i class="ph ph-megaphone-simple"></i></div></div>
+        <div class="service-feature-text">
+          <div class="section-label teal" data-i18n="services.s6.label">Paid Advertising</div>
+          <h2 data-i18n="services.s6.title">Search Engine Advertising</h2>
+          <p data-i18n="services.s6.desc">High-performance paid search campaigns on Google and Bing — precision targeting, compelling ad copy and AI-driven bid optimization to maximize your return on ad spend.</p>
+          <div class="feature-list">
+            <div class="feature-item" data-i18n="services.s6.f1">Google Ads & Microsoft Ads campaign management</div>
+            <div class="feature-item" data-i18n="services.s6.f2">AI-powered bid optimization & Smart Bidding</div>
+            <div class="feature-item" data-i18n="services.s6.f3">Search, Shopping & Performance Max campaigns</div>
+            <div class="feature-item" data-i18n="services.s6.f4">Conversion tracking & attribution setup</div>
+            <div class="feature-item" data-i18n="services.s6.f5">Regular A/B testing of ad copy & landing pages</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="service-feature fade-up">
+        <div class="service-feature-visual"><div class="visual-icon-big"><i class="ph ph-device-mobile-camera"></i></div></div>
+        <div class="service-feature-text">
+          <div class="section-label" data-i18n="services.s7.label">Social & Automation</div>
+          <h2 data-i18n="services.s7.title">Social Media & Automation</h2>
+          <p data-i18n="services.s7.desc">End-to-end social media management combined with intelligent automation — content creation, community management and AI-powered workflows that grow your audience around the clock.</p>
+          <div class="feature-list">
+            <div class="feature-item" data-i18n="services.s7.f1">Social media strategy & content planning</div>
+            <div class="feature-item" data-i18n="services.s7.f2">AI-assisted content creation for all platforms</div>
+            <div class="feature-item" data-i18n="services.s7.f3">Automated posting & scheduling workflows</div>
+            <div class="feature-item" data-i18n="services.s7.f4">Community management & engagement</div>
+            <div class="feature-item" data-i18n="services.s7.f5">Performance analytics & monthly reporting</div>
           </div>
         </div>
       </div>
@@ -186,7 +219,7 @@
 </section>
 
 <!-- ══ PRICING ══ -->
-<section class="section" style="background: var(--dark-2); border-top: 1px solid var(--border);">
+<section class="section section-alt-top" >
   <div class="container">
     <div class="section-header fade-up">
       <div class="section-label" data-i18n="pricing.label">Investment</div>
@@ -226,7 +259,7 @@
       </div>
       <div class="pricing-card fade-up delay-2">
         <div class="pricing-tag" data-i18n="pricing.enterprise">Enterprise</div>
-        <div class="pricing-price" style="font-size: 2rem; padding-top: 8px;" data-i18n="pricing.custom">Custom</div>
+        <div class="pricing-price pricing-price--custom" data-i18n="pricing.custom">Custom</div>
         <div class="pricing-period" data-i18n="pricing.enterprise.period">/ tailored engagement</div>
         <p class="pricing-desc" data-i18n="pricing.enterprise.desc">Full-service AI marketing partnerships for larger organizations with complex needs.</p>
         <div class="pricing-features">
@@ -240,9 +273,9 @@
         <a href="contact.html" class="btn btn-secondary" data-i18n="pricing.talkToMe">Talk to Me</a>
       </div>
     </div>
-    <p class="text-center mt-24" style="font-size: 0.85rem; color: var(--text-3);">
+    <p class="text-center mt-24 pricing-note">
       <span data-i18n="pricing.oneoff">Need a one-off project? I also offer fixed-price project engagements.</span>
-      <a href="contact.html" style="color: var(--accent);" data-i18n="pricing.getInTouch">Get in touch</a>
+      <a href="contact.html" class="accent" data-i18n="pricing.getInTouch">Get in touch</a>
       <span data-i18n="pricing.forQuote">for a custom quote.</span>
     </p>
   </div>
@@ -298,7 +331,7 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="index.html" class="logo"><div class="logo-icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><polyline points="1,14 6,8 10,11 17,3" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><polyline points="12,3 17,3 17,8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>ImmoGrowth</a>
+        <a href="index.html" class="logo"><img src="assets/images/logo.png" alt="ImmoGrowth" class="logo-img">ImmoGrowth</a>
         <p data-i18n="footer.tagline">AI-powered marketing for Swiss businesses that want to grow smarter, faster.</p>
         <div class="footer-social"><a href="#" class="social-link" aria-label="LinkedIn">in</a><a href="#" class="social-link" aria-label="Twitter / X">𝕏</a><a href="#" class="social-link" aria-label="Instagram">◻</a></div>
       </div>
@@ -330,8 +363,8 @@
   </div>
 </footer>
 
-<script src="i18n.js"></script>
-<script src="script.js"></script>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/script.js"></script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

@@ -21,8 +21,9 @@
   <meta property="og:image:height" content="630" />
   <meta property="og:locale" content="de_CH" />
   <meta property="og:site_name" content="ImmoGrowth" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%233D7EFF'/><polyline points='4,24 11,14 17,18 28,6' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' fill='none'/><polyline points='22,6 28,6 28,12' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' fill='none'/></svg>">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+  <link rel="icon" href="assets/images/logo.png" type="image/png">
 </head>
 <body>
 
@@ -30,19 +31,19 @@
 <nav class="navbar">
   <div class="container">
     <div class="navbar-inner">
-      <a href="index.html" class="logo"><div class="logo-icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><polyline points="1,14 6,8 10,11 17,3" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><polyline points="12,3 17,3 17,8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>ImmoGrowth</a>
+      <a href="index.html" class="logo"><img src="assets/images/logo.png" alt="ImmoGrowth" class="logo-img">ImmoGrowth</a>
       <ul class="nav-links">
         <li><a href="index.html" data-i18n="nav.home">Home</a></li>
         <li class="nav-dropdown">
           <a href="services.html" class="active" data-i18n="nav.services">Services <span class="dropdown-arrow">▾</span></a>
           <div class="dropdown-menu">
-            <a href="service-web-development.html"><span class="menu-icon">🌐</span> Website Development</a>
-            <a href="service-real-estate.html"><span class="menu-icon">🏠</span> Real Estate Application</a>
-            <a href="service-seo.html"><span class="menu-icon">🔍</span> SEO</a>
-            <a href="service-geo.html"><span class="menu-icon">🌍</span> GEO</a>
-            <a href="service-ui-ux.html" class="active"><span class="menu-icon">🎨</span> UI / UX Strategy</a>
-            <a href="service-sea.html"><span class="menu-icon">📢</span> SEA</a>
-            <a href="service-social-media.html"><span class="menu-icon">📱</span> Social Media & Automation</a>
+            <a href="service-web-development.html"><span class="menu-icon"><i class="ph ph-globe"></i></span> Website Development</a>
+            <a href="service-real-estate.html"><span class="menu-icon"><i class="ph ph-house-simple"></i></span> Real Estate Application</a>
+            <a href="service-seo.html"><span class="menu-icon"><i class="ph ph-magnifying-glass"></i></span> SEO</a>
+            <a href="service-geo.html"><span class="menu-icon"><i class="ph ph-globe-hemisphere-west"></i></span> GEO</a>
+            <a href="service-ui-ux.html" class="active"><span class="menu-icon"><i class="ph ph-palette"></i></span> UI / UX Strategy</a>
+            <a href="service-sea.html"><span class="menu-icon"><i class="ph ph-megaphone-simple"></i></span> SEA</a>
+            <a href="service-social-media.html"><span class="menu-icon"><i class="ph ph-device-mobile-camera"></i></span> Social Media & Automation</a>
           </div>
         </li>
         <li><a href="portfolio.html" data-i18n="nav.portfolio">Portfolio</a></li>
@@ -106,22 +107,22 @@
     </div>
     <div class="objectives-grid">
       <div class="objective-card fade-up">
-        <div class="objective-icon">📈</div>
+        <div class="objective-icon"><i class="ph ph-chart-line-up"></i></div>
         <h3>Conversion Rate Uplift</h3>
         <p>Systematically remove every barrier between your visitor and your goal — whether that's a purchase, enquiry, sign-up, or call. A 1% CRO improvement compounds dramatically at scale.</p>
       </div>
       <div class="objective-card fade-up delay-1">
-        <div class="objective-icon">💙</div>
+        <div class="objective-icon"><i class="ph ph-heart"></i></div>
         <h3>User Retention & Loyalty</h3>
         <p>Experiences people want to return to. Intuitive flows, consistent design language, and micro-interactions that delight — making your product the one users recommend to others.</p>
       </div>
       <div class="objective-card fade-up delay-2">
-        <div class="objective-icon">🎨</div>
+        <div class="objective-icon"><i class="ph ph-palette"></i></div>
         <h3>Brand Coherence</h3>
         <p>A unified visual language across every touchpoint — website, app, email, and social — that builds recognition and trust with every interaction your customers have with your brand.</p>
       </div>
       <div class="objective-card fade-up delay-3">
-        <div class="objective-icon">♿</div>
+        <div class="objective-icon"><i class="ph ph-wheelchair"></i></div>
         <h3>Inclusive Accessibility</h3>
         <p>WCAG 2.1 AA compliant design that works for every user — regardless of ability, device, or context. Accessibility is not a constraint; it's a marker of quality and commercial reach.</p>
       </div>
@@ -130,7 +131,7 @@
 </section>
 
 <!-- ══ OUR APPROACH ══ -->
-<section class="section" style="background: var(--dark-2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+<section class="section section-alt" >
   <div class="container">
     <div class="section-header fade-up">
       <div class="section-label teal">Our Approach</div>
@@ -201,35 +202,35 @@
     <div class="strategy-layout fade-up">
       <div class="strategy-items">
         <div class="strategy-item">
-          <div class="strategy-item-icon">🎯</div>
+          <div class="strategy-item-icon"><i class="ph ph-target"></i></div>
           <div>
             <h4>Conversion Rate Optimisation</h4>
             <p>Systematic testing of headlines, CTAs, form flows, and page layouts to continuously improve the percentage of visitors who take the actions that matter — backed by statistical significance, not guesswork.</p>
           </div>
         </div>
         <div class="strategy-item">
-          <div class="strategy-item-icon teal">📐</div>
+          <div class="strategy-item-icon teal"><i class="ph ph-ruler"></i></div>
           <div>
             <h4>Design System Development</h4>
             <p>A reusable component library and design system that ensures visual consistency across your entire digital estate — and drastically reduces the cost of future design and development work.</p>
           </div>
         </div>
         <div class="strategy-item">
-          <div class="strategy-item-icon">📱</div>
+          <div class="strategy-item-icon"><i class="ph ph-device-mobile-camera"></i></div>
           <div>
             <h4>Mobile-First Experience</h4>
             <p>Designed first for the smallest screen, then progressively enhanced for desktop — ensuring the majority of your Swiss users who browse on mobile have an exceptional experience.</p>
           </div>
         </div>
         <div class="strategy-item">
-          <div class="strategy-item-icon teal">🌍</div>
+          <div class="strategy-item-icon teal"><i class="ph ph-globe-hemisphere-west"></i></div>
           <div>
             <h4>Cross-Cultural Design</h4>
             <p>Design that works across Swiss linguistic and cultural contexts — from layout direction to colour associations and typographic preferences — for DE, FR, IT, and EN audiences.</p>
           </div>
         </div>
         <div class="strategy-item">
-          <div class="strategy-item-icon">📊</div>
+          <div class="strategy-item-icon"><i class="ph ph-chart-bar"></i></div>
           <div>
             <h4>Behavioural Analytics Integration</h4>
             <p>Heatmaps, session recordings, funnel analytics, and user surveys integrated from day one — so every future design decision is grounded in real user behaviour data.</p>
@@ -237,7 +238,7 @@
         </div>
       </div>
       <div class="strategy-visual">
-        <div class="strategy-visual-icon">🎨</div>
+        <div class="strategy-visual-icon"><i class="ph ph-palette"></i></div>
         <div class="strategy-visual-stats">
           <div class="strategy-stat">
             <span class="label">Avg. Conversion Rate Increase</span>
@@ -280,7 +281,7 @@
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="index.html" class="logo"><div class="logo-icon"><svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><polyline points="1,14 6,8 10,11 17,3" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><polyline points="12,3 17,3 17,8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>ImmoGrowth</a>
+        <a href="index.html" class="logo"><img src="assets/images/logo.png" alt="ImmoGrowth" class="logo-img">ImmoGrowth</a>
         <p>AI-powered marketing for Swiss businesses that want to grow smarter, faster.</p>
         <div class="footer-social"><a href="#" class="social-link" aria-label="LinkedIn">in</a><a href="#" class="social-link" aria-label="Twitter / X">𝕏</a><a href="#" class="social-link" aria-label="Instagram">◻</a></div>
       </div>
@@ -312,8 +313,8 @@
   </div>
 </footer>
 
-<script src="i18n.js"></script>
-<script src="script.js"></script>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/script.js"></script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",

@@ -88,8 +88,8 @@ if (heroVideo) {
   if (heroVideo.readyState >= 3) {
     onReady();
   } else {
-    heroVideo.addEventListener('canplaythrough', onReady, { once: true });
-    setTimeout(onReady, 2000); // fallback if event doesn't fire
+    heroVideo.addEventListener('canplay', onReady, { once: true });
+    setTimeout(onReady, 1500); // fallback if event doesn't fire
   }
 }
 
