@@ -365,3 +365,141 @@ if (currentPage === 'index.html' || currentPage === '') {
     if (e.key === 'ArrowRight') setPos(rect.left + rect.width * ((currentPct + step) / 100));
   });
 })();
+
+
+// ── Services: Scroll-Pinned (desktop) + Infinite Carousel (mobile) ──
+(function () {
+  const MOBILE_BP = 1024;
+  const wrapper = document.getElementById('servicesPinWrapper');
+  const section = document.querySelector('.services-scroll-section');
+  const track   = document.querySelector('.services-cards-track');
+  const scroll  = document.querySelector('.services-cards-scroll');
+  if (!wrapper || !section || !scroll) return;
+
+  const originalCards = Array.from(scroll.children);
+  const N = originalCards.length; // 7
+
+  /* ════════════════════════════════
+     DESKTOP: scroll-pinned pan
+  ════════════════════════════════ */
+  let totalTravel = 0;
+
+  function setupDesktop() {
+    scroll.style.transition = 'none';
+    totalTravel = scroll.scrollWidth - window.innerWidth;
+    if (totalTravel <= 0) { wrapper.style.height = ''; return; }
+    wrapper.style.height = (window.innerHeight + totalTravel) + 'px';
+  }
+
+  function onScrollDesktop() {
+    if (totalTravel <= 0) return;
+    const wrapperTop = wrapper.getBoundingClientRect().top;
+    const progress = Math.max(0, Math.min(-wrapperTop, totalTravel));
+    scroll.style.transform = 'translateX(-' + progress + 'px)';
+  }
+
+  /* ════════════════════════════════
+     MOBILE: scroll-snap infinite carousel
+     Track uses overflow-x:scroll + scroll-snap.
+     Clones at start/end enable infinite loop.
+     DOM order: [lastClone, card1..card7, firstClone]  (indices 0..N+1)
+  ════════════════════════════════ */
+  let mobileReady = false;
+  let jumpTimer = null;
+
+  function buildClones() {
+    scroll.querySelectorAll('.carousel-clone').forEach(c => c.remove());
+    const first = originalCards[0].cloneNode(true);
+    const last  = originalCards[N - 1].cloneNode(true);
+    first.classList.add('carousel-clone');
+    last.classList.add('carousel-clone');
+    scroll.appendChild(first);                        // index N+1 (clone of card 1)
+    scroll.insertBefore(last, scroll.firstChild);     // index 0   (clone of card 7)
+  }
+
+  // Scroll track so that the card at DOM index `idx` is centred — instantly (no animation)
+  function snapTo(idx) {
+    const card = scroll.children[idx];
+    if (!card) return;
+    // offsetLeft is relative to scroll div; scroll div's left = track's left edge
+    // scrollLeft needed so card centre aligns with track centre
+    const target = card.offsetLeft + card.offsetWidth / 2 - track.offsetWidth / 2;
+    track.style.scrollBehavior = 'auto';
+    track.scrollLeft = target;
+    // restore smooth behaviour for user swipes
+    requestAnimationFrame(() => { track.style.scrollBehavior = ''; });
+  }
+
+  // Which card index is currently snapped to (closest to track centre)
+  function currentSnappedIndex() {
+    const centre = track.scrollLeft + track.offsetWidth / 2;
+    let best = 0, bestDist = Infinity;
+    Array.from(scroll.children).forEach((card, i) => {
+      const d = Math.abs(card.offsetLeft + card.offsetWidth / 2 - centre);
+      if (d < bestDist) { bestDist = d; best = i; }
+    });
+    return best;
+  }
+
+  function setupMobile() {
+    wrapper.style.height = '';
+    if (!mobileReady) {
+      buildClones();
+      mobileReady = true;
+    }
+    // Two nested RAFs to let clones fully lay out before measuring offsetLeft
+    requestAnimationFrame(() => requestAnimationFrame(() => snapTo(1)));
+  }
+
+  function teardownMobile() {
+    clearTimeout(jumpTimer);
+    scroll.querySelectorAll('.carousel-clone').forEach(c => c.remove());
+    mobileReady = false;
+    scroll.style.transform = '';
+  }
+
+  // After the user's scroll settles, check if we're on a clone and silently jump
+  function onScrollMobile() {
+    clearTimeout(jumpTimer);
+    jumpTimer = setTimeout(() => {
+      const idx = currentSnappedIndex();
+      const total = scroll.children.length; // N + 2
+      if (idx === 0) {
+        // On the last-card clone → jump to real last card
+        snapTo(N);
+      } else if (idx === total - 1) {
+        // On the first-card clone → jump to real first card
+        snapTo(1);
+      }
+    }, 80); // fires shortly after scroll stops
+  }
+
+  /* ════════════════════════════════
+     Init & resize
+  ════════════════════════════════ */
+  let activeMode = null;
+
+  function init() {
+    const mode = window.innerWidth < MOBILE_BP ? 'mobile' : 'desktop';
+    if (mode === activeMode) {
+      if (mode === 'desktop') { setupDesktop(); onScrollDesktop(); }
+      else { requestAnimationFrame(() => requestAnimationFrame(() => snapTo(1))); }
+      return;
+    }
+    activeMode = mode;
+    if (mode === 'mobile') {
+      window.removeEventListener('scroll', onScrollDesktop);
+      track.addEventListener('scroll', onScrollMobile, { passive: true });
+      setupMobile();
+    } else {
+      track.removeEventListener('scroll', onScrollMobile);
+      teardownMobile();
+      setupDesktop();
+      onScrollDesktop();
+      window.addEventListener('scroll', onScrollDesktop, { passive: true });
+    }
+  }
+
+  init();
+  window.addEventListener('resize', () => { activeMode = null; init(); });
+})();

@@ -1,0 +1,159 @@
+/* ==============================================
+   IMMOGROWTH — Fonts & Base Typography
+   Import this file after tokens.css.
+   Usage: @import './fonts.css';
+   ============================================== */
+
+/* Google Fonts — Plus Jakarta Sans + Inter */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Inter:wght@400;500&display=swap');
+
+/* ==============================================
+   RESET & BASE
+   ============================================== */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family:      var(--font-body);
+  font-size:        var(--text-body);
+  font-weight:      var(--weight-regular);
+  line-height:      var(--leading-relaxed);
+  color:            var(--color-dark);
+  background-color: var(--color-off-white);
+}
+
+/* ==============================================
+   HEADINGS
+   ============================================== */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family:  var(--font-display);
+  font-weight:  var(--weight-bold);
+  color:        var(--color-black);
+  line-height:  var(--leading-tight);
+  margin:       0 0 0.5em;
+}
+
+h1 {
+  font-size:      var(--text-h1);
+  letter-spacing: var(--tracking-h1);
+}
+
+h2 {
+  font-size:      var(--text-h2);
+  font-weight:    var(--weight-semibold);
+  letter-spacing: var(--tracking-h2);
+}
+
+h3 {
+  font-size:    var(--text-h3);
+  font-weight:  var(--weight-semibold);
+}
+
+h4, h5, h6 {
+  font-size:    var(--text-body-lg);
+  font-weight:  var(--weight-semibold);
+}
+
+/* ==============================================
+   BODY COPY
+   ============================================== */
+
+p {
+  margin:      0 0 1em;
+  line-height: var(--leading-relaxed);
+}
+
+a {
+  color:           var(--color-orange);
+  text-decoration: none;
+  transition:      color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--color-orange-dark);
+}
+
+/* ==============================================
+   UTILITY CLASSES
+   ============================================== */
+
+/* Display — for hero headlines */
+.text-display {
+  font-family:    var(--font-display);
+  font-size:      var(--text-display);
+  font-weight:    var(--weight-bold);
+  letter-spacing: var(--tracking-display);
+  line-height:    1;
+  color:          var(--color-black);
+}
+
+/* Eyebrow / overline — above section headings */
+.text-overline {
+  font-family:    var(--font-body);
+  font-size:      var(--text-label);
+  font-weight:    var(--weight-medium);
+  letter-spacing: var(--tracking-overline);
+  text-transform: uppercase;
+  color:          var(--color-orange);
+}
+
+/* UI label — for tags, nav items */
+.text-label {
+  font-family:    var(--font-body);
+  font-size:      var(--text-label);
+  font-weight:    var(--weight-medium);
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+}
+
+/* Caption / meta text */
+.text-caption {
+  font-size:   var(--text-caption);
+  line-height: var(--leading-normal);
+  color:       var(--color-mid);
+}
+
+/* Large body copy */
+.text-body-lg {
+  font-size:   var(--text-body-lg);
+  line-height: var(--leading-relaxed);
+}
+
+/* Muted text */
+.text-muted {
+  color: var(--color-mid);
+}
+
+/* ==============================================
+   ON DARK BACKGROUNDS
+   Use these on navy / near-black sections
+   ============================================== */
+
+.on-dark h1,
+.on-dark h2,
+.on-dark h3 {
+  color: #ffffff;
+}
+
+.on-dark p,
+.on-dark li {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.on-dark .text-overline {
+  color: var(--color-orange);  /* stays orange on dark */
+}
+
+.on-dark a {
+  color: var(--color-orange);
+}
