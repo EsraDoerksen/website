@@ -1,0 +1,21 @@
+{
+  "name": "immo-growth",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lhci": "lhci autorun",
+    "serve": "serve -l 5000"
+  },
+  "devDependencies": {
+    "@lhci/cli": "^0.14.0",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@vitest/coverage-v8": "^2.1.4",
+    "jsdom": "^25.0.1",
+    "serve": "^14.2.3",
+    "vitest": "^2.1.4"
+  }
+}

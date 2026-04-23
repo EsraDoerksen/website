@@ -144,6 +144,7 @@ The following words are BANNED from all client-facing copy. They are AI defaults
 - Leidenschaft (show it — never claim it)
 - wir leben [X] / wir atmen [X]
 - Ihre Zufriedenheit ist unser Ziel
+- Scheisse
 
 **Banned English borrowings in German copy:**
 - "seamless" / "Game-changer" / "Next-Level" / "State-of-the-Art" / "Boost"

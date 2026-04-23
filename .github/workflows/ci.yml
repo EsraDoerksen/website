@@ -1,0 +1,70 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+# Cancel an in-progress run for the same branch when a new commit is pushed
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  # ── Job 1: Unit Tests ────────────────────────────────────────────────────────
+  unit-tests:
+    name: Unit Tests (Vitest)
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run unit tests
+        run: npm test -- --reporter=verbose
+
+  # ── Job 2: Lighthouse Audit ──────────────────────────────────────────────────
+  # Only runs after all unit tests pass.
+  # Results are uploaded to Lighthouse CI's temporary public storage and
+  # optionally posted as a GitHub status check (requires LHCI_GITHUB_APP_TOKEN).
+  #
+  # USER VARS TO ADD AS GITHUB SECRETS:
+  #   LHCI_GITHUB_APP_TOKEN — install the Lighthouse CI GitHub App from the
+  #     GitHub Marketplace and copy the token it provides.
+  #     → https://github.com/apps/lighthouse-ci
+  #     Without this secret the audit still runs and fails/passes the pipeline;
+  #     the token only enables the per-commit status badge on pull requests.
+  lighthouse:
+    name: Lighthouse Audit
+    runs-on: ubuntu-latest
+    needs: unit-tests
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run Lighthouse CI
+        run: npm run lhci
+        env:
+          # Optional — enables PR status checks. Add via:
+          # GitHub repo → Settings → Secrets → Actions → New repository secret
+          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}

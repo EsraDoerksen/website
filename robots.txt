@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Disallow: /legal.html
+
+Sitemap: https://immo-growth.ch/sitemap.xml
