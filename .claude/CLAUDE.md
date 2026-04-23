@@ -1,6 +1,6 @@
 # CLAUDE.md — ImmoGrowth Project Rules
 
-This file is automatically loaded by Claude Code at the start of every session. All rules below are **mandatory** on every task — no exceptions. They are derived from the four active skills in `skills/`.
+This file is automatically loaded by Claude Code at the start of every session. All rules below are **mandatory** on every task — no exceptions. They are derived from the four active skills in `.claude/skills/`.
 
 ---
 
@@ -25,7 +25,7 @@ This file is automatically loaded by Claude Code at the start of every session. 
 
 # SKILL 1 — DESIGN
 
-> Full reference: `skills/design-SKILL.md`
+> Full reference: `.claude/skills/design-SKILL.md`
 
 ### Core philosophy
 - **Trust over flair.** Every decision makes the business look reliable — not startup-like.
@@ -120,7 +120,7 @@ This file is automatically loaded by Claude Code at the start of every session. 
 
 # SKILL 2 — COMPLIANCE
 
-> Full reference: `skills/compliance-SKILL.md`
+> Full reference: `.claude/skills/compliance-SKILL.md`
 
 ### Cookie consent — CRITICAL (nLPD + GDPR hard requirement)
 - Tracking cookies MUST NOT load before explicit opt-in consent.
@@ -174,7 +174,7 @@ en-US: Legal Notice | Privacy Policy | Terms & Conditions
 
 # SKILL 3 — CONTENT
 
-> Full reference: `skills/content-SKILL.md`
+> Full reference: `.claude/skills/content-SKILL.md`
 
 ### Multilingual architecture
 - Build multilingual from day one — even if only German launches first.
@@ -240,7 +240,7 @@ Phone:   "+41 76 586 09 01"
 
 # SKILL 4 — OUTPUT
 
-> Full reference: `skills/output-SKILL.md`
+> Full reference: `.claude/skills/output-SKILL.md`
 
 ### The core rule
 **Never deliver half-finished code.** If a component, page, or function is started, it is completed in full. No exceptions. If a task is too large for one response, state upfront: `"This will be written in N parts."` — then complete all parts.
