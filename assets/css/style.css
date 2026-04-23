@@ -810,7 +810,7 @@ p { color: var(--text-2); line-height: 1.75; font-size: 1rem; }
   color: var(--accent);
   background: rgba(212,98,44,0.10);
 }
-.footer-col h5 {
+.footer-col-label {
   font-family: 'Inter', sans-serif;
   font-size: 0.6875rem;
   font-weight: 500;
